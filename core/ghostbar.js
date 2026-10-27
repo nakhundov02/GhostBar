@@ -3,6 +3,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 const net = require('node:net');
 const { execFileSync, spawn } = require('node:child_process');
+const { readCertificate } = require('./certificate');
 
 // Apple services reject HTTPS inspection, including iCloud Drive hydration.
 // https://support.apple.com/101555
@@ -171,10 +172,11 @@ class ProxyController {
   certificate() { return path.join(this.certDir, 'mitmproxy-ca-cert.pem'); }
   async prepareCertificate() {
     if (!fs.existsSync(this.certificate())) {
-      if (this.starting) throw new Error('Wait for the current proxy operation to finish.');
+      if (this.starting || this.running) throw new Error('Stop the proxy before preparing a missing certificate.');
       this.starting = true;
       try { await this.launch(); } finally { this.kill(); this.starting = false; }
     }
+    readCertificate(this.certificate());
     return this.certificate();
   }
   async start() {

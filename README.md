@@ -6,13 +6,13 @@ This personal version has no GhostBar activation key, machine lock, remote licen
 
 ## Download the app
 
-Get the ready-to-run apps from [GhostBar 2.0.4](https://github.com/nakhundov02/GhostBar/releases/tag/v2.0.4).
+Get the ready-to-run apps from [GhostBar 2.0.5](https://github.com/nakhundov02/GhostBar/releases/tag/v2.0.5).
 
 | Mac | Download |
 | --- | --- |
-| Apple Silicon (M-series) | [GhostBar-2.0.4-arm64.zip](https://github.com/nakhundov02/GhostBar/releases/download/v2.0.4/GhostBar-2.0.4-arm64.zip) |
-| Intel | [GhostBar-2.0.4-x64.zip](https://github.com/nakhundov02/GhostBar/releases/download/v2.0.4/GhostBar-2.0.4-x64.zip) |
-| Source code | [GhostBar-source.zip](https://github.com/nakhundov02/GhostBar/releases/download/v2.0.4/GhostBar-source.zip) |
+| Apple Silicon (M-series) | [GhostBar-2.0.5-arm64.zip](https://github.com/nakhundov02/GhostBar/releases/download/v2.0.5/GhostBar-2.0.5-arm64.zip) |
+| Intel | [GhostBar-2.0.5-x64.zip](https://github.com/nakhundov02/GhostBar/releases/download/v2.0.5/GhostBar-2.0.5-x64.zip) |
+| Source code | [GhostBar-source.zip](https://github.com/nakhundov02/GhostBar/releases/download/v2.0.5/GhostBar-source.zip) |
 
 Requires **macOS 13 or newer**. Unzip the matching download, move **GhostBar.app** into **Applications**, and open it. Node.js, Python, and Homebrew are not required for the packaged app. If replacing an older version, stop its proxy before replacing the app. Follow the account and certificate setup steps below on each Mac.
 
@@ -35,7 +35,7 @@ The setup command downloads the complete official mitmproxy app bundle for your 
 1. Choose **ChatGPT · use my plan** and click **Continue with ChatGPT**.
 2. Complete the official OpenAI browser sign-in and approve ChatGPT plan usage. Eligible personal Plus or Pro accounts can use their existing allowance. Free-plan access is not guaranteed.
 3. Choose an available model. **Manage usage** opens ChatGPT’s usage settings.
-4. Click **Certificate setup**. In Keychain Access, find and open the newly imported mitmproxy certificate, expand Trust, and set SSL to Always Trust. Confirm the change with macOS.
+4. Click **Certificate setup**. GhostBar imports this Mac’s public CA into the **login** keychain and opens Keychain Access. Select **login → Certificates**, open the mitmproxy certificate, expand **Trust**, and set **Secure Sockets Layer (SSL) → Always Trust**. Close its window and confirm the change with macOS. If several mitmproxy certificates appear, match the SHA-256 fingerprint shown in GhostBar.
 5. Click **Start Proxy**, reload a browser page, and click its top-right corner.
 6. Choose **Use page text** to attach page text or selected text to your next message. You can also attach a PNG, JPEG, or WebP image.
 7. Close or quit GhostBar whenever you like. The proxy and chat backend continue in a separate background process. Reopen GhostBar and click **Stop Proxy** to restore the previous proxy settings.
@@ -45,6 +45,20 @@ Each person, including a friend who clones this repository, signs in with their 
 Neither the ChatGPT desktop app nor the GhostBar control window needs to remain open. This applies to both AI providers. Keep the Mac awake and connected to the internet; quitting the macOS user session or restarting ends background processes.
 
 The existing Gemini option remains available; enter your own API key and model in the app. Keys are sent only by the local backend.
+
+## Certificate import error -25294
+
+This macOS error means the destination keychain could not be found. Keychain Access can show it when importing into Local Items/iCloud. Version 2.0.5 explicitly imports the public CA into the login keychain; SSL trust still requires your confirmation.
+
+For an older build, open **Keychain Access → File → Import Items**, click **Options**, and select **login** as the destination. Press **Command + Shift + G** in the file picker and enter:
+
+~~~text
+~/Library/Application Support/GhostBar/mitmproxy/mitmproxy-ca-cert.pem
+~~~
+
+Import it, then follow the SSL trust step above. Use the certificate generated on that Mac; do not share certificates or import `mitmproxy-ca.pem`, which also contains a private key. If login is locked, unlock it in Keychain Access before retrying. GhostBar does not reset or create a replacement login keychain.
+
+[Apple explains error -25294 and choosing the target keychain explicitly.](https://developer.apple.com/forums/thread/675290)
 
 ## Build a distributable app
 

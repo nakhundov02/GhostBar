@@ -1,6 +1,6 @@
 {
   "name": "ghostbar",
-  "version": "2.0.4",
+  "version": "2.0.5",
   "description": "GhostBar \u2014 browser chat with your own ChatGPT account",
   "main": "src/main.js",
   "private": true,

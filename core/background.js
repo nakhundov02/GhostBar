@@ -4,6 +4,7 @@ const { Preferences } = require('./preferences');
 const { ChatGPT, USAGE_URL } = require('./chatgpt');
 const { createBridge } = require('./bridge');
 const { ProxyController } = require('./ghostbar');
+const { importCertificate } = require('./certificate');
 const { socketPath, serve } = require('./service-channel');
 
 async function createBackground({ directory, root, resources, safeStorage, shell, quit, proxyRun, fetchImpl }) {
@@ -46,9 +47,10 @@ async function createBackground({ directory, root, resources, safeStorage, shell
     stop: () => proxy.stop(),
     certificate: async () => {
       const cert = await proxy.prepareCertificate();
-      const error = await shell.openPath(cert);
-      if (error) throw new Error(error);
-      return 'In Keychain Access, open the mitmproxy certificate, expand Trust, and set Secure Sockets Layer (SSL) to Always Trust. macOS will ask you to confirm.';
+      const { keychain, fingerprint } = importCertificate(cert, { run: proxyRun });
+      const error = await shell.openPath(keychain);
+      const next = 'In Keychain Access, select login → Certificates, open the mitmproxy certificate, expand Trust, and set Secure Sockets Layer (SSL) to Always Trust. Close its window and confirm with macOS. Certificate SHA-256: ' + fingerprint;
+      return 'Certificate imported into the login keychain. ' + (error ? 'Open Keychain Access manually. ' : '') + next;
     },
     openChat: () => {
       if (!proxy.running) throw new Error('Start the proxy first.');
