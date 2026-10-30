@@ -1,0 +1,4 @@
+#!/bin/bash
+# Remove quarantine flag after install — fixes "damaged app" error
+xattr -cr "/Applications/GhostBar.app" 2>/dev/null || true
+exit 0

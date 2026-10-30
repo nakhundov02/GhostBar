@@ -1,0 +1,13 @@
+node_modules/
+dist/
+runtime/
+.DS_Store
+*.log
+*.pem
+*.p12
+*.key
+.env*
+account-vault*
+proxy-backup*
+.ghostbar*
+__pycache__/

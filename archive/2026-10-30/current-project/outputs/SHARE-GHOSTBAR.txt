@@ -1,0 +1,19 @@
+GhostBar 2.0.5 — share with your friend
+
+Download page:
+https://github.com/nakhundov02/GhostBar/releases/tag/v2.0.5
+
+Apple Silicon (M-series), macOS 13 or newer:
+https://github.com/nakhundov02/GhostBar/releases/download/v2.0.5/GhostBar-2.0.5-arm64.zip
+
+Intel Mac, macOS 13 or newer:
+https://github.com/nakhundov02/GhostBar/releases/download/v2.0.5/GhostBar-2.0.5-x64.zip
+
+Source repository:
+https://github.com/nakhundov02/GhostBar
+
+Unzip the matching build and move GhostBar.app into Applications. These builds are ad-hoc signed and not Apple-notarized; macOS may require approval in System Settings > Privacy & Security. Each friend connects their own account and completes Certificate setup once on their Mac.
+
+Start Proxy, reload the webpage, and press Control + backtick (`) to open or close chat. The shortcut is configurable in the app.
+
+Certificate error -25294 is fixed by explicitly importing into the login keychain. In Keychain Access, select login > Certificates, open mitmproxy, expand Trust, set Secure Sockets Layer (SSL) to Always Trust, close the window, and confirm with macOS.

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; object-src 'none'; base-uri 'none'">
+<title>GhostBar</title><link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="shell">
+<header class="app-header">
+  <div class="brand"><div class="brand-icon"><img src="../assets/icon_256.png" alt=""></div><div><h1>GhostBar</h1><p>Your assistant, one quiet click away.</p></div></div>
+  <div id="topStatus" class="status-pill">Starting…</div>
+</header>
+<div id="messageBox" class="message-box hidden" role="status"></div>
+<main class="grid">
+<section class="main-column">
+<div class="panel">
+  <div class="panel-head"><h2>Your AI connection</h2><span>Connect your own account on this Mac.</span></div>
+  <label class="input-label" for="provider">AI provider</label>
+  <select id="provider" class="api-input"><option value="chatgpt">ChatGPT · use my plan</option><option value="gemini">Gemini · API key</option></select>
+  <div id="chatgptSettings">
+    <div class="step-card">
+      <div class="step-title">Use your ChatGPT plan</div>
+      <p class="step-copy">Sign in with an eligible personal Plus or Pro account. GhostBar uses your existing plan allowance; a free account may not provide access.</p>
+      <label class="input-label" for="accounts">Saved connections</label>
+      <select id="accounts" class="api-input"><option value="">Add a ChatGPT account</option></select>
+      <button id="signIn" class="primary-btn" disabled>Continue with ChatGPT</button>
+      <div class="button-row">
+        <button id="addAccount" class="secondary-btn">Add another account</button>
+        <button id="signOut" class="secondary-btn">Sign out</button>
+        <button id="cancelSignIn" class="secondary-btn hidden">Cancel sign-in</button>
+      </div>
+      <p id="accountStatus" class="step-copy">Not connected.</p>
+      <label class="input-label" for="models">ChatGPT model</label>
+      <select id="models" class="api-input" disabled><option>Connect your account first</option></select>
+      <div class="button-row"><button id="refreshModels" class="secondary-btn">Refresh models</button><button id="usage" class="secondary-btn">Manage usage ↗</button></div>
+      <p class="hint">Each person signs in separately. Your login and chat history are not included when you share the app.</p>
+    </div>
+  </div>
+  <div id="geminiSettings" class="step-card hidden">
+    <div class="step-title">Gemini API connection</div>
+    <label class="input-label" for="geminiKey">API key</label>
+    <input id="geminiKey" class="api-input" type="password" autocomplete="off" placeholder="Paste your own key">
+    <label class="input-label" for="geminiModel">Model</label><input id="geminiModel" class="api-input" value="gemini-2.5-flash">
+    <div class="button-row"><button id="saveGemini" class="accent-btn">Save connection</button><button id="clearGemini" class="secondary-btn">Remove key</button></div>
+    <p id="geminiStatus" class="step-copy"></p>
+  </div>
+</div>
+</section>
+<aside class="side-column">
+<div class="panel">
+  <div class="panel-head"><h2>Browser connection</h2><span id="proxyAddress">Proxy is off.</span></div>
+  <div id="heroBanner" class="hero-banner waiting">Starting background service…</div>
+  <p class="step-copy">For HTTPS pages, install and trust GhostBar’s local certificate once on each Mac.</p>
+  <button id="certificate" class="secondary-btn stack-btn">1. Certificate setup</button>
+  <button id="start" class="launch-btn" disabled>2. Start Proxy</button>
+  <div class="button-row"><button id="stop" class="danger-btn">Stop Proxy</button><button id="openChat" class="secondary-btn">Open chat ↗</button></div>
+  <p class="hint">The proxy and chat keep working after you close or quit GhostBar. Reopen GhostBar and click Stop Proxy to turn them off and restore your network settings.</p>
+</div>
+<div class="panel">
+  <div class="panel-head"><h2>Chat shortcut</h2><span>Press once to open, again to close.</span></div>
+  <output id="shortcutValue" class="shortcut-value" aria-label="Current chat shortcut">Control + `</output>
+  <div class="button-row"><button id="changeShortcut" class="accent-btn">Change shortcut</button><button id="resetShortcut" class="secondary-btn">Reset default</button></div>
+  <p id="shortcutHint" class="hint" role="status">Works on a loaded browser page, even after closing GhostBar. Reload webpages after changing the shortcut.</p>
+</div>
+<div class="panel">
+  <div class="panel-head"><h2>Open your chat</h2></div>
+  <div class="how-list">
+    <div>1. Start Proxy and reload a browser page.</div>
+    <div>2. Press your shortcut, or click <strong>✦</strong> in the top-right corner.</div>
+    <div>3. Ask a question, attach an image, or choose <strong>Use page text</strong>.</div>
+  </div>
+  <p class="hint">Only the messages and page content you choose to send go to your selected AI provider.</p>
+</div>
+</aside>
+</main>
+<dialog id="welcome"><h2>You’re using your ChatGPT plan</h2><p>Eligible requests in GhostBar use your existing ChatGPT plan or available credits. You can manage GhostBar’s usage in ChatGPT settings.</p><button id="welcomeDone" class="primary-btn">Got it</button></dialog>
+</div>
+<script src="shortcut.js"></script>
+<script src="renderer.js"></script>
+</body></html>

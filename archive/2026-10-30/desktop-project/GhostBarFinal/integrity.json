@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "created": 1773876924499,
+  "files": {
+    "src/main.js": "f5b688fadf526bab8bd0edfa1c1d9259fbecafc09a9d3b8041c784d128e56b21",
+    "src/preload.js": "1454158afce0b682dd03b8ebe9aea2c270012b71cd248918393392bb05eb6dc9",
+    "src/renderer.js": "76e821168fb5b51dabe9d1e4c343ff0afa41fb47766a2841e76c96ecbbec9f2d",
+    "core/ghostbar.js": "1701c4ea4704d66e0b11c8eca83b89bfc19dc0365e385bd49fb12f8d6fa11b6f",
+    "core/integrity.js": "29785d6000bcc93462b332e4d750212fbd6c771c4c1e419743226e14c3ff923d",
+    "core/license.js": "a48642edc4df4eef52ff9bba75fe6af9b83614fcfe1eeef5eb8c27538aa66ea7"
+  },
+  "signature": "f353251e56a12ad032635bea8485be5c90f9c2a61108b65fedceb4d96b237a95"
+}

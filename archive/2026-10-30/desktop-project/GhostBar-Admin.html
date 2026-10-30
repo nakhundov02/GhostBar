@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GhostBar Admin</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #08080f; color: #e0e0f0; font-family: -apple-system, BlinkMacSystemFont, sans-serif; min-height: 100vh; padding: 32px 24px; }
+  .header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 32px; }
+  .logo { display: flex; align-items: center; gap: 12px; }
+  .logo h1 { font-size: 20px; font-weight: 700; color: #fff; }
+  .logo p  { font-size: 12px; color: #555; margin-top: 1px; }
+  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 16px; margin-bottom: 32px; }
+  .stat { background: #111118; border: 1px solid #1e1e2e; border-radius: 14px; padding: 20px; }
+  .stat-label { font-size: 11px; color: #555; text-transform: uppercase; letter-spacing: 1px; }
+  .stat-value { font-size: 32px; font-weight: 800; color: #fff; margin-top: 6px; }
+  .stat-value.purple { color: #9F8CFF; } .stat-value.green { color: #4ade80; } .stat-value.red { color: #f87171; }
+  .card { background: #111118; border: 1px solid #1e1e2e; border-radius: 16px; padding: 24px; margin-bottom: 24px; }
+  .card-title { font-size: 13px; font-weight: 700; color: #9F8CFF; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 18px; }
+  .gen-row { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+  .count-input { background: #0d0d12; border: 1px solid #2a2a3a; border-radius: 8px; padding: 10px 14px; color: #fff; font-size: 14px; width: 80px; outline: none; }
+  .count-input:focus { border-color: #6A5CFF; }
+  .btn { padding: 10px 20px; border-radius: 8px; border: none; font-size: 13px; font-weight: 700; cursor: pointer; transition: opacity 0.2s; }
+  .btn:hover { opacity: 0.85; }
+  .btn-primary { background: linear-gradient(135deg,#6A5CFF,#9F8CFF); color: #fff; }
+  .btn-danger  { background: rgba(248,113,113,0.15); color: #f87171; border: 1px solid rgba(248,113,113,0.3); }
+  .btn-sm { padding: 6px 12px; font-size: 11px; }
+  .keys-output { background: #0d0d12; border: 1px solid #1e1e2e; border-radius: 10px; padding: 14px; margin-top: 14px; font-family: monospace; font-size: 13px; color: #9F8CFF; line-height: 2; max-height: 200px; overflow-y: auto; display: none; white-space: pre; }
+  .table-wrap { overflow-x: auto; }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  th { text-align: left; padding: 10px 14px; color: #555; font-size: 11px; text-transform: uppercase; letter-spacing: 1px; border-bottom: 1px solid #1e1e2e; }
+  td { padding: 12px 14px; border-bottom: 1px solid #151520; vertical-align: middle; }
+  tr:last-child td { border-bottom: none; }
+  tr:hover td { background: rgba(106,92,255,0.04); }
+  .badge { display: inline-block; padding: 3px 8px; border-radius: 6px; font-size: 10px; font-weight: 700; letter-spacing: 0.5px; }
+  .badge-active  { background: rgba(74,222,128,0.12); color: #4ade80; }
+  .badge-fresh   { background: rgba(106,92,255,0.12); color: #9F8CFF; }
+  .badge-revoked { background: rgba(248,113,113,0.12); color: #f87171; }
+  .key-text { font-family: monospace; color: #ccc; letter-spacing: 0.5px; }
+  .machine-text { color: #555; font-size: 11px; font-family: monospace; }
+  .search-input { flex: 1; background: #0d0d12; border: 1px solid #2a2a3a; border-radius: 8px; padding: 10px 14px; color: #fff; font-size: 13px; outline: none; }
+  .search-input:focus { border-color: #6A5CFF; }
+  .empty { text-align: center; padding: 48px; color: #333; font-size: 14px; }
+  .toast { position: fixed; bottom: 24px; right: 24px; background: #1a1a2a; border: 1px solid #2a2a3a; border-radius: 10px; padding: 12px 18px; font-size: 13px; color: #fff; transform: translateY(80px); opacity: 0; transition: all 0.3s ease; z-index: 999; }
+  .toast.show { transform: translateY(0); opacity: 1; }
+  .toast.ok { border-color: rgba(74,222,128,0.4); color: #4ade80; }
+  .toast.err { border-color: rgba(248,113,113,0.4); color: #f87171; }
+</style>
+</head>
+<body>
+<div class="header">
+  <div class="logo">
+    <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+      <rect width="36" height="36" rx="10" fill="#111118"/>
+      <ellipse cx="18" cy="16" rx="9" ry="10" fill="white"/>
+      <rect x="9" y="16" width="18" height="8" fill="white"/>
+      <path d="M9 24 Q11.5 27 14 24 Q16.5 27 18 24 Q19.5 27 22 24 Q24.5 27 27 24" stroke="#111118" stroke-width="1.5" fill="none"/>
+      <circle cx="14.5" cy="15" r="2" fill="#111118"/>
+      <circle cx="21.5" cy="15" r="2" fill="#111118"/>
+      <circle cx="15" cy="14.5" r="0.8" fill="white"/>
+      <circle cx="22" cy="14.5" r="0.8" fill="white"/>
+    </svg>
+    <div><h1>GhostBar Admin</h1><p>License Management Dashboard</p></div>
+  </div>
+  <button class="btn btn-primary" onclick="loadAll()">⟳ Refresh</button>
+</div>
+<div class="stats">
+  <div class="stat"><div class="stat-label">Total Keys</div><div class="stat-value purple" id="statTotal">—</div></div>
+  <div class="stat"><div class="stat-label">Activated</div><div class="stat-value green" id="statActivated">—</div></div>
+  <div class="stat"><div class="stat-label">Unused</div><div class="stat-value" id="statUnused">—</div></div>
+  <div class="stat"><div class="stat-label">Revoked</div><div class="stat-value red" id="statRevoked">—</div></div>
+</div>
+<div class="card">
+  <div class="card-title">✦ Generate Keys</div>
+  <div class="gen-row">
+    <input class="count-input" type="number" id="genCount" value="1" min="1" max="500">
+    <button class="btn btn-primary" onclick="generateKeys()">Generate &amp; Save</button>
+    <button class="btn" style="background:#1a1a2a;color:#888;border:1px solid #222" onclick="copyKeys()">Copy All</button>
+  </div>
+  <div class="keys-output" id="keysOutput"></div>
+</div>
+<div class="card">
+  <div class="card-title">All License Keys</div>
+  <div style="display:flex;gap:10px;margin-bottom:16px">
+    <input class="search-input" type="text" id="searchInput" placeholder="Search by key or machine…" oninput="filterTable()">
+  </div>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Key</th><th>Status</th><th>Activated</th><th>Machine</th><th>Actions</th></tr></thead>
+      <tbody id="tableBody"><tr><td colspan="5" style="text-align:center;padding:32px;color:#555">Loading…</td></tr></tbody>
+    </table>
+  </div>
+</div>
+<div class="toast" id="toast"></div>
+<script>
+const SUPABASE_URL = 'https://yekxijqiodiafhhcrvhf.supabase.co';
+const SUPABASE_KEY = 'sb_publishable_zBwjow1aU5rxckm_QdANMw_Zt3ZQbJ6';
+const API = SUPABASE_URL + '/rest/v1';
+let allLicenses = [], generatedKeys = [];
+
+function hdrs(extra={}) {
+  return { 'apikey': SUPABASE_KEY, 'Authorization': 'Bearer '+SUPABASE_KEY, 'Content-Type': 'application/json', 'Prefer': 'return=representation', ...extra };
+}
+function genKey() {
+  const chars = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789';
+  const group = () => {
+    let s = '';
+    while (s.length < 4) s += chars[Math.floor(Math.random() * chars.length)];
+    return s.substring(0, 4);
+  };
+  const key = `GHOST-${group()}-${group()}-${group()}-${group()}`;
+  // Validate before returning — must be exactly right format
+  if (!/^GHOST-[A-Z0-9]{4}-[A-Z0-9]{4}-[A-Z0-9]{4}-[A-Z0-9]{4}$/.test(key)) return genKey();
+  return key;
+}
+async function generateKeys() {
+  const count = Math.min(500, Math.max(1, parseInt(document.getElementById('genCount').value)||1));
+  const keys = Array.from({length:count}, genKey);
+  generatedKeys = keys;
+  const out = document.getElementById('keysOutput');
+  out.textContent = keys.join('\n'); out.style.display = 'block';
+  try {
+    const res = await fetch(API+'/licenses', { method:'POST', headers:hdrs(), body:JSON.stringify(keys.map(k=>({key:k}))) });
+    if (res.ok) { toast('✅ '+count+' key'+(count>1?'s':'')+' saved!','ok'); loadAll(); }
+    else toast('⚠ Save failed: '+(await res.text()),'err');
+  } catch(e) { toast('⚠ '+e.message,'err'); }
+}
+function copyKeys() {
+  const text = generatedKeys.join('\n') || document.getElementById('keysOutput').textContent;
+  if (!text) { toast('Generate keys first','err'); return; }
+  navigator.clipboard.writeText(text).then(()=>toast('✅ Copied!','ok'));
+}
+async function loadAll() {
+  try {
+    const res = await fetch(API+'/licenses?select=*&order=created_at.desc', {headers:hdrs()});
+    allLicenses = await res.json();
+    const total = allLicenses.length;
+    const activated = allLicenses.filter(l=>l.activated_at&&!l.revoked).length;
+    const revoked = allLicenses.filter(l=>l.revoked).length;
+    const unused = allLicenses.filter(l=>!l.activated_at&&!l.revoked).length;
+    document.getElementById('statTotal').textContent = total;
+    document.getElementById('statActivated').textContent = activated;
+    document.getElementById('statUnused').textContent = unused;
+    document.getElementById('statRevoked').textContent = revoked;
+    renderTable(allLicenses);
+  } catch(e) { toast('Load failed: '+e.message,'err'); }
+}
+function renderTable(licenses) {
+  const tbody = document.getElementById('tableBody');
+  if (!licenses.length) { tbody.innerHTML = '<tr><td colspan="5" class="empty">No keys yet. Generate some above.</td></tr>'; return; }
+  tbody.innerHTML = licenses.map(l => {
+    const status = l.revoked ? '<span class="badge badge-revoked">Revoked</span>' : l.activated_at ? '<span class="badge badge-active">Active</span>' : '<span class="badge badge-fresh">Unused</span>';
+    const activated = l.activated_at ? new Date(l.activated_at).toLocaleDateString() : '—';
+    const machine = l.machine_id ? '<span class="machine-text">'+(l.machine_id||'').substring(0,16)+'…</span>' : '—';
+    const btn = !l.revoked
+      ? '<button class="btn btn-danger btn-sm" onclick="revokeKey(\'' + l.key + '\')">Revoke</button>'
+      : '<button class="btn btn-sm" style="background:#1a1a2a;color:#555;border:1px solid #222" onclick="restoreKey(\'' + l.key + '\')">Restore</button>';
+    return '<tr><td class="key-text">'+l.key+'</td><td>'+status+'</td><td>'+activated+'</td><td>'+machine+'</td><td>'+btn+'</td></tr>';
+  }).join('');
+}
+function filterTable() {
+  const q = document.getElementById('searchInput').value.toLowerCase();
+  renderTable(!q ? allLicenses : allLicenses.filter(l => l.key.toLowerCase().includes(q)||(l.machine_id||'').includes(q)));
+}
+async function revokeKey(key) {
+  if (!confirm('Revoke '+key+'?\nThis blocks the user immediately on next launch.')) return;
+  await fetch(API+'/licenses?key=eq.'+encodeURIComponent(key), {method:'PATCH',headers:hdrs(),body:JSON.stringify({revoked:true})});
+  toast('✅ Key revoked','ok'); loadAll();
+}
+async function restoreKey(key) {
+  await fetch(API+'/licenses?key=eq.'+encodeURIComponent(key), {method:'PATCH',headers:hdrs(),body:JSON.stringify({revoked:false})});
+  toast('✅ Key restored','ok'); loadAll();
+}
+function toast(msg,type='') {
+  const el = document.getElementById('toast');
+  el.textContent = msg; el.className = 'toast show '+type;
+  setTimeout(()=>el.className='toast', 3000);
+}
+loadAll();
+</script>
+</body>
+</html>

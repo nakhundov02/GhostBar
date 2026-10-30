@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GhostBar chat</title><link rel="stylesheet" href="/panel.css"></head>
+<body>
+<header><strong>✦ GhostBar</strong><button id="close" title="Close chat" aria-label="Close chat">×</button></header>
+<div class="connection"><span id="connection">Connecting…</span><button id="refresh" title="Refresh connection">↻</button></div>
+<select id="model" aria-label="AI model"><option>Connect in the GhostBar app</option></select>
+<div id="messages" role="log" aria-live="polite"><p class="hint">Ask a question, attach an image, or use text from this page.</p></div>
+<div id="attachment" hidden><span id="attachmentText"></span><button id="removeAttachment" aria-label="Remove attachment">×</button></div>
+<div id="error" role="status"></div>
+<form id="form">
+<textarea id="prompt" rows="3" placeholder="Ask anything…" aria-label="Message"></textarea>
+<div class="actions"><button type="button" id="capture">Use page text</button><label class="upload">Image<input id="image" type="file" accept="image/png,image/jpeg,image/webp" hidden></label><button type="button" id="clear">New chat</button><button id="send" type="submit">Send ↑</button></div>
+</form>
+<script src="/shortcut.js"></script><script src="/panel.js"></script></body></html>

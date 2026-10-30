@@ -1,0 +1,71 @@
+const { _electron: electron, chromium } = require('playwright');
+const { spawn } = require('node:child_process');
+const fs = require('node:fs');
+const path = require('node:path');
+const assert = require('node:assert/strict');
+const cwd = path.resolve(__dirname, '../..');
+const root = path.join(cwd, 'outputs/GhostBar');
+const { socketPath, requestService } = require(path.join(root, 'core/service-channel'));
+const directory = fs.mkdtempSync(path.join(cwd, 'work/lifecycle-profile-'));
+const executable = path.join(root, 'node_modules/electron/dist/Electron.app/Contents/MacOS/Electron');
+const env = { ...process.env, GHOSTBAR_DATA_DIR: directory, GB_ROOT: root };
+delete env.ELECTRON_RUN_AS_NODE;
+const socket = socketPath(directory);
+const call = (method, ...args) => requestService(socket, method, args);
+const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
+(async () => {
+  const service = spawn(executable, [path.join(cwd, 'work/lifecycle-fixture/main.js')], { env, detached: true, stdio: ['ignore', 'ignore', 'pipe'] });
+  let errors = '', app, browser;
+  service.stderr.on('data', c => { errors += c; });
+  try {
+    let ready = false;
+    for (let i = 0; i < 100; i++) { try { await call('status'); ready = true; break; } catch {} await wait(100); }
+    assert.ok(ready, errors);
+    await call('provider', 'gemini');
+    await call('saveGemini', 'FAKE-TEST-KEY', 'gemini-test');
+    const launchUI = async () => electron.launch({ executablePath: executable, args: [root], cwd: root, env });
+    app = await launchUI();
+    let window = await app.firstWindow();
+    await window.locator('#start').click();
+    await window.waitForFunction(() => document.querySelector('#topStatus').textContent === 'Running');
+    const before = await call('status');
+    assert.equal(before.servicePid, service.pid);
+    const uiPid = app.process().pid;
+    await app.close(); app = null;
+    await wait(300);
+    assert.throws(() => process.kill(uiPid, 0), /ESRCH/);
+    const after = await call('status');
+    assert.equal(after.proxy.running, true);
+    assert.equal(after.servicePid, before.servicePid);
+    assert.equal(after.proxy.address, before.proxy.address);
+    console.log('Quitting the real control app leaves the same background process and proxy running.');
+    browser = await chromium.launch({ executablePath: '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome', headless: true, proxy: { server: 'http://' + after.proxy.address } });
+    const page = await browser.newPage({ ignoreHTTPSErrors: true });
+    await page.goto('https://ghostbar.local/');
+    await page.locator('#prompt').fill('Are you still available?');
+    await page.locator('#send').click();
+    await page.getByText('The background chat still works after GhostBar quits.').waitFor();
+    console.log('Browser chat receives a reply through the real proxy after the UI process exits (mocked provider).');
+    app = await launchUI();
+    window = await app.firstWindow();
+    await window.waitForFunction(() => document.querySelector('#topStatus').textContent === 'Running');
+    assert.equal((await call('status')).servicePid, before.servicePid);
+    await window.locator('#stop').click();
+    await window.waitForFunction(() => document.querySelector('#topStatus').textContent === 'Ready');
+    assert.equal((await call('status')).proxy.running, false);
+    assert.equal(fs.existsSync(path.join(directory, 'proxy-backup.json')), false);
+    const events = fs.readFileSync(path.join(directory, 'network-events.jsonl'), 'utf8');
+    assert.match(events, /setwebproxystate.*off/);
+    assert.match(events, /setsecurewebproxystate.*off/);
+    console.log('Reopening reconnects to the same service; Stop Proxy restores saved network settings.');
+    await app.close(); app = null;
+    await wait(400);
+    await assert.rejects(call('status'));
+    console.log('The idle background process exits after Stop Proxy and closing GhostBar.');
+  } finally {
+    if (browser) await browser.close();
+    if (app) await app.close();
+    try { await call('stop'); await call('release'); } catch {}
+    if (service.exitCode === null) service.kill('SIGTERM');
+  }
+})().catch(e => { console.error(e); process.exitCode = 1; });

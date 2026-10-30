@@ -1,0 +1,95 @@
+{
+  "name": "ghostbar",
+  "version": "1.4.0",
+  "description": "GhostBar \u2013 Summon AI anywhere",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron .",
+    "prepare-build": "bash scripts/prepare-build.sh",
+    "build:dmg": "npm run prepare-build && npm run gen:integrity && electron-builder --mac dmg",
+    "build:all": "npm run prepare-build && npm run gen:integrity && electron-builder --mac",
+    "gen:integrity": "node -e \"const i=require('./core/integrity');const fs=require('fs');const m=i.buildIntegrityManifest();fs.writeFileSync('integrity.json',JSON.stringify(m,null,2));console.log('\u2705 integrity.json generated with '+Object.keys(m.files).length+' files');\"",
+    "build:pkg": "npm run prepare-build && npm run gen:integrity && electron-builder --mac pkg",
+    "postinstall": "find node_modules -name 'app-builder_arm64' -exec chmod +x {} \\; 2>/dev/null; find node_modules -name 'app-builder_arm64' -exec xattr -cr {} \\; 2>/dev/null; true"
+  },
+  "build": {
+    "appId": "com.ghostbar.app",
+    "productName": "GhostBar",
+    "mac": {
+      "category": "public.app-category.productivity",
+      "icon": "assets/icon.icns",
+      "hardenedRuntime": false,
+      "gatekeeperAssess": false,
+      "target": [
+        {
+          "target": "dmg",
+          "arch": [
+            "arm64"
+          ]
+        }
+      ]
+    },
+    "files": [
+      "src/**/*",
+      "core/**/*",
+      "assets/**/*",
+      "node_modules/**/*",
+      "integrity.json",
+      "!admin/**",
+      "!**/*.map",
+      "!**/README*",
+      "assets/install.command",
+      "assets/mitmdump-arm64",
+      "assets/mitmdump-x86_64"
+    ],
+    "extraResources": [
+      {
+        "from": "assets/mitmdump-arm64",
+        "to": "mitmdump-arm64"
+      },
+      {
+        "from": "assets/mitmdump-x86_64",
+        "to": "mitmdump-x86_64"
+      },
+      {
+        "from": "core/addon.py",
+        "to": "addon.py"
+      },
+      {
+        "from": "core/proxy.py",
+        "to": "proxy.py"
+      }
+    ],
+    "pkg": {
+      "installLocation": "/Applications",
+      "isRelocatable": false,
+      "scripts": "build-scripts"
+    },
+    "dmg": {
+      "title": "Install GhostBar",
+      "background": "assets/dmg-bg.png",
+      "window": {
+        "width": 660,
+        "height": 420
+      },
+      "contents": [
+        {
+          "x": 165,
+          "y": 190
+        },
+        {
+          "x": 495,
+          "y": 190,
+          "type": "link",
+          "path": "/Applications"
+        }
+      ],
+      "iconSize": 120
+    }
+  },
+  "devDependencies": {
+    "electron": "^30.0.0",
+    "electron-builder": "^24.0.0"
+  },
+  "buildId": "v1.4.0-release"
+}

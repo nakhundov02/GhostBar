@@ -1,0 +1,2120 @@
+[
+  {
+    "source": "/Users/n_akhundov02/Desktop/GhostBar/GhostBarFinal/package-lock.json",
+    "destination": "desktop-project/GhostBarFinal/package-lock.json",
+    "sha256": "f803dad1b01887a1d0931d8139e174f894fa5cfd0752f2b0c74b3664e51a9e46",
+    "bytes": 146171
+  },
+  {
+    "source": "/Users/n_akhundov02/Desktop/GhostBar/GhostBar-Admin.html",
+    "destination": "desktop-project/GhostBar-Admin.html",
+    "sha256": "ca91307342a830ef6e3456e723274eeb4340aabb363a2a09bcce82dcb9144cf4",
+    "bytes": 11172
+  },
+  {
+    "source": "/Users/n_akhundov02/Desktop/GhostBar/GhostBarFinal/core/guardian.js",
+    "destination": "desktop-project/GhostBarFinal/core/guardian.js",
+    "sha256": "09d23de5420cee583cb2fcb71ef756f39e9c76c97d7efbfc0768c3bad258c242",
+    "bytes": 4795
+  },
+  {
+    "source": "/Users/n_akhundov02/Desktop/GhostBar/GhostBarFinal/core/ghostbar.js",
+    "destination": "desktop-project/GhostBarFinal/core/ghostbar.js",
+    "sha256": "1701c4ea4704d66e0b11c8eca83b89bfc19dc0365e385bd49fb12f8d6fa11b6f",
+    "bytes": 18931
+  },
+  {
+    "source": "/Users/n_akhundov02/Desktop/GhostBar/GhostBarFinal/admin/index.html",
+    "destination": "desktop-project/GhostBarFinal/admin/index.html",
+    "sha256": "e5b2e215a98d4791c564f77348174515eaf277d8f5a705c0e08abfb82fa1afde",
+    "bytes": 11284
+  },
+  {
+    "source": "/Users/n_akhundov02/Desktop/GhostBar/GhostBarFinal/core/license.js",
+    "destination": "desktop-project/GhostBarFinal/core/license.js",
+    "sha256": "a48642edc4df4eef52ff9bba75fe6af9b83614fcfe1eeef5eb8c27538aa66ea7",
+    "bytes": 4370
+  },
+  {
+    "source": "/Users/n_akhundov02/Desktop/GhostBar/GhostBarFinal/core/integrity.js",
+    "destination": "desktop-project/GhostBarFinal/core/integrity.js",
+    "sha256": "29785d6000bcc93462b332e4d750212fbd6c771c4c1e419743226e14c3ff923d",
+    "bytes": 13309
+  },
+  {
+    "source": "/Users/n_akhundov02/Desktop/GhostBar/GhostBarFinal/core/supabase.js",
+    "destination": "desktop-project/GhostBarFinal/core/supabase.js",
+    "sha256": "d8bebeda928381cfa8b30fcecb4104d4dd35f587069e121f3a21683c47dee162",
+    "bytes": 3830
+  },
+  {
+    "source": "/Users/n_akhundov02/Desktop/GhostBar/GhostBarFinal/core/addon.py",
+    "destination": "desktop-project/GhostBarFinal/core/addon.py",
+    "sha256": "2a5f0491842259a81ccabdd292b31bae1f74b4085963297acfd4982356547dc6",
+    "bytes": 2616
+  },
+  {
+    "source": "/Users/n_akhundov02/Desktop/GhostBar/GhostBarFinal/core/proxy.py",
+    "destination": "desktop-project/GhostBarFinal/core/proxy.py",
+    "sha256": "2206724335a920fff4457ab2053f74dce97abe29a26374a1bad252dcd746d193",
+    "bytes": 6581
+  },
+  {
+    "source": "/Users/n_akhundov02/Desktop/GhostBar/GhostBarFinal/webhook/supabase/functions/gumroad-webhook/config.json",
+    "destination": "desktop-project/GhostBarFinal/webhook/supabase/functions/gumroad-webhook/config.json",
+    "sha256": "8e116a1a00f8abb7632f2d40698639766ecae91b0c022a6ba3224f8df87b2865",
+    "bytes": 26
+  },
+  {
+    "source": "/Users/n_akhundov02/Desktop/GhostBar/GhostBarFinal/webhook/supabase/functions/gumroad-webhook/index.ts",
+    "destination": "desktop-project/GhostBarFinal/webhook/supabase/functions/gumroad-webhook/index.ts",
+    "sha256": "0e6d71c7ec25241904efc410a6679862a6adf77a24cb55fb5aeb33188b1f7faf",
+    "bytes": 4605
+  },
+  {
+    "source": "/Users/n_akhundov02/Desktop/GhostBar/GhostBarFinal/integrity.json",
+    "destination": "desktop-project/GhostBarFinal/integrity.json",
+    "sha256": "5d795cbcafa8cfd06b5b41c633ea51c8adfea047aeafa20e6c93eeb3fdca6683",
+    "bytes": 690
+  },
+  {
+    "source": "/Users/n_akhundov02/Desktop/GhostBar/GhostBarFinal/package.json",
+    "destination": "desktop-project/GhostBarFinal/package.json",
+    "sha256": "725d6682069eade9956d2c751aa849b44419077ef7d30a0ad7476fc2cfce2840",
+    "bytes": 2646
+  },
+  {
+    "source": "/Users/n_akhundov02/Desktop/GhostBar/GhostBarFinal/webhook/README.md",
+    "destination": "desktop-project/GhostBarFinal/webhook/README.md",
+    "sha256": "87f9e6dc9867e45b5c1a8c43ada0a05ef78ae30feaf189502b23c539a8668c01",
+    "bytes": 337
+  },
+  {
+    "source": "/Users/n_akhundov02/Desktop/GhostBar/GhostBarFinal/webhook/DEPLOY.md",
+    "destination": "desktop-project/GhostBarFinal/webhook/DEPLOY.md",
+    "sha256": "82a1340378b01dfe658046e6d7781520ecd93cb30219350df9985c5ae95051e2",
+    "bytes": 2911
+  },
+  {
+    "source": "/Users/n_akhundov02/Desktop/GhostBar/GhostBarFinal/HOW_TO_BUILD.md",
+    "destination": "desktop-project/GhostBarFinal/HOW_TO_BUILD.md",
+    "sha256": "7a6057b76a4fed1beaeb7ae2ea820b2555a8ace472a79138936c84bd02991cfa",
+    "bytes": 3379
+  },
+  {
+    "source": "/Users/n_akhundov02/Desktop/GhostBar/GhostBar-Guide.docx",
+    "destination": "desktop-project/GhostBar-Guide.docx",
+    "sha256": "90f1ba5b1583cc4731e3047cf0265a65bdd46da22d786d52871867d8a70d69c6",
+    "bytes": 20430
+  },
+  {
+    "source": "/Users/n_akhundov02/Desktop/GhostBar/GhostBarFinal/src/preload.js",
+    "destination": "desktop-project/GhostBarFinal/src/preload.js",
+    "sha256": "1454158afce0b682dd03b8ebe9aea2c270012b71cd248918393392bb05eb6dc9",
+    "bytes": 1152
+  },
+  {
+    "source": "/Users/n_akhundov02/Desktop/GhostBar/GhostBarFinal/src/index.html",
+    "destination": "desktop-project/GhostBarFinal/src/index.html",
+    "sha256": "f52f8b447a0a1577e5d6781165ecb5dd0efc0990248ff994f9e8339f4a1c70f7",
+    "bytes": 15894
+  },
+  {
+    "source": "/Users/n_akhundov02/Desktop/GhostBar/GhostBarFinal/src/renderer.js",
+    "destination": "desktop-project/GhostBarFinal/src/renderer.js",
+    "sha256": "76e821168fb5b51dabe9d1e4c343ff0afa41fb47766a2841e76c96ecbbec9f2d",
+    "bytes": 13373
+  },
+  {
+    "source": "/Users/n_akhundov02/Desktop/GhostBar/GhostBarFinal/assets/mitmdump",
+    "destination": "desktop-project/GhostBarFinal/assets/mitmdump",
+    "sha256": "6a817f6abb768d2570ab50f1c499f7695cf097b661adb858bd5d4f7c440ba51b",
+    "bytes": 203
+  },
+  {
+    "source": "/Users/n_akhundov02/Desktop/GhostBar/GhostBarFinal/src/styles.css",
+    "destination": "desktop-project/GhostBarFinal/src/styles.css",
+    "sha256": "496fb255275514448a99986d55f1a53dd9f1bc719eebbe04a9e6c7fa722ec241",
+    "bytes": 9982
+  },
+  {
+    "source": "/Users/n_akhundov02/Desktop/GhostBar/GhostBarFinal/assets/mitmdump 2",
+    "destination": "desktop-project/GhostBarFinal/assets/mitmdump 2",
+    "sha256": "6a817f6abb768d2570ab50f1c499f7695cf097b661adb858bd5d4f7c440ba51b",
+    "bytes": 203
+  },
+  {
+    "source": "/Users/n_akhundov02/Desktop/GhostBar/GhostBarWebhook/supabase/functions/gumroad-webhook/index.ts",
+    "destination": "desktop-project/GhostBarWebhook/supabase/functions/gumroad-webhook/index.ts",
+    "sha256": "d67a3c3b6b2e5f85abb9a8872dde6c6bd147ff652dd0d3881448c2e6471c5c34",
+    "bytes": 6028
+  },
+  {
+    "source": "/Users/n_akhundov02/Desktop/GhostBar/GhostBarFinal/assets/icon_256.png",
+    "destination": "desktop-project/GhostBarFinal/assets/icon_256.png",
+    "sha256": "d6bf78f17e63037f474d9091f6d44be5c46109b0377c0bb72d097587bdaa364a",
+    "bytes": 5781
+  },
+  {
+    "source": "/Users/n_akhundov02/Desktop/GhostBar/GhostBarFinal/assets/icon.icns",
+    "destination": "desktop-project/GhostBarFinal/assets/icon.icns",
+    "sha256": "ce5b3e2dab3b71a8b8567d7e41a5491634118d2075aa19f466b687370e9117a5",
+    "bytes": 28687
+  },
+  {
+    "source": "/Users/n_akhundov02/Desktop/GhostBar/GhostBarFinal/assets/install.command",
+    "destination": "desktop-project/GhostBarFinal/assets/install.command",
+    "sha256": "4fb4faff3b8d96efc9232f00918a92e04b50d4dbff75809627fd0e54d2394649",
+    "bytes": 647
+  },
+  {
+    "source": "/Users/n_akhundov02/Desktop/GhostBar/GhostBarFinal/assets/dmg-bg.png",
+    "destination": "desktop-project/GhostBarFinal/assets/dmg-bg.png",
+    "sha256": "0ae236e6a5ca82cce75cf9cb25b561bde320bc9828d032ce82f9ba06372eb39b",
+    "bytes": 30915
+  },
+  {
+    "source": "/Users/n_akhundov02/Desktop/GhostBar/GhostBarFinal/scripts/prepare-build.sh",
+    "destination": "desktop-project/GhostBarFinal/scripts/prepare-build.sh",
+    "sha256": "2220996601e1f456fe33fe52f4ceca8ae8ec73bb4c02cb86b176a72bc5642ba6",
+    "bytes": 924
+  },
+  {
+    "source": "/Users/n_akhundov02/Desktop/GhostBar/GhostBarFinal/build-scripts/postinstall",
+    "destination": "desktop-project/GhostBarFinal/build-scripts/postinstall",
+    "sha256": "1e0f10e19b3250fde227e340720fdf372cfb134174db04dd6d3d3029878fd133",
+    "bytes": 147
+  },
+  {
+    "source": "/Users/n_akhundov02/Desktop/GhostBar/GhostBarFinal/assets/GhostBar-Guide.docx",
+    "destination": "desktop-project/GhostBarFinal/assets/GhostBar-Guide.docx",
+    "sha256": "f32c3b40636dd1a33fe9b3d46d9d3cf1d076c4a881f285fedb9cb926d537b3ac",
+    "bytes": 29034
+  },
+  {
+    "source": "/Users/n_akhundov02/Desktop/GhostBar/GhostBarFinal/assets/mitmdump-arm64",
+    "destination": "desktop-project/GhostBarFinal/assets/mitmdump-arm64",
+    "sha256": "dbeb3db6d00e80bb44f61b34ff3eb00133bd6aa850c72ace2e69c35a7c8f318d",
+    "bytes": 8897968
+  },
+  {
+    "source": "/Users/n_akhundov02/Desktop/GhostBar/GhostBarFinal/assets/mitmdump-x86_64",
+    "destination": "desktop-project/GhostBarFinal/assets/mitmdump-x86_64",
+    "sha256": "6dc44e09fdd17b88f26764bb1cca8d6e38a34c2726ad4a440f9a4df8eed66372",
+    "bytes": 8881504
+  },
+  {
+    "source": "/Users/n_akhundov02/Desktop/GhostBar/GhostBarFinal/assets/GhostBar-Guide.pdf",
+    "destination": "desktop-project/GhostBarFinal/assets/GhostBar-Guide.pdf",
+    "sha256": "5b0e063bd01d0034f8518b43016d77bf6a8340f4ca60eee3f40b3aeb7121368d",
+    "bytes": 160135
+  },
+  {
+    "source": "/Users/n_akhundov02/Desktop/GhostBar/GhostBarWebhook/DEPLOY.md",
+    "destination": "desktop-project/GhostBarWebhook/DEPLOY.md",
+    "sha256": "82a1340378b01dfe658046e6d7781520ecd93cb30219350df9985c5ae95051e2",
+    "bytes": 2911
+  },
+  {
+    "source": "/Users/n_akhundov02/Desktop/GhostBar/GhostBarWebhook/README.md",
+    "destination": "desktop-project/GhostBarWebhook/README.md",
+    "sha256": "87f9e6dc9867e45b5c1a8c43ada0a05ef78ae30feaf189502b23c539a8668c01",
+    "bytes": 337
+  },
+  {
+    "source": "/Users/n_akhundov02/Desktop/GhostBar/GhostBarFinal/src/activate.html",
+    "destination": "desktop-project/GhostBarFinal/src/activate.html",
+    "sha256": "3bd689332ea900a070a4e4f7bf81ac12021c5e9c3b86738c821fd366de023829",
+    "bytes": 7499
+  },
+  {
+    "source": "/Users/n_akhundov02/Desktop/GhostBar/GhostBarFinal/src/snippet.html",
+    "destination": "desktop-project/GhostBarFinal/src/snippet.html",
+    "sha256": "564745250770b576ef253b76dc53b8e27a0734108987a3fb2b6709d13253fd2f",
+    "bytes": 34361
+  },
+  {
+    "source": "/Users/n_akhundov02/Desktop/GhostBar/GhostBarFinal/src/main.js",
+    "destination": "desktop-project/GhostBarFinal/src/main.js",
+    "sha256": "f5b688fadf526bab8bd0edfa1c1d9259fbecafc09a9d3b8041c784d128e56b21",
+    "bytes": 10120
+  },
+  {
+    "source": "/Users/n_akhundov02/Documents/Codex/2026-10-15/how/outputs/ghostbar for appstore/Proxy/addon.py",
+    "destination": "appstore-project/outputs/ghostbar for appstore/Proxy/addon.py",
+    "sha256": "da964ad5f824b09da135bebe58f8432c25cdd29e577744768c3c0f89a8d6b9ff",
+    "bytes": 3886
+  },
+  {
+    "source": "/Users/n_akhundov02/Documents/Codex/2026-10-15/how/outputs/ghostbar for appstore/Web/panel.js",
+    "destination": "appstore-project/outputs/ghostbar for appstore/Web/panel.js",
+    "sha256": "e9695de6f03db7b05f31e867a46f8401559e986f35ecd571603e91a16809d7ae",
+    "bytes": 7638
+  },
+  {
+    "source": "/Users/n_akhundov02/Documents/Codex/2026-10-15/how/outputs/ghostbar for appstore/Proxy/injection.py",
+    "destination": "appstore-project/outputs/ghostbar for appstore/Proxy/injection.py",
+    "sha256": "e7c7792db0234c44e9086d1d57d984a00415a334edd8892cf771b6677d5f60ce",
+    "bytes": 2430
+  },
+  {
+    "source": "/Users/n_akhundov02/Documents/Codex/2026-10-15/how/outputs/ghostbar for appstore/App/KeyStore.swift",
+    "destination": "appstore-project/outputs/ghostbar for appstore/App/KeyStore.swift",
+    "sha256": "27efa7d5dbd448c7aab7d46aaee25c43af6f42a88e5efba23178be97cf7d297f",
+    "bytes": 1764
+  },
+  {
+    "source": "/Users/n_akhundov02/Documents/Codex/2026-10-15/how/outputs/ghostbar for appstore/App/ChatBroker.swift",
+    "destination": "appstore-project/outputs/ghostbar for appstore/App/ChatBroker.swift",
+    "sha256": "e0a71474de6d8482bf5df77e086d82cd150d130c88b3c81f899d2cde6fa99e49",
+    "bytes": 9202
+  },
+  {
+    "source": "/Users/n_akhundov02/Documents/Codex/2026-10-15/how/outputs/ghostbar for appstore/NetworkExtension/TransparentProxyProvider.swift",
+    "destination": "appstore-project/outputs/ghostbar for appstore/NetworkExtension/TransparentProxyProvider.swift",
+    "sha256": "1874548b80757ac853879e016b6176047dadd03656a9171d3ce737e638b3a42e",
+    "bytes": 6990
+  },
+  {
+    "source": "/Users/n_akhundov02/Documents/Codex/2026-10-27/i-ha/work/routing-ui-check.js",
+    "destination": "current-project/work/routing-ui-check.js",
+    "sha256": "831f798552a7449282b93af2c49b5778b0c60113280cbd1a74fece4747196ff0",
+    "bytes": 4770
+  },
+  {
+    "source": "/Users/n_akhundov02/Documents/Codex/2026-10-27/i-ha/work/ghostbar-fixed-panel.png",
+    "destination": "current-project/work/ghostbar-fixed-panel.png",
+    "sha256": "0d91b0998d5fbd5c28079f9c4fff6209d8e93e4eba82da0c207cd0d951983f14",
+    "bytes": 41515
+  },
+  {
+    "source": "/Users/n_akhundov02/Documents/Codex/2026-10-27/i-ha/work/final-app-payload/assets/icon_256.png",
+    "destination": "current-project/work/final-app-payload/assets/icon_256.png",
+    "sha256": "d6bf78f17e63037f474d9091f6d44be5c46109b0377c0bb72d097587bdaa364a",
+    "bytes": 5781
+  },
+  {
+    "source": "/Users/n_akhundov02/Documents/Codex/2026-10-27/i-ha/work/ghostbar-panel.png",
+    "destination": "current-project/work/ghostbar-panel.png",
+    "sha256": "69a10ee7497b3075bce3718b70543c7b06886c3374c9687ef14ee208fed36085",
+    "bytes": 30557
+  },
+  {
+    "source": "/Users/n_akhundov02/Documents/Codex/2026-10-27/i-ha/work/white-chat-check.js",
+    "destination": "current-project/work/white-chat-check.js",
+    "sha256": "13eaf4ae6bba2df93b5db73fe5a7ca68f9063cde78ec0d12049cbcfa2f25f60e",
+    "bytes": 5142
+  },
+  {
+    "source": "/Users/n_akhundov02/Documents/Codex/2026-10-27/i-ha/work/final-app-payload/core/chatgpt.js",
+    "destination": "current-project/work/final-app-payload/core/chatgpt.js",
+    "sha256": "da300eeda96076510baf663d8fbd1efb9ed5b0ce84894fa826549b2a170e3d54",
+    "bytes": 19289
+  },
+  {
+    "source": "/Users/n_akhundov02/Documents/Codex/2026-10-27/i-ha/work/final-app-payload/core/service-client.js",
+    "destination": "current-project/work/final-app-payload/core/service-client.js",
+    "sha256": "b2edf78f75a26109adfc4708af63ea0f27de76a19b5cd48da0434321144a752d",
+    "bytes": 1550
+  },
+  {
+    "source": "/Users/n_akhundov02/Documents/Codex/2026-10-27/i-ha/work/final-app-payload/core/storage.js",
+    "destination": "current-project/work/final-app-payload/core/storage.js",
+    "sha256": "6031fea0857d6312ed0e9fca3db9cbe736244dd8f1513a73d62630d83aa1d0ff",
+    "bytes": 1061
+  },
+  {
+    "source": "/Users/n_akhundov02/Documents/Codex/2026-10-27/i-ha/work/packaged-check.js",
+    "destination": "current-project/work/packaged-check.js",
+    "sha256": "579ea093f503f7a66a0f659c800d66f4acc0e5ee082f0b8bbf7ed4be6f216bcf",
+    "bytes": 2169
+  },
+  {
+    "source": "/Users/n_akhundov02/Documents/Codex/2026-10-27/i-ha/work/ghostbar-injected.png",
+    "destination": "current-project/work/ghostbar-injected.png",
+    "sha256": "c4d8709c43f1b69236b150609796dac0904c26961dabcf3e75cfabbabb549cc5",
+    "bytes": 43297
+  },
+  {
+    "source": "/Users/n_akhundov02/Documents/Codex/2026-10-27/i-ha/work/final-app-payload/core/ghostbar.js",
+    "destination": "current-project/work/final-app-payload/core/ghostbar.js",
+    "sha256": "79173cf9d718d9e36339fb1d2d72136722d60461abcd556ac972f813897a9ab6",
+    "bytes": 9327
+  },
+  {
+    "source": "/Users/n_akhundov02/Documents/Codex/2026-10-27/i-ha/work/final-app-payload/core/bridge.js",
+    "destination": "current-project/work/final-app-payload/core/bridge.js",
+    "sha256": "250f1472010a2fbf7ba8f27f585a86a3b7621447e5fa0eaec5754a878075b99a",
+    "bytes": 3949
+  },
+  {
+    "source": "/Users/n_akhundov02/Documents/Codex/2026-10-27/i-ha/work/ghostbar-fixed-button.png",
+    "destination": "current-project/work/ghostbar-fixed-button.png",
+    "sha256": "d08bf3fd437b7416a5031b069030b90058b499157933bf6b47ca6e8a82f6b242",
+    "bytes": 11368
+  },
+  {
+    "source": "/Users/n_akhundov02/Documents/Codex/2026-10-27/i-ha/work/final-app-payload/core/service-channel.js",
+    "destination": "current-project/work/final-app-payload/core/service-channel.js",
+    "sha256": "d2834fa2561ef671a0aedf5ab440e4803f18f6edb994435bc2ee3b680ff75767",
+    "bytes": 2993
+  },
+  {
+    "source": "/Users/n_akhundov02/Documents/Codex/2026-10-27/i-ha/work/final-app-payload/package.json",
+    "destination": "current-project/work/final-app-payload/package.json",
+    "sha256": "f1775bd0afc19e5d1402da7c41637d7c5d10442f70a0bbf339f0bdd797a7c40b",
+    "bytes": 1350
+  },
+  {
+    "source": "/Users/n_akhundov02/Documents/Codex/2026-10-27/i-ha/work/repack.js",
+    "destination": "current-project/work/repack.js",
+    "sha256": "e6ac75a307ba1552ebfff13c513c3f37ada15223b42203d30547da5da7b8451c",
+    "bytes": 960
+  },
+  {
+    "source": "/Users/n_akhundov02/Documents/Codex/2026-10-27/i-ha/work/final-app-payload/core/background.js",
+    "destination": "current-project/work/final-app-payload/core/background.js",
+    "sha256": "8e1843c7ec6b11cc3688bf7d25c3ee676a84db4040a0c00c5e4dd9ec1bcbec84",
+    "bytes": 3271
+  },
+  {
+    "source": "/Users/n_akhundov02/Documents/Codex/2026-10-27/i-ha/work/ghostbar-window.png",
+    "destination": "current-project/work/ghostbar-window.png",
+    "sha256": "f89d8a22c0201af254c29d79836077322c3aa3b040ca498e3d04393866c5072d",
+    "bytes": 644353
+  },
+  {
+    "source": "/Users/n_akhundov02/Documents/Codex/2026-10-27/i-ha/outputs/GhostBar/.gitignore",
+    "destination": "current-project/outputs/GhostBar/.gitignore",
+    "sha256": "071661cc9cbb78a56b72e2781704cad409b4c669d10cce33b0b4aa6cdf1fd00c",
+    "bytes": 122
+  },
+  {
+    "source": "/Users/n_akhundov02/Documents/Codex/2026-10-27/i-ha/work/final-app-payload/src/panel.css",
+    "destination": "current-project/work/final-app-payload/src/panel.css",
+    "sha256": "7de58620ea744cbd0426107e4405f0269b43161340d6b395010ef325da037e36",
+    "bytes": 1654
+  },
+  {
+    "source": "/Users/n_akhundov02/Documents/Codex/2026-10-27/i-ha/work/final-app-payload/src/panel.html",
+    "destination": "current-project/work/final-app-payload/src/panel.html",
+    "sha256": "9a12bb29cbbca41746a56b1ed5deba164f3dd45cf44d643f9052f5f7a1b3721c",
+    "bytes": 1337
+  },
+  {
+    "source": "/Users/n_akhundov02/Documents/Codex/2026-10-27/i-ha/work/final-app-payload/src/panel.js",
+    "destination": "current-project/work/final-app-payload/src/panel.js",
+    "sha256": "733d9af7852efd1f0d714e8d7687d46a47e72670ce6fdc47b1dd95cd293163b9",
+    "bytes": 4810
+  },
+  {
+    "source": "/Users/n_akhundov02/Documents/Codex/2026-10-27/i-ha/work/final-app-payload/src/renderer.js",
+    "destination": "current-project/work/final-app-payload/src/renderer.js",
+    "sha256": "bf70f0cc8c61f9d476afc17eb84f5df5dd91abf239e20743a3da3c625f74d3e5",
+    "bytes": 4854
+  },
+  {
+    "source": "/Users/n_akhundov02/Documents/Codex/2026-10-27/i-ha/work/final-app-payload/src/preload.js",
+    "destination": "current-project/work/final-app-payload/src/preload.js",
+    "sha256": "51591cb16bc97676b5e5a51694a177b013552b5eebad5526ee508da4250ce86a",
+    "bytes": 576
+  },
+  {
+    "source": "/Users/n_akhundov02/Documents/Codex/2026-10-27/i-ha/work/final-app-payload/src/snippet.html",
+    "destination": "current-project/work/final-app-payload/src/snippet.html",
+    "sha256": "9555686bbd165d4051a84ce827ee81d033b67a144be1a994fefb9f470a39d8d2",
+    "bytes": 2815
+  },
+  {
+    "source": "/Users/n_akhundov02/Documents/Codex/2026-10-27/i-ha/work/final-app-payload/src/styles.css",
+    "destination": "current-project/work/final-app-payload/src/styles.css",
+    "sha256": "4948e550e52d5282ae221c1995a891618238d61d6a2237fb96c617a9d78384c8",
+    "bytes": 10541
+  },
+  {
+    "source": "/Users/n_akhundov02/Documents/Codex/2026-10-27/i-ha/work/final-app-payload/src/index.html",
+    "destination": "current-project/work/final-app-payload/src/index.html",
+    "sha256": "d9c17732c77a4b12cebe20a54d1fa8f4147b1796849b06a4145f9823453b8cfb",
+    "bytes": 4840
+  },
+  {
+    "source": "/Users/n_akhundov02/Documents/Codex/2026-10-27/i-ha/outputs/GhostBar/README.md",
+    "destination": "current-project/outputs/GhostBar/README.md",
+    "sha256": "d2456dd438d118cbc053c6a890fdbfe17b7b96a2fd1ba83091d18a5cbe472d0e",
+    "bytes": 11882
+  },
+  {
+    "source": "/Users/n_akhundov02/Documents/Codex/2026-10-27/i-ha/outputs/GhostBar/package.json",
+    "destination": "current-project/outputs/GhostBar/package.json",
+    "sha256": "5eaf8765e64e50e8a3944298d2ee2fa041abead997cf0c6740cc8e6ca1e5dff2",
+    "bytes": 1350
+  },
+  {
+    "source": "/Users/n_akhundov02/Documents/Codex/2026-10-27/i-ha/outputs/SHA256SUMS.txt",
+    "destination": "current-project/outputs/SHA256SUMS.txt",
+    "sha256": "bbb4d3b700e79a87f4e9faf9022a1601a4262db5a73511121f8976094f2161ca",
+    "bytes": 294
+  },
+  {
+    "source": "/Users/n_akhundov02/Documents/Codex/2026-10-27/i-ha/work/final-app-payload/src/main.js",
+    "destination": "current-project/work/final-app-payload/src/main.js",
+    "sha256": "5585fdc87276ed19e9e0b5d35dcab7ca89a6e4abbc708f954ee9cbca6fe1ef6b",
+    "bytes": 3845
+  },
+  {
+    "source": "/Users/n_akhundov02/Documents/Codex/2026-10-27/i-ha/outputs/GhostBar/package-lock.json",
+    "destination": "current-project/outputs/GhostBar/package-lock.json",
+    "sha256": "35b769e296f009c0816785cc1f6c4d918ed15c61390ba61689922eed563aa005",
+    "bytes": 127480
+  },
+  {
+    "source": "/Users/n_akhundov02/Documents/Codex/2026-10-27/i-ha/outputs/START-HERE.txt",
+    "destination": "current-project/outputs/START-HERE.txt",
+    "sha256": "b6f46ce1e0860ce507327dbe33ab3991ad7b22533f06e0588b9bcc4566fbc18f",
+    "bytes": 1872
+  },
+  {
+    "source": "/Users/n_akhundov02/Documents/Codex/2026-10-27/i-ha/outputs/SHARE-GHOSTBAR.txt",
+    "destination": "current-project/outputs/SHARE-GHOSTBAR.txt",
+    "sha256": "6fa107defe8a255efa070340791cb8179e69ed8b790c974e12734632658490c0",
+    "bytes": 1098
+  },
+  {
+    "source": "/Users/n_akhundov02/Documents/Codex/2026-10-27/i-ha/outputs/GhostBar/core/chatgpt.js",
+    "destination": "current-project/outputs/GhostBar/core/chatgpt.js",
+    "sha256": "da300eeda96076510baf663d8fbd1efb9ed5b0ce84894fa826549b2a170e3d54",
+    "bytes": 19289
+  },
+  {
+    "source": "/Users/n_akhundov02/Documents/Codex/2026-10-27/i-ha/outputs/GhostBar/core/service-channel.js",
+    "destination": "current-project/outputs/GhostBar/core/service-channel.js",
+    "sha256": "d2834fa2561ef671a0aedf5ab440e4803f18f6edb994435bc2ee3b680ff75767",
+    "bytes": 2993
+  },
+  {
+    "source": "/Users/n_akhundov02/Documents/Codex/2026-10-27/i-ha/outputs/GhostBar/core/service-client.js",
+    "destination": "current-project/outputs/GhostBar/core/service-client.js",
+    "sha256": "b2edf78f75a26109adfc4708af63ea0f27de76a19b5cd48da0434321144a752d",
+    "bytes": 1550
+  },
+  {
+    "source": "/Users/n_akhundov02/Documents/Codex/2026-10-27/i-ha/outputs/GhostBar/core/ghostbar.js",
+    "destination": "current-project/outputs/GhostBar/core/ghostbar.js",
+    "sha256": "648a778ce8575478c8e9c37b038e9985d1b5639d5f060a4843fa6c4381916a81",
+    "bytes": 10211
+  },
+  {
+    "source": "/Users/n_akhundov02/Documents/Codex/2026-10-27/i-ha/outputs/GhostBar/core/certificate.js",
+    "destination": "current-project/outputs/GhostBar/core/certificate.js",
+    "sha256": "4cb86178ae36260e8978c78122cb3d531189e49dcf118e9860de46d980a3544f",
+    "bytes": 2737
+  },
+  {
+    "source": "/Users/n_akhundov02/Documents/Codex/2026-10-27/i-ha/outputs/GhostBar/core/bridge.js",
+    "destination": "current-project/outputs/GhostBar/core/bridge.js",
+    "sha256": "05dd7a77bd4e5102774a120f9e7f6bc440d97b44c11cf3e39027384256140cc2",
+    "bytes": 4136
+  },
+  {
+    "source": "/Users/n_akhundov02/Documents/Codex/2026-10-27/i-ha/outputs/GhostBar/core/background.js",
+    "destination": "current-project/outputs/GhostBar/core/background.js",
+    "sha256": "2f9ac6ff0a16f8938154ae29d0b5cbdaee6e4588c8f4a36f76f57b2938517b23",
+    "bytes": 3828
+  },
+  {
+    "source": "/Users/n_akhundov02/Documents/Codex/2026-10-27/i-ha/outputs/GhostBar/core/preferences.js",
+    "destination": "current-project/outputs/GhostBar/core/preferences.js",
+    "sha256": "3f95f1e29bad52bbeaf8e53c22e9ffa413d41d7e35887d78dbf98f1e522f01ed",
+    "bytes": 789
+  },
+  {
+    "source": "/Users/n_akhundov02/Documents/Codex/2026-10-27/i-ha/outputs/GhostBar/core/addon.py",
+    "destination": "current-project/outputs/GhostBar/core/addon.py",
+    "sha256": "10e58ce93ee896ab4dac33ab6bfe7386563fe89da94339406f6f5287da7cc76f",
+    "bytes": 9526
+  },
+  {
+    "source": "/Users/n_akhundov02/Documents/Codex/2026-10-27/i-ha/outputs/GhostBar/core/storage.js",
+    "destination": "current-project/outputs/GhostBar/core/storage.js",
+    "sha256": "6031fea0857d6312ed0e9fca3db9cbe736244dd8f1513a73d62630d83aa1d0ff",
+    "bytes": 1061
+  },
+  {
+    "source": "/Users/n_akhundov02/Documents/Codex/2026-10-27/i-ha/outputs/GhostBar/tests/chatgpt.test.js",
+    "destination": "current-project/outputs/GhostBar/tests/chatgpt.test.js",
+    "sha256": "7264cdf9a0e13d01274bed94912eb58d397e0d82058efa78b8a69d859cbb21ed",
+    "bytes": 7785
+  },
+  {
+    "source": "/Users/n_akhundov02/Documents/Codex/2026-10-27/i-ha/outputs/GhostBar/assets/icon_256.png",
+    "destination": "current-project/outputs/GhostBar/assets/icon_256.png",
+    "sha256": "d6bf78f17e63037f474d9091f6d44be5c46109b0377c0bb72d097587bdaa364a",
+    "bytes": 5781
+  },
+  {
+    "source": "/Users/n_akhundov02/Documents/Codex/2026-10-27/i-ha/outputs/GhostBar/assets/dmg-bg.png",
+    "destination": "current-project/outputs/GhostBar/assets/dmg-bg.png",
+    "sha256": "0ae236e6a5ca82cce75cf9cb25b561bde320bc9828d032ce82f9ba06372eb39b",
+    "bytes": 30915
+  },
+  {
+    "source": "/Users/n_akhundov02/Documents/Codex/2026-10-27/i-ha/outputs/GhostBar/assets/icon.icns",
+    "destination": "current-project/outputs/GhostBar/assets/icon.icns",
+    "sha256": "ce5b3e2dab3b71a8b8567d7e41a5491634118d2075aa19f466b687370e9117a5",
+    "bytes": 28687
+  },
+  {
+    "source": "/Users/n_akhundov02/Documents/Codex/2026-10-27/i-ha/outputs/GhostBar/tests/browser-compat.cjs",
+    "destination": "current-project/outputs/GhostBar/tests/browser-compat.cjs",
+    "sha256": "45f4ceae8912930d824a0a1a6e9d6a65488a7483f1fa7b9b734869f007ea830f",
+    "bytes": 12088
+  },
+  {
+    "source": "/Users/n_akhundov02/Documents/Codex/2026-10-27/i-ha/outputs/GhostBar/tests/shortcut.test.js",
+    "destination": "current-project/outputs/GhostBar/tests/shortcut.test.js",
+    "sha256": "edfae740a170cafcb152717c0f047374d73899fc538ce410c405472633058a44",
+    "bytes": 1812
+  },
+  {
+    "source": "/Users/n_akhundov02/Documents/Codex/2026-10-27/i-ha/outputs/GhostBar/tests/certificate.test.js",
+    "destination": "current-project/outputs/GhostBar/tests/certificate.test.js",
+    "sha256": "465bd4a8b4d9df8e2194dce366858343116776de0be70c21b15fd44a637af128",
+    "bytes": 6330
+  },
+  {
+    "source": "/Users/n_akhundov02/Documents/Codex/2026-10-27/i-ha/outputs/GhostBar/src/renderer.js",
+    "destination": "current-project/outputs/GhostBar/src/renderer.js",
+    "sha256": "326c647debcf53425ac93cd6319f32788d12d2eebfeded974dcae67619770a15",
+    "bytes": 6625
+  },
+  {
+    "source": "/Users/n_akhundov02/Documents/Codex/2026-10-27/i-ha/outputs/GhostBar/src/preload.js",
+    "destination": "current-project/outputs/GhostBar/src/preload.js",
+    "sha256": "cf41eff4f2cc70472fc23e3da358184eacdb094640b09d37d536c6c04c85b769",
+    "bytes": 588
+  },
+  {
+    "source": "/Users/n_akhundov02/Documents/Codex/2026-10-27/i-ha/outputs/GhostBar/.github/workflows/build-macos.yml",
+    "destination": "current-project/outputs/GhostBar/.github/workflows/build-macos.yml",
+    "sha256": "b7c1f00a1b9549717e85378c001865e83437e7ef27be3cc5a98d0e046b7bad17",
+    "bytes": 745
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.2-browser-check.js",
+    "destination": "temporary/ghostbar-2.0.2-browser-check.js",
+    "sha256": "13eaf4ae6bba2df93b5db73fe5a7ca68f9063cde78ec0d12049cbcfa2f25f60e",
+    "bytes": 5142
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.2-payload/package.json",
+    "destination": "temporary/ghostbar-2.0.2-payload/package.json",
+    "sha256": "5c52d118d2c7f80839bb0318156c22708778c1602e46b669802f8ea6051213a7",
+    "bytes": 1350
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.2-payload/core/background.js",
+    "destination": "temporary/ghostbar-2.0.2-payload/core/background.js",
+    "sha256": "8e1843c7ec6b11cc3688bf7d25c3ee676a84db4040a0c00c5e4dd9ec1bcbec84",
+    "bytes": 3271
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.2-payload/core/bridge.js",
+    "destination": "temporary/ghostbar-2.0.2-payload/core/bridge.js",
+    "sha256": "48dc388e7472aefa9bab24c119b8da887e45f7a9d3983c1c7e9bba356f6dcdbf",
+    "bytes": 3982
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.2-payload/core/service-client.js",
+    "destination": "temporary/ghostbar-2.0.2-payload/core/service-client.js",
+    "sha256": "b2edf78f75a26109adfc4708af63ea0f27de76a19b5cd48da0434321144a752d",
+    "bytes": 1550
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.2-payload/core/service-channel.js",
+    "destination": "temporary/ghostbar-2.0.2-payload/core/service-channel.js",
+    "sha256": "d2834fa2561ef671a0aedf5ab440e4803f18f6edb994435bc2ee3b680ff75767",
+    "bytes": 2993
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.2-payload/core/chatgpt.js",
+    "destination": "temporary/ghostbar-2.0.2-payload/core/chatgpt.js",
+    "sha256": "da300eeda96076510baf663d8fbd1efb9ed5b0ce84894fa826549b2a170e3d54",
+    "bytes": 19289
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.2-payload/core/ghostbar.js",
+    "destination": "temporary/ghostbar-2.0.2-payload/core/ghostbar.js",
+    "sha256": "f592da61b27c8ecebbf11c23473161f83601f9c8dbc3e87fa503d3d78924ab96",
+    "bytes": 10024
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.2-payload/core/storage.js",
+    "destination": "temporary/ghostbar-2.0.2-payload/core/storage.js",
+    "sha256": "6031fea0857d6312ed0e9fca3db9cbe736244dd8f1513a73d62630d83aa1d0ff",
+    "bytes": 1061
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.2-payload/assets/icon_256.png",
+    "destination": "temporary/ghostbar-2.0.2-payload/assets/icon_256.png",
+    "sha256": "d6bf78f17e63037f474d9091f6d44be5c46109b0377c0bb72d097587bdaa364a",
+    "bytes": 5781
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.2-payload/src/preload.js",
+    "destination": "temporary/ghostbar-2.0.2-payload/src/preload.js",
+    "sha256": "51591cb16bc97676b5e5a51694a177b013552b5eebad5526ee508da4250ce86a",
+    "bytes": 576
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.2-payload/src/renderer.js",
+    "destination": "temporary/ghostbar-2.0.2-payload/src/renderer.js",
+    "sha256": "bf70f0cc8c61f9d476afc17eb84f5df5dd91abf239e20743a3da3c625f74d3e5",
+    "bytes": 4854
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.2-payload/src/index.html",
+    "destination": "temporary/ghostbar-2.0.2-payload/src/index.html",
+    "sha256": "d9c17732c77a4b12cebe20a54d1fa8f4147b1796849b06a4145f9823453b8cfb",
+    "bytes": 4840
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.2-payload/src/styles.css",
+    "destination": "temporary/ghostbar-2.0.2-payload/src/styles.css",
+    "sha256": "4948e550e52d5282ae221c1995a891618238d61d6a2237fb96c617a9d78384c8",
+    "bytes": 10541
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.2-payload/src/panel.js",
+    "destination": "temporary/ghostbar-2.0.2-payload/src/panel.js",
+    "sha256": "733d9af7852efd1f0d714e8d7687d46a47e72670ce6fdc47b1dd95cd293163b9",
+    "bytes": 4810
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.2-payload/src/main.js",
+    "destination": "temporary/ghostbar-2.0.2-payload/src/main.js",
+    "sha256": "5585fdc87276ed19e9e0b5d35dcab7ca89a6e4abbc708f954ee9cbca6fe1ef6b",
+    "bytes": 3845
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.2-payload/src/panel.html",
+    "destination": "temporary/ghostbar-2.0.2-payload/src/panel.html",
+    "sha256": "9a12bb29cbbca41746a56b1ed5deba164f3dd45cf44d643f9052f5f7a1b3721c",
+    "bytes": 1337
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.2-payload/src/panel.css",
+    "destination": "temporary/ghostbar-2.0.2-payload/src/panel.css",
+    "sha256": "c217420e4c340258754398c98d1be8b3b0591f86837afc3ccc7bab82a6b08cca",
+    "bytes": 1835
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.2-payload/src/snippet.html",
+    "destination": "temporary/ghostbar-2.0.2-payload/src/snippet.html",
+    "sha256": "98cfc3864adac6a05c412a3bffacdc454b6f1cfee920e28cf76b15d79e2e6388",
+    "bytes": 2824
+  },
+  {
+    "source": "/Users/n_akhundov02/Documents/Codex/2026-10-27/i-ha/outputs/GhostBar/scripts/download-proxy.js",
+    "destination": "current-project/outputs/GhostBar/scripts/download-proxy.js",
+    "sha256": "2dfca175da6f45f97dbc3c79f812085f28a6cb93e63f6ad3a962053a811f3219",
+    "bytes": 2024
+  },
+  {
+    "source": "/Users/n_akhundov02/Documents/Codex/2026-10-27/i-ha/outputs/GhostBar/tests/bridge.test.js",
+    "destination": "current-project/outputs/GhostBar/tests/bridge.test.js",
+    "sha256": "15ae4a608bb53d2d6f2601b19cf44e2784a893967047f1a022e8b6f4ae310769",
+    "bytes": 1893
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.2-source/.gitignore",
+    "destination": "temporary/ghostbar-2.0.2-source/.gitignore",
+    "sha256": "071661cc9cbb78a56b72e2781704cad409b4c669d10cce33b0b4aa6cdf1fd00c",
+    "bytes": 122
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.2-source/README.md",
+    "destination": "temporary/ghostbar-2.0.2-source/README.md",
+    "sha256": "e5e21b3dd75725c2bde4ef8041393760dcab93c2be629214ac8ae39e825057a0",
+    "bytes": 8004
+  },
+  {
+    "source": "/Users/n_akhundov02/Documents/Codex/2026-10-27/i-ha/outputs/GhostBar/tests/service-channel.test.js",
+    "destination": "current-project/outputs/GhostBar/tests/service-channel.test.js",
+    "sha256": "f3a200b68a36812aec693abb8efdc9beab7f0e3f4acaf060be26c78d4e513d1a",
+    "bytes": 1399
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.2-source/package.json",
+    "destination": "temporary/ghostbar-2.0.2-source/package.json",
+    "sha256": "5c52d118d2c7f80839bb0318156c22708778c1602e46b669802f8ea6051213a7",
+    "bytes": 1350
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.2-source/package-lock.json",
+    "destination": "temporary/ghostbar-2.0.2-source/package-lock.json",
+    "sha256": "d972effa88edab4757b1515ca64ca23b61542d236bf7c802f41c59332fb06a29",
+    "bytes": 127480
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.2-source/core/addon.py",
+    "destination": "temporary/ghostbar-2.0.2-source/core/addon.py",
+    "sha256": "b15a7e235aba20099ebe128cfeea01f57bbc2cc00b4b0594a08da1c5c83ebd27",
+    "bytes": 5809
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.2-source/core/bridge.js",
+    "destination": "temporary/ghostbar-2.0.2-source/core/bridge.js",
+    "sha256": "48dc388e7472aefa9bab24c119b8da887e45f7a9d3983c1c7e9bba356f6dcdbf",
+    "bytes": 3982
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.2-source/core/background.js",
+    "destination": "temporary/ghostbar-2.0.2-source/core/background.js",
+    "sha256": "8e1843c7ec6b11cc3688bf7d25c3ee676a84db4040a0c00c5e4dd9ec1bcbec84",
+    "bytes": 3271
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.2-source/core/storage.js",
+    "destination": "temporary/ghostbar-2.0.2-source/core/storage.js",
+    "sha256": "6031fea0857d6312ed0e9fca3db9cbe736244dd8f1513a73d62630d83aa1d0ff",
+    "bytes": 1061
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.2-source/core/service-channel.js",
+    "destination": "temporary/ghostbar-2.0.2-source/core/service-channel.js",
+    "sha256": "d2834fa2561ef671a0aedf5ab440e4803f18f6edb994435bc2ee3b680ff75767",
+    "bytes": 2993
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.2-source/core/service-client.js",
+    "destination": "temporary/ghostbar-2.0.2-source/core/service-client.js",
+    "sha256": "b2edf78f75a26109adfc4708af63ea0f27de76a19b5cd48da0434321144a752d",
+    "bytes": 1550
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.2-source/core/chatgpt.js",
+    "destination": "temporary/ghostbar-2.0.2-source/core/chatgpt.js",
+    "sha256": "da300eeda96076510baf663d8fbd1efb9ed5b0ce84894fa826549b2a170e3d54",
+    "bytes": 19289
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.2-source/core/ghostbar.js",
+    "destination": "temporary/ghostbar-2.0.2-source/core/ghostbar.js",
+    "sha256": "f592da61b27c8ecebbf11c23473161f83601f9c8dbc3e87fa503d3d78924ab96",
+    "bytes": 10024
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.2-source/tests/bridge.test.js",
+    "destination": "temporary/ghostbar-2.0.2-source/tests/bridge.test.js",
+    "sha256": "15ae4a608bb53d2d6f2601b19cf44e2784a893967047f1a022e8b6f4ae310769",
+    "bytes": 1893
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.2-source/tests/chatgpt.test.js",
+    "destination": "temporary/ghostbar-2.0.2-source/tests/chatgpt.test.js",
+    "sha256": "7264cdf9a0e13d01274bed94912eb58d397e0d82058efa78b8a69d859cbb21ed",
+    "bytes": 7785
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.2-source/tests/proxy.test.js",
+    "destination": "temporary/ghostbar-2.0.2-source/tests/proxy.test.js",
+    "sha256": "54f610a05b1cb5ed8a15546d12a0c7e15fbcc6630519116d3f80d7262a1db94e",
+    "bytes": 5935
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.2-source/tests/service-channel.test.js",
+    "destination": "temporary/ghostbar-2.0.2-source/tests/service-channel.test.js",
+    "sha256": "f3a200b68a36812aec693abb8efdc9beab7f0e3f4acaf060be26c78d4e513d1a",
+    "bytes": 1399
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.2-source/tests/addon_test.py",
+    "destination": "temporary/ghostbar-2.0.2-source/tests/addon_test.py",
+    "sha256": "6e1345de686fea3eb1847753cc18686014dbd3f991969861f05aae94c5915872",
+    "bytes": 3070
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.2-source/scripts/download-proxy.js",
+    "destination": "temporary/ghostbar-2.0.2-source/scripts/download-proxy.js",
+    "sha256": "2dfca175da6f45f97dbc3c79f812085f28a6cb93e63f6ad3a962053a811f3219",
+    "bytes": 2024
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.2-source/assets/icon.icns",
+    "destination": "temporary/ghostbar-2.0.2-source/assets/icon.icns",
+    "sha256": "ce5b3e2dab3b71a8b8567d7e41a5491634118d2075aa19f466b687370e9117a5",
+    "bytes": 28687
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.2-source/.github/workflows/build-macos.yml",
+    "destination": "temporary/ghostbar-2.0.2-source/.github/workflows/build-macos.yml",
+    "sha256": "b7c1f00a1b9549717e85378c001865e83437e7ef27be3cc5a98d0e046b7bad17",
+    "bytes": 745
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.2-source/assets/icon_256.png",
+    "destination": "temporary/ghostbar-2.0.2-source/assets/icon_256.png",
+    "sha256": "d6bf78f17e63037f474d9091f6d44be5c46109b0377c0bb72d097587bdaa364a",
+    "bytes": 5781
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.2-source/src/renderer.js",
+    "destination": "temporary/ghostbar-2.0.2-source/src/renderer.js",
+    "sha256": "bf70f0cc8c61f9d476afc17eb84f5df5dd91abf239e20743a3da3c625f74d3e5",
+    "bytes": 4854
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.2-source/assets/dmg-bg.png",
+    "destination": "temporary/ghostbar-2.0.2-source/assets/dmg-bg.png",
+    "sha256": "0ae236e6a5ca82cce75cf9cb25b561bde320bc9828d032ce82f9ba06372eb39b",
+    "bytes": 30915
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.2-source/src/preload.js",
+    "destination": "temporary/ghostbar-2.0.2-source/src/preload.js",
+    "sha256": "51591cb16bc97676b5e5a51694a177b013552b5eebad5526ee508da4250ce86a",
+    "bytes": 576
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.2-source/src/index.html",
+    "destination": "temporary/ghostbar-2.0.2-source/src/index.html",
+    "sha256": "d9c17732c77a4b12cebe20a54d1fa8f4147b1796849b06a4145f9823453b8cfb",
+    "bytes": 4840
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.2-source/src/main.js",
+    "destination": "temporary/ghostbar-2.0.2-source/src/main.js",
+    "sha256": "5585fdc87276ed19e9e0b5d35dcab7ca89a6e4abbc708f954ee9cbca6fe1ef6b",
+    "bytes": 3845
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.2-source/src/panel.js",
+    "destination": "temporary/ghostbar-2.0.2-source/src/panel.js",
+    "sha256": "733d9af7852efd1f0d714e8d7687d46a47e72670ce6fdc47b1dd95cd293163b9",
+    "bytes": 4810
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.2-source/src/panel.html",
+    "destination": "temporary/ghostbar-2.0.2-source/src/panel.html",
+    "sha256": "9a12bb29cbbca41746a56b1ed5deba164f3dd45cf44d643f9052f5f7a1b3721c",
+    "bytes": 1337
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.2-source/src/styles.css",
+    "destination": "temporary/ghostbar-2.0.2-source/src/styles.css",
+    "sha256": "4948e550e52d5282ae221c1995a891618238d61d6a2237fb96c617a9d78384c8",
+    "bytes": 10541
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.2-source/src/panel.css",
+    "destination": "temporary/ghostbar-2.0.2-source/src/panel.css",
+    "sha256": "c217420e4c340258754398c98d1be8b3b0591f86837afc3ccc7bab82a6b08cca",
+    "bytes": 1835
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.2-tls-check.js",
+    "destination": "temporary/ghostbar-2.0.2-tls-check.js",
+    "sha256": "39566ef7962618683da03aed2320d06ae58bac1204974df9beffd3d0b8569705",
+    "bytes": 1916
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.2-source/src/snippet.html",
+    "destination": "temporary/ghostbar-2.0.2-source/src/snippet.html",
+    "sha256": "98cfc3864adac6a05c412a3bffacdc454b6f1cfee920e28cf76b15d79e2e6388",
+    "bytes": 2824
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.3/install.cjs",
+    "destination": "temporary/ghostbar-2.0.3/install.cjs",
+    "sha256": "57d56eae346b00fb6cb42bf362b963fcddc9f6fb903ce41abb777abcd32912c3",
+    "bytes": 1918
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.3/source/.gitignore",
+    "destination": "temporary/ghostbar-2.0.3/source/.gitignore",
+    "sha256": "071661cc9cbb78a56b72e2781704cad409b4c669d10cce33b0b4aa6cdf1fd00c",
+    "bytes": 122
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.3/source/README.md",
+    "destination": "temporary/ghostbar-2.0.3/source/README.md",
+    "sha256": "c7aca7c571f663e562f11aa81aface9ad67eac38ac7e12da827a66df676a23da",
+    "bytes": 8560
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.3/source/package.json",
+    "destination": "temporary/ghostbar-2.0.3/source/package.json",
+    "sha256": "7de9b98fa525c5e7e83b8f1c938642f8459fc86b8f2c4079e55f09f75804ceab",
+    "bytes": 1350
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.3/source/package-lock.json",
+    "destination": "temporary/ghostbar-2.0.3/source/package-lock.json",
+    "sha256": "0dae9479042dd907631abdac5d2f6e09ec4616e216b08bf068d3b9c3dee02a21",
+    "bytes": 127480
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.3/source/core/background.js",
+    "destination": "temporary/ghostbar-2.0.3/source/core/background.js",
+    "sha256": "8e1843c7ec6b11cc3688bf7d25c3ee676a84db4040a0c00c5e4dd9ec1bcbec84",
+    "bytes": 3271
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.3/source/core/bridge.js",
+    "destination": "temporary/ghostbar-2.0.3/source/core/bridge.js",
+    "sha256": "48dc388e7472aefa9bab24c119b8da887e45f7a9d3983c1c7e9bba356f6dcdbf",
+    "bytes": 3982
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.3/source/core/service-client.js",
+    "destination": "temporary/ghostbar-2.0.3/source/core/service-client.js",
+    "sha256": "b2edf78f75a26109adfc4708af63ea0f27de76a19b5cd48da0434321144a752d",
+    "bytes": 1550
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.3/source/core/chatgpt.js",
+    "destination": "temporary/ghostbar-2.0.3/source/core/chatgpt.js",
+    "sha256": "da300eeda96076510baf663d8fbd1efb9ed5b0ce84894fa826549b2a170e3d54",
+    "bytes": 19289
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.3/source/core/ghostbar.js",
+    "destination": "temporary/ghostbar-2.0.3/source/core/ghostbar.js",
+    "sha256": "f592da61b27c8ecebbf11c23473161f83601f9c8dbc3e87fa503d3d78924ab96",
+    "bytes": 10024
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.3/source/core/addon.py",
+    "destination": "temporary/ghostbar-2.0.3/source/core/addon.py",
+    "sha256": "f2e59e8b00afba5ef7d5fee6105784a7f6af234565a49f628fa1d9901c1324a4",
+    "bytes": 8446
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.3/source/core/service-channel.js",
+    "destination": "temporary/ghostbar-2.0.3/source/core/service-channel.js",
+    "sha256": "d2834fa2561ef671a0aedf5ab440e4803f18f6edb994435bc2ee3b680ff75767",
+    "bytes": 2993
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.3/source/core/storage.js",
+    "destination": "temporary/ghostbar-2.0.3/source/core/storage.js",
+    "sha256": "6031fea0857d6312ed0e9fca3db9cbe736244dd8f1513a73d62630d83aa1d0ff",
+    "bytes": 1061
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.3/source/tests/fixture-addon.py",
+    "destination": "temporary/ghostbar-2.0.3/source/tests/fixture-addon.py",
+    "sha256": "b7dad4b564214086ebf170094ac59b85f5e08805924d296b7541079560d6b663",
+    "bytes": 690
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.3/source/tests/browser-compat.cjs",
+    "destination": "temporary/ghostbar-2.0.3/source/tests/browser-compat.cjs",
+    "sha256": "adb23d7ff911a3965a1aeb597a8e5b37bbe0c67b2c5246e330329926cb86d0e0",
+    "bytes": 9647
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.3/source/tests/proxy.test.js",
+    "destination": "temporary/ghostbar-2.0.3/source/tests/proxy.test.js",
+    "sha256": "54f610a05b1cb5ed8a15546d12a0c7e15fbcc6630519116d3f80d7262a1db94e",
+    "bytes": 5935
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.3/source/tests/chatgpt.test.js",
+    "destination": "temporary/ghostbar-2.0.3/source/tests/chatgpt.test.js",
+    "sha256": "7264cdf9a0e13d01274bed94912eb58d397e0d82058efa78b8a69d859cbb21ed",
+    "bytes": 7785
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.3/source/tests/bridge.test.js",
+    "destination": "temporary/ghostbar-2.0.3/source/tests/bridge.test.js",
+    "sha256": "15ae4a608bb53d2d6f2601b19cf44e2784a893967047f1a022e8b6f4ae310769",
+    "bytes": 1893
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.3/source/tests/service-channel.test.js",
+    "destination": "temporary/ghostbar-2.0.3/source/tests/service-channel.test.js",
+    "sha256": "f3a200b68a36812aec693abb8efdc9beab7f0e3f4acaf060be26c78d4e513d1a",
+    "bytes": 1399
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.3/source/scripts/download-proxy.js",
+    "destination": "temporary/ghostbar-2.0.3/source/scripts/download-proxy.js",
+    "sha256": "2dfca175da6f45f97dbc3c79f812085f28a6cb93e63f6ad3a962053a811f3219",
+    "bytes": 2024
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.3/source/tests/addon_test.py",
+    "destination": "temporary/ghostbar-2.0.3/source/tests/addon_test.py",
+    "sha256": "2677cd2ae82cce70ac17573ce56d983a330659b5af4fa88f34ea5b149d53740c",
+    "bytes": 7188
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.3/source/.github/workflows/build-macos.yml",
+    "destination": "temporary/ghostbar-2.0.3/source/.github/workflows/build-macos.yml",
+    "sha256": "b7c1f00a1b9549717e85378c001865e83437e7ef27be3cc5a98d0e046b7bad17",
+    "bytes": 745
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.3/source/assets/icon.icns",
+    "destination": "temporary/ghostbar-2.0.3/source/assets/icon.icns",
+    "sha256": "ce5b3e2dab3b71a8b8567d7e41a5491634118d2075aa19f466b687370e9117a5",
+    "bytes": 28687
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.3/source/assets/dmg-bg.png",
+    "destination": "temporary/ghostbar-2.0.3/source/assets/dmg-bg.png",
+    "sha256": "0ae236e6a5ca82cce75cf9cb25b561bde320bc9828d032ce82f9ba06372eb39b",
+    "bytes": 30915
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.3/source/src/preload.js",
+    "destination": "temporary/ghostbar-2.0.3/source/src/preload.js",
+    "sha256": "51591cb16bc97676b5e5a51694a177b013552b5eebad5526ee508da4250ce86a",
+    "bytes": 576
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.3/source/src/renderer.js",
+    "destination": "temporary/ghostbar-2.0.3/source/src/renderer.js",
+    "sha256": "bf70f0cc8c61f9d476afc17eb84f5df5dd91abf239e20743a3da3c625f74d3e5",
+    "bytes": 4854
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.3/source/assets/icon_256.png",
+    "destination": "temporary/ghostbar-2.0.3/source/assets/icon_256.png",
+    "sha256": "d6bf78f17e63037f474d9091f6d44be5c46109b0377c0bb72d097587bdaa364a",
+    "bytes": 5781
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.3/source/src/index.html",
+    "destination": "temporary/ghostbar-2.0.3/source/src/index.html",
+    "sha256": "d9c17732c77a4b12cebe20a54d1fa8f4147b1796849b06a4145f9823453b8cfb",
+    "bytes": 4840
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.3/source/src/styles.css",
+    "destination": "temporary/ghostbar-2.0.3/source/src/styles.css",
+    "sha256": "4948e550e52d5282ae221c1995a891618238d61d6a2237fb96c617a9d78384c8",
+    "bytes": 10541
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.3/source/src/panel.js",
+    "destination": "temporary/ghostbar-2.0.3/source/src/panel.js",
+    "sha256": "733d9af7852efd1f0d714e8d7687d46a47e72670ce6fdc47b1dd95cd293163b9",
+    "bytes": 4810
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.3/source/src/main.js",
+    "destination": "temporary/ghostbar-2.0.3/source/src/main.js",
+    "sha256": "5585fdc87276ed19e9e0b5d35dcab7ca89a6e4abbc708f954ee9cbca6fe1ef6b",
+    "bytes": 3845
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.3/source/src/panel.html",
+    "destination": "temporary/ghostbar-2.0.3/source/src/panel.html",
+    "sha256": "9a12bb29cbbca41746a56b1ed5deba164f3dd45cf44d643f9052f5f7a1b3721c",
+    "bytes": 1337
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.3/source/src/panel.css",
+    "destination": "temporary/ghostbar-2.0.3/source/src/panel.css",
+    "sha256": "c217420e4c340258754398c98d1be8b3b0591f86837afc3ccc7bab82a6b08cca",
+    "bytes": 1835
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.3/source/src/snippet.html",
+    "destination": "temporary/ghostbar-2.0.3/source/src/snippet.html",
+    "sha256": "98cfc3864adac6a05c412a3bffacdc454b6f1cfee920e28cf76b15d79e2e6388",
+    "bytes": 2824
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.3/payload/package.json",
+    "destination": "temporary/ghostbar-2.0.3/payload/package.json",
+    "sha256": "7de9b98fa525c5e7e83b8f1c938642f8459fc86b8f2c4079e55f09f75804ceab",
+    "bytes": 1350
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.3/payload/core/background.js",
+    "destination": "temporary/ghostbar-2.0.3/payload/core/background.js",
+    "sha256": "8e1843c7ec6b11cc3688bf7d25c3ee676a84db4040a0c00c5e4dd9ec1bcbec84",
+    "bytes": 3271
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.3/payload/core/service-channel.js",
+    "destination": "temporary/ghostbar-2.0.3/payload/core/service-channel.js",
+    "sha256": "d2834fa2561ef671a0aedf5ab440e4803f18f6edb994435bc2ee3b680ff75767",
+    "bytes": 2993
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.3/payload/core/service-client.js",
+    "destination": "temporary/ghostbar-2.0.3/payload/core/service-client.js",
+    "sha256": "b2edf78f75a26109adfc4708af63ea0f27de76a19b5cd48da0434321144a752d",
+    "bytes": 1550
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.3/payload/core/bridge.js",
+    "destination": "temporary/ghostbar-2.0.3/payload/core/bridge.js",
+    "sha256": "48dc388e7472aefa9bab24c119b8da887e45f7a9d3983c1c7e9bba356f6dcdbf",
+    "bytes": 3982
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.3/payload/core/ghostbar.js",
+    "destination": "temporary/ghostbar-2.0.3/payload/core/ghostbar.js",
+    "sha256": "f592da61b27c8ecebbf11c23473161f83601f9c8dbc3e87fa503d3d78924ab96",
+    "bytes": 10024
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.3/payload/core/chatgpt.js",
+    "destination": "temporary/ghostbar-2.0.3/payload/core/chatgpt.js",
+    "sha256": "da300eeda96076510baf663d8fbd1efb9ed5b0ce84894fa826549b2a170e3d54",
+    "bytes": 19289
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.3/payload/src/preload.js",
+    "destination": "temporary/ghostbar-2.0.3/payload/src/preload.js",
+    "sha256": "51591cb16bc97676b5e5a51694a177b013552b5eebad5526ee508da4250ce86a",
+    "bytes": 576
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.3/payload/assets/icon_256.png",
+    "destination": "temporary/ghostbar-2.0.3/payload/assets/icon_256.png",
+    "sha256": "d6bf78f17e63037f474d9091f6d44be5c46109b0377c0bb72d097587bdaa364a",
+    "bytes": 5781
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.3/payload/core/storage.js",
+    "destination": "temporary/ghostbar-2.0.3/payload/core/storage.js",
+    "sha256": "6031fea0857d6312ed0e9fca3db9cbe736244dd8f1513a73d62630d83aa1d0ff",
+    "bytes": 1061
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.3/payload/src/index.html",
+    "destination": "temporary/ghostbar-2.0.3/payload/src/index.html",
+    "sha256": "d9c17732c77a4b12cebe20a54d1fa8f4147b1796849b06a4145f9823453b8cfb",
+    "bytes": 4840
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.3/payload/src/renderer.js",
+    "destination": "temporary/ghostbar-2.0.3/payload/src/renderer.js",
+    "sha256": "bf70f0cc8c61f9d476afc17eb84f5df5dd91abf239e20743a3da3c625f74d3e5",
+    "bytes": 4854
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.3/payload/src/panel.js",
+    "destination": "temporary/ghostbar-2.0.3/payload/src/panel.js",
+    "sha256": "733d9af7852efd1f0d714e8d7687d46a47e72670ce6fdc47b1dd95cd293163b9",
+    "bytes": 4810
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.3/payload/src/main.js",
+    "destination": "temporary/ghostbar-2.0.3/payload/src/main.js",
+    "sha256": "5585fdc87276ed19e9e0b5d35dcab7ca89a6e4abbc708f954ee9cbca6fe1ef6b",
+    "bytes": 3845
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.3/payload/src/styles.css",
+    "destination": "temporary/ghostbar-2.0.3/payload/src/styles.css",
+    "sha256": "4948e550e52d5282ae221c1995a891618238d61d6a2237fb96c617a9d78384c8",
+    "bytes": 10541
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.3/payload/src/panel.html",
+    "destination": "temporary/ghostbar-2.0.3/payload/src/panel.html",
+    "sha256": "9a12bb29cbbca41746a56b1ed5deba164f3dd45cf44d643f9052f5f7a1b3721c",
+    "bytes": 1337
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.3/payload/src/panel.css",
+    "destination": "temporary/ghostbar-2.0.3/payload/src/panel.css",
+    "sha256": "c217420e4c340258754398c98d1be8b3b0591f86837afc3ccc7bab82a6b08cca",
+    "bytes": 1835
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.3/payload/src/snippet.html",
+    "destination": "temporary/ghostbar-2.0.3/payload/src/snippet.html",
+    "sha256": "98cfc3864adac6a05c412a3bffacdc454b6f1cfee920e28cf76b15d79e2e6388",
+    "bytes": 2824
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.4/install.cjs",
+    "destination": "temporary/ghostbar-2.0.4/install.cjs",
+    "sha256": "f6ee2f8a5abac611e6fe024b7a50e92935044b5bfef3d5aebeb65e37981f5e6c",
+    "bytes": 2107
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.4/shortcut-ui-check.cjs",
+    "destination": "temporary/ghostbar-2.0.4/shortcut-ui-check.cjs",
+    "sha256": "db0a8c808a7bd40e2acb5166efbca78f9e0d5434372650838aee8f870418eff2",
+    "bytes": 2246
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.4/installed-shortcut-check.cjs",
+    "destination": "temporary/ghostbar-2.0.4/installed-shortcut-check.cjs",
+    "sha256": "8fdd4137bf35a604e031bda1464117de0db1eaffa8471c0e185adbe78d58f1a2",
+    "bytes": 2067
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.4/shortcut-settings.png",
+    "destination": "temporary/ghostbar-2.0.4/shortcut-settings.png",
+    "sha256": "ecc3b4890a9e3a230850afc1441b903cc42f9ffe6d87fdd682b87e80e88d0480",
+    "bytes": 90465
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.4/source/README.md",
+    "destination": "temporary/ghostbar-2.0.4/source/README.md",
+    "sha256": "f8991e8ab59c5a562ee726d0582502168884ae7c420258b2a37f718a2c205680",
+    "bytes": 9400
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.4/source/.gitignore",
+    "destination": "temporary/ghostbar-2.0.4/source/.gitignore",
+    "sha256": "071661cc9cbb78a56b72e2781704cad409b4c669d10cce33b0b4aa6cdf1fd00c",
+    "bytes": 122
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.4/source/package.json",
+    "destination": "temporary/ghostbar-2.0.4/source/package.json",
+    "sha256": "ad2c472f06d14796636a08fc16f8664957a1e0ee1dab64fe2aebce2d7abe8c05",
+    "bytes": 1350
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.4/source/core/preferences.js",
+    "destination": "temporary/ghostbar-2.0.4/source/core/preferences.js",
+    "sha256": "3f95f1e29bad52bbeaf8e53c22e9ffa413d41d7e35887d78dbf98f1e522f01ed",
+    "bytes": 789
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.4/source/package-lock.json",
+    "destination": "temporary/ghostbar-2.0.4/source/package-lock.json",
+    "sha256": "a5899f53b4e594b18bd22f02e25c32de54e01700d5011203e395ae4c99ca5a95",
+    "bytes": 127480
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.4/source/core/background.js",
+    "destination": "temporary/ghostbar-2.0.4/source/core/background.js",
+    "sha256": "1657f13f8261584d4708f3382233bf0ed2498d83b257879023d5991504948bf7",
+    "bytes": 3521
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.4/source/core/bridge.js",
+    "destination": "temporary/ghostbar-2.0.4/source/core/bridge.js",
+    "sha256": "05dd7a77bd4e5102774a120f9e7f6bc440d97b44c11cf3e39027384256140cc2",
+    "bytes": 4136
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.4/source/core/addon.py",
+    "destination": "temporary/ghostbar-2.0.4/source/core/addon.py",
+    "sha256": "10e58ce93ee896ab4dac33ab6bfe7386563fe89da94339406f6f5287da7cc76f",
+    "bytes": 9526
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.4/source/core/service-client.js",
+    "destination": "temporary/ghostbar-2.0.4/source/core/service-client.js",
+    "sha256": "b2edf78f75a26109adfc4708af63ea0f27de76a19b5cd48da0434321144a752d",
+    "bytes": 1550
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.4/source/core/service-channel.js",
+    "destination": "temporary/ghostbar-2.0.4/source/core/service-channel.js",
+    "sha256": "d2834fa2561ef671a0aedf5ab440e4803f18f6edb994435bc2ee3b680ff75767",
+    "bytes": 2993
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.4/source/core/ghostbar.js",
+    "destination": "temporary/ghostbar-2.0.4/source/core/ghostbar.js",
+    "sha256": "6f413ce6da3da30b8f566879a4c4fea888842df64bb8205bbe75a5b9f4a65ec3",
+    "bytes": 10093
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.4/source/tests/proxy.test.js",
+    "destination": "temporary/ghostbar-2.0.4/source/tests/proxy.test.js",
+    "sha256": "54f610a05b1cb5ed8a15546d12a0c7e15fbcc6630519116d3f80d7262a1db94e",
+    "bytes": 5935
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.4/source/tests/shortcut.test.js",
+    "destination": "temporary/ghostbar-2.0.4/source/tests/shortcut.test.js",
+    "sha256": "edfae740a170cafcb152717c0f047374d73899fc538ce410c405472633058a44",
+    "bytes": 1812
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.4/source/core/storage.js",
+    "destination": "temporary/ghostbar-2.0.4/source/core/storage.js",
+    "sha256": "6031fea0857d6312ed0e9fca3db9cbe736244dd8f1513a73d62630d83aa1d0ff",
+    "bytes": 1061
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.4/source/core/chatgpt.js",
+    "destination": "temporary/ghostbar-2.0.4/source/core/chatgpt.js",
+    "sha256": "da300eeda96076510baf663d8fbd1efb9ed5b0ce84894fa826549b2a170e3d54",
+    "bytes": 19289
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.4/source/tests/chatgpt.test.js",
+    "destination": "temporary/ghostbar-2.0.4/source/tests/chatgpt.test.js",
+    "sha256": "7264cdf9a0e13d01274bed94912eb58d397e0d82058efa78b8a69d859cbb21ed",
+    "bytes": 7785
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.4/source/tests/fixture-addon.py",
+    "destination": "temporary/ghostbar-2.0.4/source/tests/fixture-addon.py",
+    "sha256": "b7dad4b564214086ebf170094ac59b85f5e08805924d296b7541079560d6b663",
+    "bytes": 690
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.4/source/tests/browser-compat.cjs",
+    "destination": "temporary/ghostbar-2.0.4/source/tests/browser-compat.cjs",
+    "sha256": "45f4ceae8912930d824a0a1a6e9d6a65488a7483f1fa7b9b734869f007ea830f",
+    "bytes": 12088
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.4/source/tests/addon_test.py",
+    "destination": "temporary/ghostbar-2.0.4/source/tests/addon_test.py",
+    "sha256": "05f5e1c40e073f6118adfc5fc8f13ea25afef16491df167b46eb6d91970d13b0",
+    "bytes": 8427
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.4/source/tests/service-channel.test.js",
+    "destination": "temporary/ghostbar-2.0.4/source/tests/service-channel.test.js",
+    "sha256": "f3a200b68a36812aec693abb8efdc9beab7f0e3f4acaf060be26c78d4e513d1a",
+    "bytes": 1399
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.4/source/tests/bridge.test.js",
+    "destination": "temporary/ghostbar-2.0.4/source/tests/bridge.test.js",
+    "sha256": "15ae4a608bb53d2d6f2601b19cf44e2784a893967047f1a022e8b6f4ae310769",
+    "bytes": 1893
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.4/source/assets/dmg-bg.png",
+    "destination": "temporary/ghostbar-2.0.4/source/assets/dmg-bg.png",
+    "sha256": "0ae236e6a5ca82cce75cf9cb25b561bde320bc9828d032ce82f9ba06372eb39b",
+    "bytes": 30915
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.4/source/scripts/download-proxy.js",
+    "destination": "temporary/ghostbar-2.0.4/source/scripts/download-proxy.js",
+    "sha256": "2dfca175da6f45f97dbc3c79f812085f28a6cb93e63f6ad3a962053a811f3219",
+    "bytes": 2024
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.4/source/assets/icon.icns",
+    "destination": "temporary/ghostbar-2.0.4/source/assets/icon.icns",
+    "sha256": "ce5b3e2dab3b71a8b8567d7e41a5491634118d2075aa19f466b687370e9117a5",
+    "bytes": 28687
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.4/source/.github/workflows/build-macos.yml",
+    "destination": "temporary/ghostbar-2.0.4/source/.github/workflows/build-macos.yml",
+    "sha256": "b7c1f00a1b9549717e85378c001865e83437e7ef27be3cc5a98d0e046b7bad17",
+    "bytes": 745
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.4/source/assets/icon_256.png",
+    "destination": "temporary/ghostbar-2.0.4/source/assets/icon_256.png",
+    "sha256": "d6bf78f17e63037f474d9091f6d44be5c46109b0377c0bb72d097587bdaa364a",
+    "bytes": 5781
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.4/source/src/preload.js",
+    "destination": "temporary/ghostbar-2.0.4/source/src/preload.js",
+    "sha256": "cf41eff4f2cc70472fc23e3da358184eacdb094640b09d37d536c6c04c85b769",
+    "bytes": 588
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.4/source/src/renderer.js",
+    "destination": "temporary/ghostbar-2.0.4/source/src/renderer.js",
+    "sha256": "326c647debcf53425ac93cd6319f32788d12d2eebfeded974dcae67619770a15",
+    "bytes": 6625
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.4/source/src/index.html",
+    "destination": "temporary/ghostbar-2.0.4/source/src/index.html",
+    "sha256": "a27c7e29adbaf904ef3d9399acea7b3a5d26ae7b2516d2bea4d826f0f32cd3da",
+    "bytes": 5462
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.4/source/src/styles.css",
+    "destination": "temporary/ghostbar-2.0.4/source/src/styles.css",
+    "sha256": "a078590e1f36f6cbe0507dbbd89aaf61443920c6066a3d5d143e9fa7e0d418e6",
+    "bytes": 10804
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.4/source/src/panel.js",
+    "destination": "temporary/ghostbar-2.0.4/source/src/panel.js",
+    "sha256": "fe7eb9dd672588e79a4e057cec1e0d195edf9588d78682a22f8524bd62bc050d",
+    "bytes": 5572
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.4/source/src/main.js",
+    "destination": "temporary/ghostbar-2.0.4/source/src/main.js",
+    "sha256": "2706e222b37e561c8d8cf8c02d016eb1f874ef35b601137eb49322df441181e8",
+    "bytes": 3857
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.4/source/src/shortcut.js",
+    "destination": "temporary/ghostbar-2.0.4/source/src/shortcut.js",
+    "sha256": "752fcf1e4ddfe994987fd4e38f1d2b3ce2e38b7e67ef9e73d720c3dd29914a11",
+    "bytes": 1950
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.4/source/src/panel.html",
+    "destination": "temporary/ghostbar-2.0.4/source/src/panel.html",
+    "sha256": "4c11b277a4066946f305b00ffac6e1a069fc19e4ecf44abfed88cc53bc9dc3b4",
+    "bytes": 1373
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.4/source/src/panel.css",
+    "destination": "temporary/ghostbar-2.0.4/source/src/panel.css",
+    "sha256": "c217420e4c340258754398c98d1be8b3b0591f86837afc3ccc7bab82a6b08cca",
+    "bytes": 1835
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.4/source/src/snippet.html",
+    "destination": "temporary/ghostbar-2.0.4/source/src/snippet.html",
+    "sha256": "3e3c8ee67e9714447e38baeec39757c5e7c5a877095931e76a95dfeccdede497",
+    "bytes": 3811
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.4/payload/package.json",
+    "destination": "temporary/ghostbar-2.0.4/payload/package.json",
+    "sha256": "ad2c472f06d14796636a08fc16f8664957a1e0ee1dab64fe2aebce2d7abe8c05",
+    "bytes": 1350
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.4/payload/core/preferences.js",
+    "destination": "temporary/ghostbar-2.0.4/payload/core/preferences.js",
+    "sha256": "3f95f1e29bad52bbeaf8e53c22e9ffa413d41d7e35887d78dbf98f1e522f01ed",
+    "bytes": 789
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.4/payload/core/background.js",
+    "destination": "temporary/ghostbar-2.0.4/payload/core/background.js",
+    "sha256": "1657f13f8261584d4708f3382233bf0ed2498d83b257879023d5991504948bf7",
+    "bytes": 3521
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.4/payload/core/service-client.js",
+    "destination": "temporary/ghostbar-2.0.4/payload/core/service-client.js",
+    "sha256": "b2edf78f75a26109adfc4708af63ea0f27de76a19b5cd48da0434321144a752d",
+    "bytes": 1550
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.4/payload/core/service-channel.js",
+    "destination": "temporary/ghostbar-2.0.4/payload/core/service-channel.js",
+    "sha256": "d2834fa2561ef671a0aedf5ab440e4803f18f6edb994435bc2ee3b680ff75767",
+    "bytes": 2993
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.4/payload/core/bridge.js",
+    "destination": "temporary/ghostbar-2.0.4/payload/core/bridge.js",
+    "sha256": "05dd7a77bd4e5102774a120f9e7f6bc440d97b44c11cf3e39027384256140cc2",
+    "bytes": 4136
+  },
+  {
+    "source": "/Users/n_akhundov02/Documents/Codex/2026-10-27/i-ha/outputs/GhostBar/tests/addon_test.py",
+    "destination": "current-project/outputs/GhostBar/tests/addon_test.py",
+    "sha256": "05f5e1c40e073f6118adfc5fc8f13ea25afef16491df167b46eb6d91970d13b0",
+    "bytes": 8427
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.4/payload/core/ghostbar.js",
+    "destination": "temporary/ghostbar-2.0.4/payload/core/ghostbar.js",
+    "sha256": "6f413ce6da3da30b8f566879a4c4fea888842df64bb8205bbe75a5b9f4a65ec3",
+    "bytes": 10093
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.4/payload/core/storage.js",
+    "destination": "temporary/ghostbar-2.0.4/payload/core/storage.js",
+    "sha256": "6031fea0857d6312ed0e9fca3db9cbe736244dd8f1513a73d62630d83aa1d0ff",
+    "bytes": 1061
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.4/payload/assets/icon_256.png",
+    "destination": "temporary/ghostbar-2.0.4/payload/assets/icon_256.png",
+    "sha256": "d6bf78f17e63037f474d9091f6d44be5c46109b0377c0bb72d097587bdaa364a",
+    "bytes": 5781
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.4/payload/src/preload.js",
+    "destination": "temporary/ghostbar-2.0.4/payload/src/preload.js",
+    "sha256": "cf41eff4f2cc70472fc23e3da358184eacdb094640b09d37d536c6c04c85b769",
+    "bytes": 588
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.4/payload/src/panel.js",
+    "destination": "temporary/ghostbar-2.0.4/payload/src/panel.js",
+    "sha256": "fe7eb9dd672588e79a4e057cec1e0d195edf9588d78682a22f8524bd62bc050d",
+    "bytes": 5572
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.4/payload/src/renderer.js",
+    "destination": "temporary/ghostbar-2.0.4/payload/src/renderer.js",
+    "sha256": "326c647debcf53425ac93cd6319f32788d12d2eebfeded974dcae67619770a15",
+    "bytes": 6625
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.4/payload/src/index.html",
+    "destination": "temporary/ghostbar-2.0.4/payload/src/index.html",
+    "sha256": "a27c7e29adbaf904ef3d9399acea7b3a5d26ae7b2516d2bea4d826f0f32cd3da",
+    "bytes": 5462
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.4/payload/src/styles.css",
+    "destination": "temporary/ghostbar-2.0.4/payload/src/styles.css",
+    "sha256": "a078590e1f36f6cbe0507dbbd89aaf61443920c6066a3d5d143e9fa7e0d418e6",
+    "bytes": 10804
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.4/payload/core/chatgpt.js",
+    "destination": "temporary/ghostbar-2.0.4/payload/core/chatgpt.js",
+    "sha256": "da300eeda96076510baf663d8fbd1efb9ed5b0ce84894fa826549b2a170e3d54",
+    "bytes": 19289
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.4/payload/src/shortcut.js",
+    "destination": "temporary/ghostbar-2.0.4/payload/src/shortcut.js",
+    "sha256": "752fcf1e4ddfe994987fd4e38f1d2b3ce2e38b7e67ef9e73d720c3dd29914a11",
+    "bytes": 1950
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.4/payload/src/main.js",
+    "destination": "temporary/ghostbar-2.0.4/payload/src/main.js",
+    "sha256": "2706e222b37e561c8d8cf8c02d016eb1f874ef35b601137eb49322df441181e8",
+    "bytes": 3857
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.4/payload/src/snippet.html",
+    "destination": "temporary/ghostbar-2.0.4/payload/src/snippet.html",
+    "sha256": "3e3c8ee67e9714447e38baeec39757c5e7c5a877095931e76a95dfeccdede497",
+    "bytes": 3811
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.4/payload/src/panel.css",
+    "destination": "temporary/ghostbar-2.0.4/payload/src/panel.css",
+    "sha256": "c217420e4c340258754398c98d1be8b3b0591f86837afc3ccc7bab82a6b08cca",
+    "bytes": 1835
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.4/payload/src/panel.html",
+    "destination": "temporary/ghostbar-2.0.4/payload/src/panel.html",
+    "sha256": "4c11b277a4066946f305b00ffac6e1a069fc19e4ecf44abfed88cc53bc9dc3b4",
+    "bytes": 1373
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.5/verify-release.py",
+    "destination": "temporary/ghostbar-2.0.5/verify-release.py",
+    "sha256": "2dce914834a2d6cdebe2c29292ee72151af4c1db9f8db820f09d235f7c52d976",
+    "bytes": 966
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.5/SHA256SUMS.txt",
+    "destination": "temporary/ghostbar-2.0.5/SHA256SUMS.txt",
+    "sha256": "ea86314578c34ce3ed440b402fff3230d7765e628976f3c49e3f5b9284a3c5be",
+    "bytes": 266
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.5/payload/package.json",
+    "destination": "temporary/ghostbar-2.0.5/payload/package.json",
+    "sha256": "5eaf8765e64e50e8a3944298d2ee2fa041abead997cf0c6740cc8e6ca1e5dff2",
+    "bytes": 1350
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.5/payload/core/preferences.js",
+    "destination": "temporary/ghostbar-2.0.5/payload/core/preferences.js",
+    "sha256": "3f95f1e29bad52bbeaf8e53c22e9ffa413d41d7e35887d78dbf98f1e522f01ed",
+    "bytes": 789
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.5/packaged-smoke.cjs",
+    "destination": "temporary/ghostbar-2.0.5/packaged-smoke.cjs",
+    "sha256": "9dad0def394310dbd2dc7505f7ba259734bc90a24244409e323a5f5987362100",
+    "bytes": 1377
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.5/release-notes.md",
+    "destination": "temporary/ghostbar-2.0.5/release-notes.md",
+    "sha256": "daddb97ee76b7972c414e9fc3ed0d90e4dce244d4caaca6db7459286d4dca865",
+    "bytes": 2115
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.5/payload/core/service-channel.js",
+    "destination": "temporary/ghostbar-2.0.5/payload/core/service-channel.js",
+    "sha256": "d2834fa2561ef671a0aedf5ab440e4803f18f6edb994435bc2ee3b680ff75767",
+    "bytes": 2993
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.5/payload/core/service-client.js",
+    "destination": "temporary/ghostbar-2.0.5/payload/core/service-client.js",
+    "sha256": "b2edf78f75a26109adfc4708af63ea0f27de76a19b5cd48da0434321144a752d",
+    "bytes": 1550
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.5/payload/core/background.js",
+    "destination": "temporary/ghostbar-2.0.5/payload/core/background.js",
+    "sha256": "2f9ac6ff0a16f8938154ae29d0b5cbdaee6e4588c8f4a36f76f57b2938517b23",
+    "bytes": 3828
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.5/payload/core/certificate.js",
+    "destination": "temporary/ghostbar-2.0.5/payload/core/certificate.js",
+    "sha256": "4cb86178ae36260e8978c78122cb3d531189e49dcf118e9860de46d980a3544f",
+    "bytes": 2737
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.5/payload/core/bridge.js",
+    "destination": "temporary/ghostbar-2.0.5/payload/core/bridge.js",
+    "sha256": "05dd7a77bd4e5102774a120f9e7f6bc440d97b44c11cf3e39027384256140cc2",
+    "bytes": 4136
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.5/payload/core/storage.js",
+    "destination": "temporary/ghostbar-2.0.5/payload/core/storage.js",
+    "sha256": "6031fea0857d6312ed0e9fca3db9cbe736244dd8f1513a73d62630d83aa1d0ff",
+    "bytes": 1061
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.5/payload/core/ghostbar.js",
+    "destination": "temporary/ghostbar-2.0.5/payload/core/ghostbar.js",
+    "sha256": "648a778ce8575478c8e9c37b038e9985d1b5639d5f060a4843fa6c4381916a81",
+    "bytes": 10211
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.5/payload/assets/icon_256.png",
+    "destination": "temporary/ghostbar-2.0.5/payload/assets/icon_256.png",
+    "sha256": "d6bf78f17e63037f474d9091f6d44be5c46109b0377c0bb72d097587bdaa364a",
+    "bytes": 5781
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.5/payload/core/chatgpt.js",
+    "destination": "temporary/ghostbar-2.0.5/payload/core/chatgpt.js",
+    "sha256": "da300eeda96076510baf663d8fbd1efb9ed5b0ce84894fa826549b2a170e3d54",
+    "bytes": 19289
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.5/payload/src/preload.js",
+    "destination": "temporary/ghostbar-2.0.5/payload/src/preload.js",
+    "sha256": "cf41eff4f2cc70472fc23e3da358184eacdb094640b09d37d536c6c04c85b769",
+    "bytes": 588
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.5/payload/src/renderer.js",
+    "destination": "temporary/ghostbar-2.0.5/payload/src/renderer.js",
+    "sha256": "326c647debcf53425ac93cd6319f32788d12d2eebfeded974dcae67619770a15",
+    "bytes": 6625
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.5/payload/src/styles.css",
+    "destination": "temporary/ghostbar-2.0.5/payload/src/styles.css",
+    "sha256": "a078590e1f36f6cbe0507dbbd89aaf61443920c6066a3d5d143e9fa7e0d418e6",
+    "bytes": 10804
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.5/payload/src/panel.html",
+    "destination": "temporary/ghostbar-2.0.5/payload/src/panel.html",
+    "sha256": "4c11b277a4066946f305b00ffac6e1a069fc19e4ecf44abfed88cc53bc9dc3b4",
+    "bytes": 1373
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.5/payload/src/shortcut.js",
+    "destination": "temporary/ghostbar-2.0.5/payload/src/shortcut.js",
+    "sha256": "752fcf1e4ddfe994987fd4e38f1d2b3ce2e38b7e67ef9e73d720c3dd29914a11",
+    "bytes": 1950
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.5/payload/src/panel.js",
+    "destination": "temporary/ghostbar-2.0.5/payload/src/panel.js",
+    "sha256": "fe7eb9dd672588e79a4e057cec1e0d195edf9588d78682a22f8524bd62bc050d",
+    "bytes": 5572
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.5/payload/src/index.html",
+    "destination": "temporary/ghostbar-2.0.5/payload/src/index.html",
+    "sha256": "a27c7e29adbaf904ef3d9399acea7b3a5d26ae7b2516d2bea4d826f0f32cd3da",
+    "bytes": 5462
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.5/payload/src/main.js",
+    "destination": "temporary/ghostbar-2.0.5/payload/src/main.js",
+    "sha256": "2706e222b37e561c8d8cf8c02d016eb1f874ef35b601137eb49322df441181e8",
+    "bytes": 3857
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.5/payload/src/panel.css",
+    "destination": "temporary/ghostbar-2.0.5/payload/src/panel.css",
+    "sha256": "c217420e4c340258754398c98d1be8b3b0591f86837afc3ccc7bab82a6b08cca",
+    "bytes": 1835
+  },
+  {
+    "source": "/private/tmp/ghostbar-2.0.5/payload/src/snippet.html",
+    "destination": "temporary/ghostbar-2.0.5/payload/src/snippet.html",
+    "sha256": "3e3c8ee67e9714447e38baeec39757c5e7c5a877095931e76a95dfeccdede497",
+    "bytes": 3811
+  },
+  {
+    "source": "/private/tmp/ghostbar-certificate-smoke.cjs",
+    "destination": "temporary/ghostbar-certificate-smoke.cjs",
+    "sha256": "0c37a3e54bceb6dd615f5d05a2c051b08192e94fc26186db2791ac0763bcd32a",
+    "bytes": 2251
+  },
+  {
+    "source": "/private/tmp/ghostbar-publish-2.0.4/SHA256SUMS.txt",
+    "destination": "temporary/ghostbar-publish-2.0.4/SHA256SUMS.txt",
+    "sha256": "ea4ad01280898ff2a512a10b9f0c0b3b5cc8916199b826b4497488c60592ee87",
+    "bytes": 266
+  },
+  {
+    "source": "/private/tmp/ghostbar-publish-2.0.4/release-notes.md",
+    "destination": "temporary/ghostbar-publish-2.0.4/release-notes.md",
+    "sha256": "e0e35463d24807311a6d2cfcf689d5221546300f527395d2dcf2122fc2a7b80f",
+    "bytes": 1557
+  },
+  {
+    "source": "/private/tmp/ghostbar-local-panel-check.html",
+    "destination": "temporary/ghostbar-local-panel-check.html",
+    "sha256": "4c11b277a4066946f305b00ffac6e1a069fc19e4ecf44abfed88cc53bc9dc3b4",
+    "bytes": 1373
+  },
+  {
+    "source": "/private/tmp/ghostbar-package-2.0.5.py",
+    "destination": "temporary/ghostbar-package-2.0.5.py",
+    "sha256": "657448ffab3f6740b0df164e0a16a4d0c5dec1ece1f174d9437c5f074c28bbb8",
+    "bytes": 4337
+  },
+  {
+    "source": "/private/tmp/ghostbar-publish-2.0.4/GhostBar/.gitignore",
+    "destination": "temporary/ghostbar-publish-2.0.4/GhostBar/.gitignore",
+    "sha256": "071661cc9cbb78a56b72e2781704cad409b4c669d10cce33b0b4aa6cdf1fd00c",
+    "bytes": 122
+  },
+  {
+    "source": "/private/tmp/ghostbar-publish-2.0.4/GhostBar/package.json",
+    "destination": "temporary/ghostbar-publish-2.0.4/GhostBar/package.json",
+    "sha256": "5eaf8765e64e50e8a3944298d2ee2fa041abead997cf0c6740cc8e6ca1e5dff2",
+    "bytes": 1350
+  },
+  {
+    "source": "/private/tmp/ghostbar-publish-2.0.4/GhostBar/core/preferences.js",
+    "destination": "temporary/ghostbar-publish-2.0.4/GhostBar/core/preferences.js",
+    "sha256": "3f95f1e29bad52bbeaf8e53c22e9ffa413d41d7e35887d78dbf98f1e522f01ed",
+    "bytes": 789
+  },
+  {
+    "source": "/private/tmp/ghostbar-publish-2.0.4/GhostBar/core/addon.py",
+    "destination": "temporary/ghostbar-publish-2.0.4/GhostBar/core/addon.py",
+    "sha256": "10e58ce93ee896ab4dac33ab6bfe7386563fe89da94339406f6f5287da7cc76f",
+    "bytes": 9526
+  },
+  {
+    "source": "/private/tmp/ghostbar-publish-2.0.4/GhostBar/README.md",
+    "destination": "temporary/ghostbar-publish-2.0.4/GhostBar/README.md",
+    "sha256": "d2456dd438d118cbc053c6a890fdbfe17b7b96a2fd1ba83091d18a5cbe472d0e",
+    "bytes": 11882
+  },
+  {
+    "source": "/private/tmp/ghostbar-publish-2.0.4/GhostBar/package-lock.json",
+    "destination": "temporary/ghostbar-publish-2.0.4/GhostBar/package-lock.json",
+    "sha256": "35b769e296f009c0816785cc1f6c4d918ed15c61390ba61689922eed563aa005",
+    "bytes": 127480
+  },
+  {
+    "source": "/private/tmp/ghostbar-publish-2.0.4/GhostBar/core/background.js",
+    "destination": "temporary/ghostbar-publish-2.0.4/GhostBar/core/background.js",
+    "sha256": "2f9ac6ff0a16f8938154ae29d0b5cbdaee6e4588c8f4a36f76f57b2938517b23",
+    "bytes": 3828
+  },
+  {
+    "source": "/private/tmp/ghostbar-publish-2.0.4/GhostBar/core/bridge.js",
+    "destination": "temporary/ghostbar-publish-2.0.4/GhostBar/core/bridge.js",
+    "sha256": "05dd7a77bd4e5102774a120f9e7f6bc440d97b44c11cf3e39027384256140cc2",
+    "bytes": 4136
+  },
+  {
+    "source": "/private/tmp/ghostbar-publish-2.0.4/GhostBar/core/service-channel.js",
+    "destination": "temporary/ghostbar-publish-2.0.4/GhostBar/core/service-channel.js",
+    "sha256": "d2834fa2561ef671a0aedf5ab440e4803f18f6edb994435bc2ee3b680ff75767",
+    "bytes": 2993
+  },
+  {
+    "source": "/private/tmp/ghostbar-publish-2.0.4/GhostBar/core/service-client.js",
+    "destination": "temporary/ghostbar-publish-2.0.4/GhostBar/core/service-client.js",
+    "sha256": "b2edf78f75a26109adfc4708af63ea0f27de76a19b5cd48da0434321144a752d",
+    "bytes": 1550
+  },
+  {
+    "source": "/private/tmp/ghostbar-publish-2.0.4/GhostBar/tests/shortcut.test.js",
+    "destination": "temporary/ghostbar-publish-2.0.4/GhostBar/tests/shortcut.test.js",
+    "sha256": "edfae740a170cafcb152717c0f047374d73899fc538ce410c405472633058a44",
+    "bytes": 1812
+  },
+  {
+    "source": "/private/tmp/ghostbar-publish-2.0.4/GhostBar/core/storage.js",
+    "destination": "temporary/ghostbar-publish-2.0.4/GhostBar/core/storage.js",
+    "sha256": "6031fea0857d6312ed0e9fca3db9cbe736244dd8f1513a73d62630d83aa1d0ff",
+    "bytes": 1061
+  },
+  {
+    "source": "/private/tmp/ghostbar-publish-2.0.4/GhostBar/tests/proxy.test.js",
+    "destination": "temporary/ghostbar-publish-2.0.4/GhostBar/tests/proxy.test.js",
+    "sha256": "54f610a05b1cb5ed8a15546d12a0c7e15fbcc6630519116d3f80d7262a1db94e",
+    "bytes": 5935
+  },
+  {
+    "source": "/private/tmp/ghostbar-publish-2.0.4/GhostBar/core/ghostbar.js",
+    "destination": "temporary/ghostbar-publish-2.0.4/GhostBar/core/ghostbar.js",
+    "sha256": "648a778ce8575478c8e9c37b038e9985d1b5639d5f060a4843fa6c4381916a81",
+    "bytes": 10211
+  },
+  {
+    "source": "/private/tmp/ghostbar-publish-2.0.4/GhostBar/core/certificate.js",
+    "destination": "temporary/ghostbar-publish-2.0.4/GhostBar/core/certificate.js",
+    "sha256": "4cb86178ae36260e8978c78122cb3d531189e49dcf118e9860de46d980a3544f",
+    "bytes": 2737
+  },
+  {
+    "source": "/private/tmp/ghostbar-publish-2.0.4/GhostBar/core/chatgpt.js",
+    "destination": "temporary/ghostbar-publish-2.0.4/GhostBar/core/chatgpt.js",
+    "sha256": "da300eeda96076510baf663d8fbd1efb9ed5b0ce84894fa826549b2a170e3d54",
+    "bytes": 19289
+  },
+  {
+    "source": "/private/tmp/ghostbar-publish-2.0.4/GhostBar/tests/fixture-addon.py",
+    "destination": "temporary/ghostbar-publish-2.0.4/GhostBar/tests/fixture-addon.py",
+    "sha256": "b7dad4b564214086ebf170094ac59b85f5e08805924d296b7541079560d6b663",
+    "bytes": 690
+  },
+  {
+    "source": "/private/tmp/ghostbar-publish-2.0.4/GhostBar/tests/chatgpt.test.js",
+    "destination": "temporary/ghostbar-publish-2.0.4/GhostBar/tests/chatgpt.test.js",
+    "sha256": "7264cdf9a0e13d01274bed94912eb58d397e0d82058efa78b8a69d859cbb21ed",
+    "bytes": 7785
+  },
+  {
+    "source": "/private/tmp/ghostbar-publish-2.0.4/GhostBar/tests/certificate.test.js",
+    "destination": "temporary/ghostbar-publish-2.0.4/GhostBar/tests/certificate.test.js",
+    "sha256": "465bd4a8b4d9df8e2194dce366858343116776de0be70c21b15fd44a637af128",
+    "bytes": 6330
+  },
+  {
+    "source": "/private/tmp/ghostbar-publish-2.0.4/GhostBar/tests/browser-compat.cjs",
+    "destination": "temporary/ghostbar-publish-2.0.4/GhostBar/tests/browser-compat.cjs",
+    "sha256": "45f4ceae8912930d824a0a1a6e9d6a65488a7483f1fa7b9b734869f007ea830f",
+    "bytes": 12088
+  },
+  {
+    "source": "/private/tmp/ghostbar-publish-2.0.4/GhostBar/tests/bridge.test.js",
+    "destination": "temporary/ghostbar-publish-2.0.4/GhostBar/tests/bridge.test.js",
+    "sha256": "15ae4a608bb53d2d6f2601b19cf44e2784a893967047f1a022e8b6f4ae310769",
+    "bytes": 1893
+  },
+  {
+    "source": "/private/tmp/ghostbar-publish-2.0.4/GhostBar/tests/service-channel.test.js",
+    "destination": "temporary/ghostbar-publish-2.0.4/GhostBar/tests/service-channel.test.js",
+    "sha256": "f3a200b68a36812aec693abb8efdc9beab7f0e3f4acaf060be26c78d4e513d1a",
+    "bytes": 1399
+  },
+  {
+    "source": "/private/tmp/ghostbar-publish-2.0.4/GhostBar/tests/addon_test.py",
+    "destination": "temporary/ghostbar-publish-2.0.4/GhostBar/tests/addon_test.py",
+    "sha256": "05f5e1c40e073f6118adfc5fc8f13ea25afef16491df167b46eb6d91970d13b0",
+    "bytes": 8427
+  },
+  {
+    "source": "/private/tmp/ghostbar-publish-2.0.4/GhostBar/scripts/download-proxy.js",
+    "destination": "temporary/ghostbar-publish-2.0.4/GhostBar/scripts/download-proxy.js",
+    "sha256": "2dfca175da6f45f97dbc3c79f812085f28a6cb93e63f6ad3a962053a811f3219",
+    "bytes": 2024
+  },
+  {
+    "source": "/private/tmp/ghostbar-publish-2.0.4/GhostBar/src/preload.js",
+    "destination": "temporary/ghostbar-publish-2.0.4/GhostBar/src/preload.js",
+    "sha256": "cf41eff4f2cc70472fc23e3da358184eacdb094640b09d37d536c6c04c85b769",
+    "bytes": 588
+  },
+  {
+    "source": "/private/tmp/ghostbar-publish-2.0.4/GhostBar/.github/workflows/build-macos.yml",
+    "destination": "temporary/ghostbar-publish-2.0.4/GhostBar/.github/workflows/build-macos.yml",
+    "sha256": "b7c1f00a1b9549717e85378c001865e83437e7ef27be3cc5a98d0e046b7bad17",
+    "bytes": 745
+  },
+  {
+    "source": "/private/tmp/ghostbar-publish-2.0.4/GhostBar/assets/icon_256.png",
+    "destination": "temporary/ghostbar-publish-2.0.4/GhostBar/assets/icon_256.png",
+    "sha256": "d6bf78f17e63037f474d9091f6d44be5c46109b0377c0bb72d097587bdaa364a",
+    "bytes": 5781
+  },
+  {
+    "source": "/private/tmp/ghostbar-publish-2.0.4/GhostBar/assets/icon.icns",
+    "destination": "temporary/ghostbar-publish-2.0.4/GhostBar/assets/icon.icns",
+    "sha256": "ce5b3e2dab3b71a8b8567d7e41a5491634118d2075aa19f466b687370e9117a5",
+    "bytes": 28687
+  },
+  {
+    "source": "/private/tmp/ghostbar-publish-2.0.4/GhostBar/assets/dmg-bg.png",
+    "destination": "temporary/ghostbar-publish-2.0.4/GhostBar/assets/dmg-bg.png",
+    "sha256": "0ae236e6a5ca82cce75cf9cb25b561bde320bc9828d032ce82f9ba06372eb39b",
+    "bytes": 30915
+  },
+  {
+    "source": "/private/tmp/ghostbar-publish-2.0.4/GhostBar/src/renderer.js",
+    "destination": "temporary/ghostbar-publish-2.0.4/GhostBar/src/renderer.js",
+    "sha256": "326c647debcf53425ac93cd6319f32788d12d2eebfeded974dcae67619770a15",
+    "bytes": 6625
+  },
+  {
+    "source": "/private/tmp/ghostbar-publish-2.0.4/GhostBar/src/index.html",
+    "destination": "temporary/ghostbar-publish-2.0.4/GhostBar/src/index.html",
+    "sha256": "a27c7e29adbaf904ef3d9399acea7b3a5d26ae7b2516d2bea4d826f0f32cd3da",
+    "bytes": 5462
+  },
+  {
+    "source": "/private/tmp/ghostbar-publish-2.0.4/GhostBar/src/styles.css",
+    "destination": "temporary/ghostbar-publish-2.0.4/GhostBar/src/styles.css",
+    "sha256": "a078590e1f36f6cbe0507dbbd89aaf61443920c6066a3d5d143e9fa7e0d418e6",
+    "bytes": 10804
+  },
+  {
+    "source": "/private/tmp/ghostbar-publish-2.0.4/GhostBar/src/panel.html",
+    "destination": "temporary/ghostbar-publish-2.0.4/GhostBar/src/panel.html",
+    "sha256": "4c11b277a4066946f305b00ffac6e1a069fc19e4ecf44abfed88cc53bc9dc3b4",
+    "bytes": 1373
+  },
+  {
+    "source": "/private/tmp/ghostbar-publish-2.0.4/GhostBar/src/panel.js",
+    "destination": "temporary/ghostbar-publish-2.0.4/GhostBar/src/panel.js",
+    "sha256": "fe7eb9dd672588e79a4e057cec1e0d195edf9588d78682a22f8524bd62bc050d",
+    "bytes": 5572
+  },
+  {
+    "source": "/private/tmp/ghostbar-publish-2.0.4/GhostBar/src/main.js",
+    "destination": "temporary/ghostbar-publish-2.0.4/GhostBar/src/main.js",
+    "sha256": "2706e222b37e561c8d8cf8c02d016eb1f874ef35b601137eb49322df441181e8",
+    "bytes": 3857
+  },
+  {
+    "source": "/private/tmp/ghostbar-publish-2.0.4/GhostBar/src/shortcut.js",
+    "destination": "temporary/ghostbar-publish-2.0.4/GhostBar/src/shortcut.js",
+    "sha256": "752fcf1e4ddfe994987fd4e38f1d2b3ce2e38b7e67ef9e73d720c3dd29914a11",
+    "bytes": 1950
+  },
+  {
+    "source": "/private/tmp/ghostbar-publish-2.0.4/GhostBar/src/panel.css",
+    "destination": "temporary/ghostbar-publish-2.0.4/GhostBar/src/panel.css",
+    "sha256": "c217420e4c340258754398c98d1be8b3b0591f86837afc3ccc7bab82a6b08cca",
+    "bytes": 1835
+  },
+  {
+    "source": "/private/tmp/ghostbar-publish-2.0.4/GhostBar/src/snippet.html",
+    "destination": "temporary/ghostbar-publish-2.0.4/GhostBar/src/snippet.html",
+    "sha256": "3e3c8ee67e9714447e38baeec39757c5e7c5a877095931e76a95dfeccdede497",
+    "bytes": 3811
+  },
+  {
+    "source": "/Users/n_akhundov02/Downloads/ghostbar-pro-ui.zip",
+    "destination": "downloads/ghostbar-pro-ui.zip",
+    "sha256": "fd7523dd81beb17285e0889aef071645f98f76682e44d51e592866becab0b955",
+    "bytes": 5644
+  },
+  {
+    "source": "/Users/n_akhundov02/Downloads/ghostbar.js",
+    "destination": "downloads/ghostbar.js",
+    "sha256": "1701c4ea4704d66e0b11c8eca83b89bfc19dc0365e385bd49fb12f8d6fa11b6f",
+    "bytes": 18931
+  },
+  {
+    "source": "/Users/n_akhundov02/Downloads/GhostBar-Guide.pdf",
+    "destination": "downloads/GhostBar-Guide.pdf",
+    "sha256": "715b15664e69f38ee86f4414d5c668bd8a4fa9ab8b705414f76cf7a4b38e9083",
+    "bytes": 293021
+  },
+  {
+    "source": "/Users/n_akhundov02/Documents/Codex/2026-10-27/i-ha/outputs/GhostBar/tests/fixture-addon.py",
+    "destination": "current-project/outputs/GhostBar/tests/fixture-addon.py",
+    "sha256": "b7dad4b564214086ebf170094ac59b85f5e08805924d296b7541079560d6b663",
+    "bytes": 690
+  },
+  {
+    "source": "/Users/n_akhundov02/Documents/Codex/2026-10-27/i-ha/outputs/GhostBar/tests/proxy.test.js",
+    "destination": "current-project/outputs/GhostBar/tests/proxy.test.js",
+    "sha256": "54f610a05b1cb5ed8a15546d12a0c7e15fbcc6630519116d3f80d7262a1db94e",
+    "bytes": 5935
+  },
+  {
+    "source": "/Users/n_akhundov02/Documents/Codex/2026-10-27/i-ha/outputs/GhostBar/src/snippet.html",
+    "destination": "current-project/outputs/GhostBar/src/snippet.html",
+    "sha256": "3e3c8ee67e9714447e38baeec39757c5e7c5a877095931e76a95dfeccdede497",
+    "bytes": 3811
+  },
+  {
+    "source": "/Users/n_akhundov02/Documents/Codex/2026-10-27/i-ha/outputs/GhostBar/src/panel.css",
+    "destination": "current-project/outputs/GhostBar/src/panel.css",
+    "sha256": "c217420e4c340258754398c98d1be8b3b0591f86837afc3ccc7bab82a6b08cca",
+    "bytes": 1835
+  },
+  {
+    "source": "/Users/n_akhundov02/Documents/Codex/2026-10-27/i-ha/outputs/GhostBar/src/panel.html",
+    "destination": "current-project/outputs/GhostBar/src/panel.html",
+    "sha256": "4c11b277a4066946f305b00ffac6e1a069fc19e4ecf44abfed88cc53bc9dc3b4",
+    "bytes": 1373
+  },
+  {
+    "source": "/Users/n_akhundov02/Documents/Codex/2026-10-27/i-ha/outputs/GhostBar/src/main.js",
+    "destination": "current-project/outputs/GhostBar/src/main.js",
+    "sha256": "2706e222b37e561c8d8cf8c02d016eb1f874ef35b601137eb49322df441181e8",
+    "bytes": 3857
+  },
+  {
+    "source": "/Users/n_akhundov02/Documents/Codex/2026-10-27/i-ha/outputs/GhostBar/src/panel.js",
+    "destination": "current-project/outputs/GhostBar/src/panel.js",
+    "sha256": "fe7eb9dd672588e79a4e057cec1e0d195edf9588d78682a22f8524bd62bc050d",
+    "bytes": 5572
+  },
+  {
+    "source": "/Users/n_akhundov02/Documents/Codex/2026-10-27/i-ha/outputs/GhostBar/src/shortcut.js",
+    "destination": "current-project/outputs/GhostBar/src/shortcut.js",
+    "sha256": "752fcf1e4ddfe994987fd4e38f1d2b3ce2e38b7e67ef9e73d720c3dd29914a11",
+    "bytes": 1950
+  },
+  {
+    "source": "/Users/n_akhundov02/Documents/Codex/2026-10-27/i-ha/outputs/GhostBar/src/styles.css",
+    "destination": "current-project/outputs/GhostBar/src/styles.css",
+    "sha256": "a078590e1f36f6cbe0507dbbd89aaf61443920c6066a3d5d143e9fa7e0d418e6",
+    "bytes": 10804
+  },
+  {
+    "source": "/Users/n_akhundov02/Documents/Codex/2026-10-27/i-ha/outputs/GhostBar/src/index.html",
+    "destination": "current-project/outputs/GhostBar/src/index.html",
+    "sha256": "a27c7e29adbaf904ef3d9399acea7b3a5d26ae7b2516d2bea4d826f0f32cd3da",
+    "bytes": 5462
+  },
+  {
+    "source": "/Users/n_akhundov02/Documents/Codex/2026-10-27/i-ha/work/ui-tests/fixture.json",
+    "destination": "current-project/work/ui-tests/fixture.json",
+    "bytes": 3216,
+    "sha256": "38fb454ec5df82a9a707db813021876393ff07667dfa7481884865fb919b1804"
+  },
+  {
+    "source": "/Users/n_akhundov02/Documents/Codex/2026-10-27/i-ha/work/ui-tests/persistence.js",
+    "destination": "current-project/work/ui-tests/persistence.js",
+    "bytes": 4213,
+    "sha256": "197f580cd8e2b38501b245345be43f473ab60012dac1b632ba67c228bf061331"
+  },
+  {
+    "source": "/Users/n_akhundov02/Documents/Codex/2026-10-27/i-ha/work/ui-tests/package-lock.json",
+    "destination": "current-project/work/ui-tests/package-lock.json",
+    "bytes": 1067,
+    "sha256": "d18fba62f8eea59206246d704ba047abd62e136b6273df3627c36ed419ef78c3"
+  },
+  {
+    "source": "/Users/n_akhundov02/Documents/Codex/2026-10-27/i-ha/work/ui-tests/package.json",
+    "destination": "current-project/work/ui-tests/package.json",
+    "bytes": 56,
+    "sha256": "2647cddd0e4be9683fbde4c438510e882776c0a2e9b4503c35ad16fe0a558965"
+  },
+  {
+    "source": "/Users/n_akhundov02/Documents/Codex/2026-10-27/i-ha/work/ui-tests/smoke.js",
+    "destination": "current-project/work/ui-tests/smoke.js",
+    "bytes": 4455,
+    "sha256": "50bdbb773148974086de0a8a06e25a64152553c2bac515dd8555881af61473e2"
+  }
+]

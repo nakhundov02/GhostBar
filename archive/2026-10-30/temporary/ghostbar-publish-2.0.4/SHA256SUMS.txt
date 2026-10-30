@@ -1,0 +1,3 @@
+8cc0d6ce64f17e946eedceb07e3793ac34ca6bac9c652b3bb86804aa8c88fe71  GhostBar-2.0.4-arm64.zip
+68b90f92219d6513f7032baec7603de81987b00e2218bc8a9b9f8fd50a65018b  GhostBar-2.0.4-x64.zip
+6de2e2cdfb5dcdb670a51fb8aeab65294c77c68edb3d101abf0fa49f0d3f02bf  GhostBar-source.zip

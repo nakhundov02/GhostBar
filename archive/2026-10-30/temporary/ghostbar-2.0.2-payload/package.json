@@ -1,0 +1,57 @@
+{
+  "name": "ghostbar",
+  "version": "2.0.2",
+  "description": "GhostBar \u2014 browser chat with your own ChatGPT account",
+  "main": "src/main.js",
+  "private": true,
+  "scripts": {
+    "start": "electron .",
+    "test": "node --test tests/*.test.js",
+    "setup:proxy": "node scripts/download-proxy.js",
+    "build:mac": "electron-builder --mac --arm64 --x64",
+    "build:dmg": "electron-builder --mac dmg",
+    "build:dir": "electron-builder --mac --dir"
+  },
+  "dependencies": {
+    "jose": "5.10.0"
+  },
+  "devDependencies": {
+    "electron": "45.0.0",
+    "electron-builder": "26.18.0"
+  },
+  "build": {
+    "appId": "com.ghostbar.personal",
+    "productName": "GhostBar",
+    "asar": true,
+    "files": [
+      "src/**/*",
+      "core/**/*.js",
+      "assets/icon_256.png",
+      "package.json"
+    ],
+    "extraResources": [
+      {
+        "from": "runtime/mitmproxy/${arch}",
+        "to": "mitmproxy/${arch}"
+      },
+      {
+        "from": "core/addon.py",
+        "to": "addon.py"
+      },
+      {
+        "from": "src/snippet.html",
+        "to": "snippet.html"
+      }
+    ],
+    "mac": {
+      "category": "public.app-category.productivity",
+      "icon": "assets/icon.icns",
+      "target": [
+        "dmg",
+        "zip"
+      ],
+      "hardenedRuntime": true
+    },
+    "artifactName": "GhostBar-${version}-${arch}.${ext}"
+  }
+}

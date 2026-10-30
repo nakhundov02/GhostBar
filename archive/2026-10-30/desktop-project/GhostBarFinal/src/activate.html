@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>GhostBar — Activate</title>
+<style>
+  *{ margin:0; padding:0; box-sizing:border-box; }
+  body{
+    background:#0a0a10;
+    color:#fff;
+    font-family:-apple-system,BlinkMacSystemFont,sans-serif;
+    height:100vh;
+    display:flex; align-items:center; justify-content:center;
+    -webkit-app-region:drag;
+    user-select:none;
+  }
+  .card{
+    background:#111118;
+    border:1px solid #222;
+    border-radius:20px;
+    padding:48px 40px;
+    width:420px;
+    text-align:center;
+    -webkit-app-region:no-drag;
+  }
+  .ghost{ margin-bottom:16px; display:flex; justify-content:center; }
+  h1{ font-size:22px; font-weight:700; margin-bottom:6px; }
+  .sub{ color:#555; font-size:13px; margin-bottom:32px; line-height:1.5; }
+
+  .input-wrap{ position:relative; margin-bottom:12px; }
+  input{
+    width:100%;
+    background:#0d0d12;
+    border:1px solid #2a2a3a;
+    border-radius:10px;
+    padding:14px 16px;
+    color:#fff;
+    font-size:15px;
+    letter-spacing:2px;
+    text-align:center;
+    outline:none;
+    transition:border-color 0.2s;
+    font-family:monospace;
+  }
+  input:focus{ border-color:#6A5CFF; }
+  input::placeholder{ color:#333; letter-spacing:1px; font-size:13px; }
+
+  .btn{
+    width:100%;
+    padding:15px;
+    border-radius:10px;
+    border:none;
+    background:linear-gradient(135deg,#6A5CFF,#9F8CFF);
+    color:#fff;
+    font-size:15px;
+    font-weight:700;
+    cursor:pointer;
+    margin-top:4px;
+    transition:opacity 0.2s, transform 0.1s;
+  }
+  .btn:hover{ opacity:0.9; }
+  .btn:active{ transform:scale(0.98); }
+  .btn:disabled{ opacity:0.4; cursor:default; }
+
+  .msg{ font-size:12px; margin-top:14px; min-height:18px; }
+  .msg.ok { color:#4ade80; }
+  .msg.err{ color:#f87171; }
+
+  .divider{
+    border:none; border-top:1px solid #1a1a2a;
+    margin:28px 0 20px;
+  }
+  .buy-link{
+    color:#6A5CFF; font-size:12px; text-decoration:none;
+    cursor:pointer;
+  }
+  .buy-link:hover{ text-decoration:underline; }
+
+  .integrity-err{
+    background:#1a0a0a;
+    border:1px solid #4a1a1a;
+    border-radius:12px;
+    padding:20px;
+    margin-bottom:24px;
+    text-align:left;
+  }
+  .integrity-err h3{ color:#f87171; font-size:13px; margin-bottom:8px; }
+  .integrity-err p { color:#888; font-size:11px; line-height:1.6; }
+  .file-list{ margin-top:8px; }
+  .file-list li{ color:#f87171; font-size:11px; font-family:monospace; list-style:none; padding:1px 0; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="ghost">
+    <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect width="64" height="64" rx="16" fill="#1a1a2a"/>
+      <ellipse cx="32" cy="28" rx="16" ry="18" fill="white"/>
+      <rect x="16" y="28" width="32" height="14" fill="white"/>
+      <path d="M16 42 Q20 48 24 42 Q28 48 32 42 Q36 48 40 42 Q44 48 48 42" stroke="#1a1a2a" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+      <circle cx="26" cy="27" r="3.5" fill="#1a1a2a"/>
+      <circle cx="38" cy="27" r="3.5" fill="#1a1a2a"/>
+      <circle cx="27" cy="26" r="1.2" fill="white"/>
+      <circle cx="39" cy="26" r="1.2" fill="white"/>
+    </svg>
+  </div>
+  <h1>GhostBar</h1>
+  <p class="sub" id="subtitle">Enter your license key to activate.</p>
+
+  <!-- Integrity error panel (hidden by default) -->
+  <div class="integrity-err" id="integrityErr" style="display:none">
+    <h3>⚠ Application Integrity Error</h3>
+    <p>GhostBar has detected that its files have been modified. This could indicate tampering or corruption.</p>
+    <ul class="file-list" id="tamperedList"></ul>
+    <p style="margin-top:8px">Please reinstall GhostBar from the original DMG file.</p>
+  </div>
+
+  <div class="input-wrap">
+    <input id="keyInput"
+           type="text"
+           placeholder="GHOST-XXXX-XXXX-XXXX-XXXX"
+           maxlength="26"
+           autocomplete="off"
+           spellcheck="false" />
+  </div>
+
+  <button class="btn" id="activateBtn" onclick="activate()">Activate GhostBar</button>
+
+  <div class="msg" id="msg"></div>
+
+  <hr class="divider">
+  <a class="buy-link" onclick="openBuy()">Don't have a key? Get GhostBar →</a>
+</div>
+
+<script>
+  const api = window.ghostbarAPI;
+
+  // Format key input automatically: GHOST-XXXX-XXXX-XXXX-XXXX
+  document.getElementById('keyInput').addEventListener('input', function(e) {
+    var v = e.target.value.toUpperCase().replace(/[^A-Z0-9-]/g, '');
+    // Auto-insert GHOST- prefix if not present
+    if (v.length > 0 && !v.startsWith('GHOST-')) {
+      // If they're typing the prefix themselves, allow it
+      if (v.length < 6) {
+        // just let them type
+      } else {
+        v = 'GHOST-' + v.replace(/^GHOST-?/, '');
+      }
+    }
+    e.target.value = v;
+  });
+
+  document.getElementById('keyInput').addEventListener('keydown', function(e) {
+    if (e.key === 'Enter') activate();
+  });
+
+  async function activate() {
+    var key = document.getElementById('keyInput').value.trim();
+    var btn = document.getElementById('activateBtn');
+    var msgEl = document.getElementById('msg');
+
+    if (!key) { showMsg('Please enter your license key.', false); return; }
+
+    btn.disabled = true;
+    btn.textContent = 'Activating…';
+    showMsg('', null);
+
+    try {
+      var result = await api.activateLicense(key);
+      if (result.ok) {
+        showMsg('✅ ' + result.msg, true);
+        btn.textContent = 'Activated!';
+        setTimeout(function() {
+          api.licenseOk();
+        }, 1200);
+      } else {
+        showMsg('⚠ ' + result.msg, false);
+        btn.disabled = false;
+        btn.textContent = 'Activate GhostBar';
+      }
+    } catch(e) {
+      showMsg('Error: ' + e.message, false);
+      btn.disabled = false;
+      btn.textContent = 'Activate GhostBar';
+    }
+  }
+
+  function showMsg(txt, ok) {
+    var el = document.getElementById('msg');
+    el.textContent = txt;
+    el.className = 'msg ' + (ok === true ? 'ok' : ok === false ? 'err' : '');
+  }
+
+  function openBuy() { api.openExternal('https://ghostbar.app'); }
+
+  var params  = new URLSearchParams(window.location.search);
+  var tampered = params.get('tampered');
+  var intMsg   = params.get('msg');
+
+  if (tampered) {
+    document.getElementById('integrityErr').style.display = '';
+    document.getElementById('subtitle').textContent = 'GhostBar cannot start due to an integrity error.';
+    document.getElementById('activateBtn').disabled = true;
+    document.getElementById('activateBtn').textContent = 'Reinstall Required';
+    var list = document.getElementById('tamperedList');
+    tampered.split(',').forEach(function(f) {
+      var li = document.createElement('li'); li.textContent = '• ' + f; list.appendChild(li);
+    });
+  } else if (intMsg) {
+    document.getElementById('subtitle').textContent = intMsg;
+    // If locked to different machine, show a clear + re-enter option
+    if (intMsg.indexOf('different machine') > -1 || intMsg.indexOf('locked') > -1) {
+      var clearBtn = document.createElement('button');
+      clearBtn.className = 'btn';
+      clearBtn.style.cssText = 'width:100%;margin-top:10px;background:#1a1a2a;color:#888;border:1px solid #333;';
+      clearBtn.textContent = 'Clear license & enter new key';
+      clearBtn.onclick = function() {
+        api.clearLicense && api.clearLicense();
+        document.getElementById('subtitle').textContent = 'Enter your license key to activate.';
+        clearBtn.remove();
+      };
+      document.getElementById('activateBtn').after(clearBtn);
+    }
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<script nonce="__GHOSTBAR_NONCE__">
+(() => {
+  if (window.top !== window || document.getElementById('ghostbar-mount')) return;
+  const origin = 'https://ghostbar.test';
+  const shortcut = __GHOSTBAR_SHORTCUT__;
+  let previousFocus;
+  const mount = document.createElement('div');
+  mount.id = 'ghostbar-mount';
+  const shadow = mount.attachShadow({ mode: 'closed' });
+  const style = document.createElement('style');
+  style.nonce = document.currentScript.nonce;
+  style.textContent = ':host{all:initial!important;position:fixed!important;top:0!important;right:0!important;z-index:2147483647!important}button{position:fixed;right:0;top:0;width:46px;height:46px;border:0;background:transparent;color:#c3b7ff;opacity:.1;cursor:pointer;font:24px system-ui;border-radius:0 0 0 16px}button:focus-visible{outline:2px solid #8970ff}iframe{position:fixed;right:14px;top:14px;width:min(440px,calc(100vw - 28px));height:min(670px,calc(100vh - 28px));border:1px solid #ddd6e7;border-radius:18px;box-shadow:0 20px 70px #0003;background:#fff;display:none}iframe.open{display:block}';
+  const button = document.createElement('button');
+  button.textContent = '✦'; button.setAttribute('aria-label', 'Open GhostBar');
+  const frame = document.createElement('iframe');
+  frame.title = 'GhostBar chat'; frame.referrerPolicy = 'origin';
+  frame.setAttribute('sandbox', 'allow-scripts allow-same-origin allow-forms');
+  frame.setAttribute('allow', 'clipboard-write');
+  const focusChat = () => {
+    frame.contentWindow?.postMessage({ type: 'ghostbar:focus', shortcut }, origin);
+  };
+  frame.addEventListener('load', () => { if (frame.classList.contains('open')) focusChat(); });
+  const open = () => {
+    if (!frame.classList.contains('open')) previousFocus = document.activeElement;
+    if (!frame.src) frame.src = origin + '/';
+    frame.classList.add('open'); button.hidden = true;
+    focusChat();
+  };
+  const close = () => {
+    const hadFocus = document.activeElement === mount;
+    frame.classList.remove('open'); button.hidden = false;
+    if (hadFocus) { frame.blur(); previousFocus?.focus({ preventScroll: true }); }
+  };
+  const toggle = () => frame.classList.contains('open') ? close() : open();
+  button.addEventListener('click', open);
+  // Events inside the closed shadow root are retargeted to its host. Events
+  // inside the chat iframe stay in that document and must not dismiss it.
+  document.addEventListener('pointerdown', event => {
+    if (frame.classList.contains('open') && !event.composedPath().includes(mount)) close();
+  }, true);
+  document.addEventListener('keydown', event => {
+    if (!event.repeat && !event.isComposing && shortcut.enabled && event.code === shortcut.code &&
+        event.ctrlKey === shortcut.ctrl && event.altKey === shortcut.alt &&
+        event.shiftKey === shortcut.shift && event.metaKey === shortcut.meta) {
+      event.preventDefault(); event.stopPropagation(); toggle();
+    } else if (event.key === 'Escape' && frame.classList.contains('open')) close();
+  }, true);
+  window.addEventListener('message', event => {
+    if (event.origin !== origin || event.source !== frame.contentWindow) return;
+    if (event.data?.type === 'ghostbar:close') close();
+    if (event.data?.type === 'ghostbar:toggle') toggle();
+    if (event.data?.type === 'ghostbar:capture' && typeof event.data.id === 'string') {
+      const selected = window.getSelection()?.toString().trim();
+      const text = selected || document.body.innerText;
+      frame.contentWindow.postMessage({
+        type: 'ghostbar:context', id: event.data.id,
+        title: document.title, url: location.origin + location.pathname,
+        text: text.slice(0, 60000), selected: !!selected
+      }, origin);
+    }
+  });
+  shadow.append(style, button, frame); document.documentElement.append(mount);
+})();
+</script>

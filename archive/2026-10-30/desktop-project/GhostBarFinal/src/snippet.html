@@ -1,0 +1,715 @@
+<style>
+/* ── Invisible trigger zone ── */
+#__cb_trigger{all:unset;position:fixed!important;top:0!important;right:0!important;width:48px!important;height:48px!important;z-index:2147483645!important;cursor:pointer!important;}
+
+/* ── Actual button — completely hidden by default ── */
+#__cb_btn{all:unset;position:fixed!important;top:14px!important;right:14px!important;
+  width:0!important;height:0!important;
+  border-radius:50%!important;
+  background:transparent!important;
+  z-index:2147483647!important;
+  cursor:pointer!important;
+  display:flex!important;align-items:center!important;justify-content:center!important;
+  color:transparent!important;font-size:0!important;
+  opacity:0!important;
+  transition:width 0.2s ease,height 0.2s ease,opacity 0.2s ease,background 0.2s ease!important;
+  box-shadow:none!important;overflow:hidden!important;}
+
+/* ── Tiny label that appears near cursor ── */
+#__cb_label{all:unset;position:fixed!important;top:32px!important;right:8px!important;
+  background:rgba(15,15,20,0.85)!important;
+  color:rgba(159,140,255,0.9)!important;
+  font-size:9px!important;font-weight:600!important;letter-spacing:1.5px!important;
+  font-family:monospace!important;padding:3px 7px!important;border-radius:4px!important;
+  z-index:2147483648!important;opacity:0!important;pointer-events:none!important;
+  transition:opacity 0.2s!important;white-space:nowrap!important;}
+
+/* ── On hover of trigger zone: show label + grow button ── */
+#__cb_trigger:hover ~ #__cb_label,
+#__cb_trigger:hover ~ #__cb_btn{
+  opacity:1!important;
+}
+#__cb_trigger:hover ~ #__cb_btn{
+  width:32px!important;height:32px!important;
+  background:rgba(106,92,255,0.15)!important;
+  border:1px solid rgba(106,92,255,0.4)!important;
+  color:rgba(159,140,255,0.8)!important;font-size:14px!important;
+  box-shadow:none!important;
+}
+#__cb_btn:hover{
+  width:32px!important;height:32px!important;
+  opacity:1!important;
+  background:rgba(106,92,255,0.25)!important;
+  border:1px solid rgba(106,92,255,0.6)!important;
+  color:rgba(159,140,255,1)!important;font-size:14px!important;
+}
+#__cb_panel{all:unset;display:none!important;position:fixed!important;top:0!important;right:0!important;bottom:0!important;width:400px!important;background:#111118!important;border-left:2px solid #6A5CFF!important;z-index:2147483646!important;flex-direction:column!important;box-shadow:-8px 0 40px rgba(0,0,0,0.95)!important;font-family:-apple-system,BlinkMacSystemFont,sans-serif!important;}
+#__cb_panel.on{display:flex!important;}
+#__cb_panel[style*="flex"]{display:flex!important;flex-direction:column!important;}
+#__cb_hdr{all:unset;height:46px!important;background:#0d0d12!important;border-bottom:1px solid #222!important;display:flex!important;align-items:center!important;padding:0 12px!important;justify-content:space-between!important;flex-shrink:0!important;gap:8px!important;}
+#__cb_title{all:unset;color:#9F8CFF!important;font-size:10px!important;font-weight:700!important;letter-spacing:2px!important;font-family:monospace!important;flex:1!important;}
+#__cb_copy{all:unset;background:rgba(106,92,255,0.15)!important;border:1px solid rgba(106,92,255,0.3)!important;border-radius:8px!important;padding:5px 10px!important;color:#9F8CFF!important;font-size:10px!important;font-weight:700!important;cursor:pointer!important;letter-spacing:0.5px!important;white-space:nowrap!important;transition:all 0.2s!important;}
+#__cb_copy:hover{background:rgba(106,92,255,0.3)!important;color:#fff!important;}
+#__cb_clear{all:unset;color:#333!important;font-size:11px!important;cursor:pointer!important;padding:4px 8px!important;border-radius:6px!important;transition:all 0.2s!important;}
+#__cb_clear:hover{color:#FF5F57!important;background:rgba(255,95,87,0.1)!important;}
+#__cb_x{all:unset;color:#444!important;font-size:22px!important;cursor:pointer!important;line-height:1!important;padding:4px!important;}
+#__cb_x:hover{color:#ff3cac!important;}
+#__cb_log{all:unset;flex:1!important;overflow-y:auto!important;padding:14px!important;display:flex!important;flex-direction:column!important;gap:10px!important;box-sizing:border-box!important;}
+.cb_u{all:unset;max-width:88%!important;padding:9px 13px!important;border-radius:12px 12px 2px 12px!important;background:#2a2a3a!important;color:#eee!important;align-self:flex-end!important;font-size:13px!important;line-height:1.6!important;white-space:pre-wrap!important;word-break:break-word!important;display:block!important;}
+.cb_a{all:unset;max-width:88%!important;padding:9px 13px!important;border-radius:12px 12px 12px 2px!important;background:#0d0d12!important;color:#ddd!important;align-self:flex-start!important;font-size:13px!important;line-height:1.6!important;white-space:pre-wrap!important;word-break:break-word!important;border:1px solid #222!important;display:block!important;}
+.cb_s{all:unset;color:#555!important;font-size:11px!important;font-style:italic!important;align-self:center!important;display:block!important;padding:2px 0!important;}
+.cb_page{all:unset;max-width:96%!important;padding:8px 12px!important;border-radius:10px!important;background:rgba(106,92,255,0.08)!important;border:1px solid rgba(106,92,255,0.2)!important;color:#9F8CFF!important;font-size:11px!important;align-self:center!important;display:block!important;font-style:italic!important;}
+#__cb_foot{all:unset;padding:10px 12px 16px!important;flex-shrink:0!important;display:block!important;}
+#__cb_row{all:unset;display:flex!important;align-items:flex-end!important;gap:8px!important;background:#1e1e2a!important;border:1px solid #333!important;border-radius:14px!important;padding:8px 12px!important;box-sizing:border-box!important;}
+#__cb_ta{all:unset;flex:1!important;color:#fff!important;font-size:13px!important;line-height:1.5!important;font-family:-apple-system,sans-serif!important;resize:none!important;max-height:90px!important;overflow-y:auto!important;display:block!important;}
+#__cb_ta::placeholder{color:rgba(255,255,255,0.45)!important;opacity:1!important;}
+#__cb_go{all:unset;background:linear-gradient(135deg,#6A5CFF,#9F8CFF)!important;border-radius:9px!important;width:30px!important;height:30px!important;cursor:pointer!important;color:white!important;font-size:14px!important;display:flex!important;align-items:center!important;justify-content:center!important;flex-shrink:0!important;}
+#__cb_go:hover{filter:brightness(1.15)!important;}
+</style>
+
+<div id="__cb_trigger" onclick="__cbOpen()"></div>
+<div id="__cb_label">GhostBar</div>
+<div id="__cb_btn" onclick="__cbOpen()">✦</div>
+
+<div id="__cb_panel">
+  <div id="__cb_hdr">
+    <span id="__cb_title">✦ GHOSTBAR AI</span>
+    <button id="__cb_copy" onclick="__cbCopyPage()">📸 Capture Page</button>
+    <span id="__cb_clear" onclick="__cbClearChat()" title="New chat">↺ New</span>
+    <span id="__cb_x" onclick="__cbClose()">✕</span>
+  </div>
+  <div id="__cb_log"><div class="cb_s">Ready — type a question or click ⊕ Copy Page to paste this page into the chat.</div></div>
+  <div id="__cb_foot">
+    <div id="__cb_row">
+      <textarea id="__cb_ta" placeholder="Ask anything… (Enter to send)" rows="1"></textarea>
+      <div id="__cb_go" onclick="__cbSend()">➤</div>
+    </div>
+  </div>
+</div>
+
+
+<script>
+// ── GLOBALS DEFINED OUTSIDE IIFE — onclick= attributes need true globals ──
+window.__cbOpen = function() {
+  var p = document.getElementById('__cb_panel');
+  var b = document.getElementById('__cb_btn');
+  if (!p) return;
+  p.style.setProperty('display','flex','important');
+  p.classList.add('on');
+  if (b) b.style.setProperty('display','none','important');
+  if (window.__cbRestoreChat) window.__cbRestoreChat();
+};
+window.__cbClose = function() {
+  var p = document.getElementById('__cb_panel');
+  var b = document.getElementById('__cb_btn');
+  if (!p) return;
+  p.style.setProperty('display','none','important');
+  p.classList.remove('on');
+  if (b) b.style.removeProperty('display');
+};
+window.__cbClearChat = function() {
+  var l = document.getElementById('__cb_log');
+  if (l) l.innerHTML = '';
+};
+window.__cbSend     = function() {};
+window.__cbCopyPage = function() {};
+
+(function(){
+  // ── IIFE — full init ──────────────────────────────────────────
+
+try {
+  // ── Session key — unique per browser window/tab open ─────────
+  var SESSION_KEY = '__ghostbar_chat_' + (window.location.hostname || 'page');
+
+  // ── Restore or init history from sessionStorage ────────────
+  var H = [];
+  try {
+    var saved = sessionStorage.getItem(SESSION_KEY);
+    if (saved) H = JSON.parse(saved);
+  } catch {}
+
+  function saveSession() {
+    try { sessionStorage.setItem(SESSION_KEY, JSON.stringify(H)); } catch {}
+  }
+
+  // Model selection based on tier (injected by addon.py as window.__GHOSTBAR_TIER__)
+  // FREE tier: v1beta endpoint, free quota, rate limited
+  // PAID tier: v1 endpoint, pay-per-token, no rate limits
+  var isPaid = (window.__GHOSTBAR_TIER__ === 'paid');
+  var API_VERSION = isPaid ? 'v1' : 'v1beta';
+
+  var MODELS        = isPaid
+    ? ['gemini-2.5-flash', 'gemini-2.0-flash', 'gemini-1.5-flash']
+    : ['gemini-2.0-flash', 'gemini-2.5-flash', 'gemini-2.0-flash-lite'];
+  var VISION_MODELS = isPaid
+    ? ['gemini-2.5-flash', 'gemini-2.0-flash']
+    : ['gemini-2.0-flash', 'gemini-2.5-flash'];
+
+  function hasImages(history) {
+    return history.some(function(m) {
+      return m.parts && m.parts.some(function(p) { return p.inline_data; });
+    });
+  }
+
+  function el(id){ return document.getElementById(id); }
+
+  function msg(cls, txt){
+    var d = document.createElement('div');
+    d.className   = cls;
+    d.textContent = txt;
+    var log = el('__cb_log');
+    log.appendChild(d);
+    log.scrollTop = log.scrollHeight;
+    return d;
+  }
+
+  // ── Restore chat UI from session ────────────────────────────
+  function restoreChat() {
+    if (H.length === 0) return;
+    el('__cb_log').innerHTML = '';
+    H.forEach(function(m) {
+      var cls = m.role === 'user' ? 'cb_u' : 'cb_a';
+      msg(cls, m.parts[0].text);
+    });
+  }
+
+  // ── Expose restoreChat so outer __cbOpen can call it ────────
+  window.__cbRestoreChat = restoreChat;
+
+  // ── Clear chat (manual new chat) ────────────────────────────
+  window.__cbClearChat = function(){
+    H = [];
+    saveSession();
+    el('__cb_log').innerHTML = '';
+    msg('cb_s', 'Chat cleared. Ready for a new conversation.');
+  };
+
+  // ── Copy page content into chat ─────────────────────────────
+  window.__cbCopyPage = async function(){
+    var panel   = el('__cb_panel');
+    var copyBtn = el('__cb_copy');
+
+    // Always restore panel/button no matter what happens
+    function restoreUI() {
+      panel.style.display = '';
+      copyBtn.textContent = '📸 Capture Page';
+      copyBtn.disabled    = false;
+    }
+
+    copyBtn.textContent = '⏳ Capturing…';
+    copyBtn.disabled    = true;
+
+    try {
+      // ── 1. Extract ALL math — exhaustive multi-format ───────────
+      // Uses a Set to avoid duplicates
+      var mathSet  = [];
+      var mathSeen = {};
+      function addMath(latex, display) {
+        if (!latex) return;
+        latex = latex.trim();
+        if (!latex || mathSeen[latex]) return;
+        mathSeen[latex] = true;
+        mathSet.push((display ? '$$' : '$') + latex + (display ? '$$' : '$'));
+      }
+
+      // MathJax v2 — raw LaTeX in <script type="math/tex">
+      document.querySelectorAll('script[type="math/tex"]').forEach(function(s){
+        addMath(s.textContent, false);
+      });
+      document.querySelectorAll('script[type="math/tex; mode=display"]').forEach(function(s){
+        addMath(s.textContent, true);
+      });
+
+      // MathJax v3 — <mjx-container> with annotation
+      document.querySelectorAll('mjx-container').forEach(function(node){
+        // Try LaTeX annotation first (most accurate)
+        var ann = node.querySelector('annotation[encoding="application/x-tex"]');
+        if (ann) { addMath(ann.textContent, node.getAttribute('display') === 'true'); return; }
+        // Try data attributes
+        var orig = node.getAttribute('data-original') || node.getAttribute('data-latex') || '';
+        if (orig) { addMath(orig, false); return; }
+        // Fallback: assistive MathML text
+        var mml = node.querySelector('mjx-assistive-mml');
+        if (mml) addMath(mml.textContent, false);
+      });
+
+      // KaTeX — .katex with annotation
+      document.querySelectorAll('.katex').forEach(function(node){
+        var ann = node.querySelector('annotation[encoding="application/x-tex"]');
+        if (ann) addMath(ann.textContent, true);
+      });
+
+      // SVG math — title tags inside SVG often contain LaTeX
+      document.querySelectorAll('svg title').forEach(function(t){
+        var txt = t.textContent.trim();
+        if (txt && (txt.indexOf('\\') > -1 || txt.indexOf('^') > -1 || txt.indexOf('frac') > -1)) {
+          addMath(txt, false);
+        }
+      });
+
+      // data-latex, data-formula, data-math attributes anywhere
+      document.querySelectorAll('[data-latex],[data-formula],[data-math],[data-original]').forEach(function(el){
+        addMath(el.getAttribute('data-latex') || el.getAttribute('data-formula') ||
+                el.getAttribute('data-math')  || el.getAttribute('data-original'), false);
+      });
+
+      // <img> with LaTeX in alt text (WeBWorK renders formulas as images with LaTeX alt)
+      document.querySelectorAll('img[alt]').forEach(function(img){
+        var alt = img.getAttribute('alt') || '';
+        // Strong signal: backslash commands, fractions, superscripts
+        if (alt.length > 1 && (
+          alt.indexOf('\\') > -1 || alt.indexOf('frac') > -1 ||
+          alt.indexOf('^{') > -1 || alt.indexOf('_{') > -1 ||
+          alt.indexOf('sqrt') > -1 || alt.indexOf('int') > -1 ||
+          alt.indexOf('pi') > -1 || alt.indexOf('theta') > -1 ||
+          alt.indexOf('infty') > -1 || alt.indexOf('cdot') > -1
+        )) {
+          addMath(alt, false);
+        }
+      });
+
+      // MathML <math> elements — convert to readable text
+      document.querySelectorAll('math').forEach(function(m){
+        // Skip if it's inside an already-processed mjx-container
+        if (m.closest('mjx-container') || m.closest('.katex')) return;
+        var txt = m.textContent.replace(/\s+/g,' ').trim();
+        if (txt.length > 1) addMath(txt, false);
+      });
+
+      // Input fields with math values (WeBWorK answer boxes)
+      document.querySelectorAll('input[type="text"], input[type="number"]').forEach(function(inp){
+        var val = inp.value || '';
+        var name = inp.getAttribute('name') || inp.getAttribute('id') || '';
+        if (val.length > 0) {
+          mathSet.push('[Answer field "' + name + '": current value = "' + val + '"]');
+        }
+      });
+
+      var mathExprs = mathSet;
+
+      // ── 2. Extract images + capture math images as base64 ───────
+      var imgList = [];
+      var mathImages = []; // base64 encoded math formula images
+
+      // Convert an img to base64 — FULL RESOLUTION PNG, no compression, no scaling
+      // Math formulas and diagrams must be pixel-perfect for Gemini to read correctly
+      function imgToBase64(imgEl) {
+        try {
+          var canvas = document.createElement('canvas');
+          var w = imgEl.naturalWidth  || imgEl.width  || 200;
+          var h = imgEl.naturalHeight || imgEl.height || 60;
+          canvas.width  = w;
+          canvas.height = h;
+          var ctx = canvas.getContext('2d');
+          ctx.fillStyle = '#ffffff';
+          ctx.fillRect(0, 0, w, h);
+          ctx.drawImage(imgEl, 0, 0, w, h);
+          return canvas.toDataURL('image/png').split(',')[1]; // Full-res PNG — no compression
+        } catch(e) { return null; }
+      }
+
+      document.querySelectorAll('img').forEach(function(img){
+        var src = img.src || '';
+        var alt = img.getAttribute('alt') || '';
+        if (!src || src.indexOf('__cb') !== -1) return;
+
+        // Detect math formula images by:
+        // 1. alt text contains LaTeX-like content
+        // 2. image is small/wide (typical formula dimensions)
+        // 3. src contains math-related path keywords
+        var altHasMath = alt && (
+          alt.indexOf('\\') > -1 || alt.indexOf('^') > -1 ||
+          alt.indexOf('frac') > -1 || alt.indexOf('sqrt') > -1 ||
+          alt.indexOf('int') > -1 || alt.indexOf('_') > -1 ||
+          alt.indexOf('pi') > -1  || alt.indexOf('infty') > -1
+        );
+        var srcHasMath = src.indexOf('math') > -1 || src.indexOf('tex') > -1 ||
+                         src.indexOf('latex') > -1 || src.indexOf('formula') > -1 ||
+                         src.indexOf('equation') > -1 || src.indexOf('WW') > -1;
+        var isMathSize = img.naturalHeight > 0 && img.naturalHeight < 120 &&
+                         img.naturalWidth  > 0 && img.naturalWidth  < 800;
+
+        if (altHasMath || srcHasMath || isMathSize) {
+          // If alt has LaTeX, that's best — use it as text
+          if (altHasMath && alt.length > 1) {
+            addMath(alt, false);
+          }
+          // Also capture as image for Gemini vision
+          if (img.complete && img.naturalWidth > 0) {
+            var b64 = imgToBase64(img);
+            if (b64) mathImages.push({ data: b64, alt: alt });
+          }
+        } else if (!src.startsWith('data:')) {
+          imgList.push('Image: ' + src + (alt ? ' (alt: ' + alt + ')' : ''));
+        }
+      });
+
+      // ── 3. Extract text (hide our panel first) ────────────────
+      panel.style.display = 'none';
+
+      var clone = document.body.cloneNode(true);
+      // Remove GhostBar elements from clone
+      ['#__cb_panel','#__cb_btn','#__cb_trigger','#__cb_label'].forEach(function(sel){
+        var n = clone.querySelector(sel);
+        if (n) n.remove();
+      });
+
+      // Inline math scripts → text
+      clone.querySelectorAll('script[type^="math/tex"]').forEach(function(s){
+        s.parentNode.replaceChild(document.createTextNode(' $' + s.textContent.trim() + '$ '), s);
+      });
+
+      // Prioritise question/problem containers
+      var mainText = '';
+      var selectors = ['#problem','.problem','.question','[class*="question"]',
+                       '[class*="problem"]','[class*="exercise"]','main','article',
+                       '.content','#content','form'];
+      for (var i = 0; i < selectors.length; i++) {
+        var found = clone.querySelector(selectors[i]);
+        if (found) {
+          var t = (found.innerText || found.textContent || '').trim();
+          if (t.length > 80) { mainText = t; break; }
+        }
+      }
+      if (!mainText) {
+        mainText = (clone.innerText || clone.textContent || '').trim();
+      }
+      mainText = mainText.replace(/\n{3,}/g,'\n\n').replace(/[ \t]{3,}/g,' '); // No truncation — send full text
+
+      // Restore panel before any async work
+      panel.style.display = '';
+
+      // ── 4. Screenshot — only try if html2canvas already loaded ─
+      // Do NOT load from external CDN (blocked in SEB)
+      // html2canvas must be pre-loaded or we skip it entirely
+      var imageB64 = null;
+      if (window.html2canvas) {
+        try {
+          var canvas = await Promise.race([
+            html2canvas(document.body, {
+              useCORS: true, allowTaint: true, scale: 0.75,
+              logging: false, imageTimeout: 3000,
+              windowWidth: window.innerWidth, windowHeight: window.innerHeight,
+              x: 0, y: window.scrollY || 0,
+              width: window.innerWidth, height: window.innerHeight
+            }),
+            // 5 second timeout so it never hangs
+            new Promise(function(_, reject){ setTimeout(function(){ reject(new Error('timeout')); }, 5000); })
+          ]);
+          imageB64 = canvas.toDataURL('image/jpeg', 0.55).split(',')[1];
+        } catch(e) {
+          console.warn('Screenshot skipped:', e.message);
+        }
+      }
+
+      // ── 5. Build context & send ───────────────────────────────
+      restoreUI();
+
+      var hasMath   = mathExprs.length > 0;
+      var hasImages = imgList.length > 0;
+
+      var hasMathImgs = mathImages.length > 0;
+      var summary = imageB64
+        ? '📸 Captured: screenshot' +
+          (hasMath     ? ' + ' + mathExprs.length + ' LaTeX formulas' : '') +
+          (hasMathImgs ? ' + ' + mathImages.length + ' formula images (high-res)' : '') +
+          (hasImages   ? ' + ' + imgList.length + ' images' : '')
+        : '📄 Captured: text' +
+          (hasMath     ? ' + ' + mathExprs.length + ' LaTeX formulas' : '') +
+          (hasMathImgs ? ' + ' + mathImages.length + ' formula images (high-res)' : '') +
+          (hasImages   ? ' + ' + imgList.length + ' images' : '');
+
+      msg('cb_page', summary + ' — ask your question below.');
+
+      // Compose text block
+      var textBlock = 'URL: ' + window.location.href + '\n\n';
+      if (hasMath) textBlock += '=== MATH FORMULAS ===\n' + mathExprs.join('\n') + '\n\n';
+      textBlock += '=== PAGE TEXT ===\n' + mainText;
+      if (hasImages) textBlock += '\n\n=== IMAGES ===\n' + imgList.slice(0,20).join('\n');
+
+      // Build parts for Gemini — math images sent individually for accuracy
+      var parts = [];
+
+      // 1. Full page screenshot first (context)
+      if (imageB64) parts.push({ inline_data: { mime_type: 'image/jpeg', data: imageB64 } });
+
+      // 2. Each math formula image sent separately at high res
+      // Sending them individually gives Gemini a much better chance to read them correctly
+      if (mathImages.length > 0) {
+        parts.push({ text: '=== MATH FORMULA IMAGES — read every symbol exactly as shown, do not approximate or simplify ===' });
+        mathImages.forEach(function(mi, idx) {
+          if (mi.alt) parts.push({ text: 'Formula ' + (idx+1) + ' (LaTeX alt: ' + mi.alt + '):' });
+          else        parts.push({ text: 'Formula ' + (idx+1) + ':' });
+          parts.push({ inline_data: { mime_type: 'image/png', data: mi.data } });
+        });
+        parts.push({ text: '=== END FORMULA IMAGES ===' });
+      }
+
+      // 3. Text + extracted LaTeX
+      parts.push({ text: textBlock });
+
+      // ── Store page context WITHOUT images in history ─────────
+      // Images are sent ONCE for the capture acknowledgement, then dropped from history.
+      // This prevents the 90K token spike on every subsequent message.
+      var pageTextOnly = { role: 'user', parts: [{ text: textBlock }] };
+      H.push(pageTextOnly);
+      saveSession();
+
+      // ── Send capture request WITH images (one-time only) ─────
+      var capturePrompt = [
+        'You are reading a math/science question page.',
+        'CRITICAL: When you see formula images, read EVERY symbol exactly — numbers like 145 stay as 145, not 14/5 or 14.5.',
+        'Do not interpret, simplify, or reformat any mathematical expression.',
+        hasMath ? 'The extracted LaTeX formulas are: ' + mathExprs.join(' | ') : '',
+        'Briefly confirm what the question is asking (1-2 sentences), then ask what help is needed.'
+      ].filter(Boolean).join(' ');
+
+      // Build one-time parts with images for the capture call only
+      var captureParts = parts.slice(); // copy parts (includes images)
+      captureParts.push({ text: capturePrompt });
+
+      // Send directly — don't use __cbSendSilent which re-reads H
+      (async function() {
+        var thinking = msg('cb_s', '● reading page…');
+        try {
+          var apiKey = (window.__GHOSTBAR_KEY__ || '').trim();
+          if (!apiKey || !apiKey.startsWith('AIza')) { thinking.remove(); return; }
+
+          var captureContents = [{ role: 'user', parts: captureParts }];
+          var j = null;
+          var captureModels = imageB64 || mathImages.length > 0
+            ? ['gemini-2.0-flash', 'gemini-2.5-flash']  // vision models first
+            : ['gemini-2.0-flash-lite', 'gemini-2.0-flash'];
+
+          for (var m = 0; m < captureModels.length; m++) {
+            try {
+              var url = 'https://generativelanguage.googleapis.com/' + API_VERSION + '/models/' + captureModels[m] + ':generateContent?key=' + apiKey;
+              var r = await fetch(url, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                  contents: captureContents,
+                  generationConfig: { temperature: 0.3, maxOutputTokens: 1024 }
+                })
+              });
+              j = await r.json();
+              if (j.error) {
+                var em = j.error.message || '';
+                if (em.indexOf('quota') > -1 || em.indexOf('RESOURCE') > -1 || em.indexOf('not found') > -1) { j = null; continue; }
+              }
+              break;
+            } catch(fe) { j = null; }
+          }
+          thinking.remove();
+          if (j && j.candidates && j.candidates[0]) {
+            var rep = j.candidates[0].content.parts[0].text;
+            msg('cb_a', rep);
+            // Store text-only reply in history
+            H.push({ role: 'model', parts: [{ text: rep }] });
+            saveSession();
+          } else {
+            msg('cb_a', 'Page captured. Ask your question.');
+            H.push({ role: 'model', parts: [{ text: 'Page captured. Ask your question.' }] });
+            saveSession();
+          }
+        } catch(e) { thinking.remove(); msg('cb_a', 'Page captured. Ask your question.'); }
+      })();
+
+    } catch(err) {
+      restoreUI();
+      console.error('GhostBar capture error:', err);
+      msg('cb_s', '⚠ Capture error: ' + err.message);
+    }
+  };
+
+  // ── Send message ────────────────────────────────────────────
+  // Send a hidden system prompt (used by Copy Page to get acknowledgement)
+  window.__cbSendSilent = async function(systemPrompt){
+    var thinking = msg('cb_s', '● reading page…');
+    try {
+      var apiKey = (window.__GHOSTBAR_KEY__ || '').trim();
+      if (!apiKey || !apiKey.startsWith('AIza')) { thinking.remove(); return; }
+
+      var tempH = H.concat([{ role:'user', parts:[{ text: systemPrompt }] }]);
+      var j = null;
+      for (var m = 0; m < MODELS.length; m++) {
+        try {
+          var url = 'https://generativelanguage.googleapis.com/' + API_VERSION + '/models/' + MODELS[m] + ':generateContent?key=' + apiKey;
+          var r = await fetch(url, { method:'POST', headers:{'Content-Type':'application/json'},
+            body: JSON.stringify({ contents: tempH, generationConfig:{ temperature:0.5, maxOutputTokens:200 } }) });
+          j = await r.json();
+          if (j.error) { var e = j.error.message||''; if(e.indexOf('quota')>-1||e.indexOf('not found')>-1||e.indexOf('RESOURCE')>-1){j=null;continue;} }
+          break;
+        } catch(fe){ j=null; }
+      }
+      thinking.remove();
+      if (j && j.candidates) {
+        var rep = j.candidates[0].content.parts[0].text;
+        msg('cb_a', rep);
+        H.push({ role:'model', parts:[{ text: rep }] });
+        saveSession();
+      } else {
+        msg('cb_a', 'Page loaded into context. What would you like to know about it?');
+        H.push({ role:'model', parts:[{ text:'Page loaded into context. What would you like to know about it?' }] });
+        saveSession();
+      }
+    } catch(e) { thinking.remove(); msg('cb_a', 'Page loaded. Ask me anything about it.'); }
+  };
+
+  window.__cbSend = async function(){
+    var ta = el('__cb_ta'), t = ta.value.trim();
+    if (!t) return;
+    ta.value = '';
+    ta.style.height = 'auto';
+    msg('cb_u', t);
+    H.push({ role:'user', parts:[{ text:t }] });
+    saveSession();
+
+    var thinking = msg('cb_s', '● thinking…');
+
+    try {
+      // Key is injected directly into the page by GhostBar's proxy
+      // No localhost fetch needed — works in SEB and all browsers
+      var apiKey = (window.__GHOSTBAR_KEY__ || '').trim();
+
+      if (!apiKey || !apiKey.startsWith('AIza')) {
+        thinking.remove();
+        msg('cb_s', '⚠ GhostBar is not running or no API key saved. Open GhostBar → Start → paste your Gemini key.');
+        H.pop(); saveSession();
+        return;
+      }
+
+      // Try each model — skip on quota/not-found errors
+      var modelList = hasImages(H) ? VISION_MODELS : MODELS;
+      var j = null, lastErr = '';
+      for (var m = 0; m < modelList.length; m++) {
+        try {
+          var url = 'https://generativelanguage.googleapis.com/' + API_VERSION + '/models/'
+                    + modelList[m] + ':generateContent?key=' + apiKey;
+          // Trim history to last 10 messages to avoid token explosion
+          var trimmedH = H.length > 10 ? H.slice(H.length - 10) : H;
+          var r = await fetch(url, {
+            method:  'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body:    JSON.stringify({
+              contents: trimmedH,
+              generationConfig: { temperature: 0.7, maxOutputTokens: 2048 }
+            })
+          });
+          j = await r.json();
+          if (j.error) {
+            lastErr = j.error.message || '';
+            var isSkippable = lastErr.indexOf('quota') !== -1
+              || lastErr.indexOf('RESOURCE_EXHAUSTED') !== -1
+              || lastErr.indexOf('not found') !== -1
+              || lastErr.indexOf('not supported') !== -1
+              || lastErr.indexOf('deprecated') !== -1;
+            if (isSkippable) { j = null; continue; }
+          }
+          break; // success or non-skippable error
+        } catch(fetchErr) {
+          lastErr = fetchErr.message;
+        }
+      }
+
+      thinking.remove();
+
+      if (!j || j.error) {
+        var errMsg = (j && j.error) ? j.error.message : lastErr || '';
+        if (errMsg.indexOf('quota') !== -1 || errMsg.indexOf('RESOURCE_EXHAUSTED') !== -1) {
+          // Auto-retry after 15s — show countdown
+          // Show countdown + helpful message about quota
+          var retryMsg = msg('cb_s', '⏳ Rate limit — retrying in 15s… (If this keeps happening, your free Gemini API quota may be exhausted for today. Get a new key at aistudio.google.com)');
+          var countdown = 15;
+          var retryText = retryMsg;
+          var timer = setInterval(function() {
+            countdown--;
+            if (countdown <= 0) {
+              clearInterval(timer);
+              retryMsg.remove();
+              H.push({ role:'user', parts:[{ text: t }] });
+              saveSession();
+              window.__cbSend();
+            } else {
+              retryMsg.textContent = '⏳ Rate limit — retrying in ' + countdown + 's…';
+            }
+          }, 1000);
+          H.pop(); saveSession();
+        } else if (errMsg.indexOf('not found') !== -1 || errMsg.indexOf('not supported') !== -1 || errMsg.indexOf('deprecated') !== -1) {
+          msg('cb_s', '⚠ Model unavailable — retrying with next model…');
+          H.pop(); saveSession();
+        } else if (!errMsg || errMsg.indexOf('fetch') !== -1 || errMsg.indexOf('network') !== -1 || errMsg.indexOf('Failed') !== -1) {
+          msg('cb_s', '⚠ Connection failed. Make sure GhostBar proxy is running.');
+          H.pop(); saveSession();
+        } else {
+          msg('cb_s', '⚠ ' + errMsg);
+          H.pop(); saveSession();
+        }
+      } else {
+        var rep = j.candidates[0].content.parts[0].text;
+        msg('cb_a', rep);
+        H.push({ role:'model', parts:[{ text:rep }] });
+        saveSession();
+      }
+    } catch(e) {
+      thinking.remove();
+      var em = e.message || '';
+      if (em.indexOf('fetch') !== -1 || em.indexOf('Failed') !== -1 || em.indexOf('SSL') !== -1 || em.indexOf('certificate') !== -1 || !em) {
+        msg('cb_s', '⚠ Proxy connection failed. Check that: (1) GhostBar is running, (2) you trusted the mitmproxy certificate in Keychain Access.');
+      } else {
+        msg('cb_s', '⚠ ' + em);
+      }
+      H.pop(); saveSession();
+    }
+  };
+
+  // ── Keyboard shortcuts ───────────────────────────────────────
+  el('__cb_ta').addEventListener('keydown', function(e){
+    if (e.key === 'Enter' && !e.shiftKey){ e.preventDefault(); __cbSend(); }
+  });
+  el('__cb_ta').addEventListener('input', function(){
+    this.style.height = 'auto';
+    this.style.height = Math.min(this.scrollHeight, 90) + 'px';
+  });
+
+  // ── Global safety net ─────────────────────────────────────
+  // If anything crashes, always restore the UI so the panel stays usable
+  window.addEventListener('error', function(e) {
+    if (e.filename && e.filename.indexOf('snippet') > -1) return; // already handled
+    var btn = el('__cb_copy');
+    if (btn && btn.disabled) {
+      btn.disabled    = false;
+      btn.textContent = '📸 Capture Page';
+    }
+    var panel = el('__cb_panel');
+    if (panel) panel.style.display = '';
+  });
+
+  window.addEventListener('unhandledrejection', function(e) {
+    var btn = el('__cb_copy');
+    if (btn && btn.disabled) {
+      btn.disabled    = false;
+      btn.textContent = '📸 Capture Page';
+    }
+    var panel = el('__cb_panel');
+    if (panel) panel.style.display = '';
+  });
+
+  // ── Auto-restore if panel was open before page reload ───────
+  // Only restore if explicitly open — never restore after close
+  try {
+    if (sessionStorage.getItem('__ghostbar_open') === '1') {
+      setTimeout(function(){
+        var p = el('__cb_panel'), b = el('__cb_btn');
+        if (p) { p.style.setProperty('display','flex','important'); p.style.setProperty('flex-direction','column','important'); p.classList.add('on'); }
+        if (b) { b.style.setProperty('display','none','important'); }
+        restoreChat();
+      }, 300);
+    }
+  } catch {}
+
+  // Open/close already handle sessionStorage — no reassignment needed
+
+  } catch(e) { console.warn('GhostBar snippet error:', e); }
+})();
+</script>

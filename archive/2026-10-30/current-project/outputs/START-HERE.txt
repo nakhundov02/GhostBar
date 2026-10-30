@@ -1,0 +1,16 @@
+GhostBar 2.0.5 — certificate setup fix
+
+Version 2.0.5 is available in the Apple Silicon and Intel ZIPs and on the GitHub release page. Your currently installed version 2.0.4 was left running unchanged because it already works on your Mac.
+
+For the friend seeing error -25294: stop the old proxy, quit GhostBar, unzip the matching 2.0.5 ZIP, and replace GhostBar.app in Applications. Open it and click Certificate setup. It imports this Mac’s public CA into the login keychain. In Keychain Access, select login > Certificates, open mitmproxy, expand Trust, set Secure Sockets Layer (SSL) to Always Trust, close the window, and confirm with macOS. Start Proxy afterward.
+
+No download is required for the manual workaround: open Keychain Access > File > Import Items > Options and choose login. Import ~/Library/Application Support/GhostBar/mitmproxy/mitmproxy-ca-cert.pem from the affected Mac, then complete the SSL trust step above. Do not choose Local Items/iCloud.
+
+The certificate import fix was verified with a fresh generated CA and a disposable macOS keychain, including repeated import. 28 JavaScript and 15 Python checks passed. Both app archives and signatures were checked; the Apple Silicon build opened with a fresh profile. The affected friend’s Mac and Intel execution still need testing there.
+
+Share link: https://github.com/nakhundov02/GhostBar/releases/tag/v2.0.5
+Apple Silicon: GhostBar/dist/GhostBar-2.0.5-arm64.zip
+Intel: GhostBar/dist/GhostBar-2.0.5-x64.zip
+Requires macOS 13 or newer. Builds are ad-hoc signed and not Apple-notarized. Each person uses their own account and certificate setup. GhostBar-source.zip excludes dependencies, generated certificates, and account data.
+
+Control + backtick toggles chat; customize it in Chat shortcut. Network restrictions, certificate pinning, and reserved browser shortcuts can affect compatibility.

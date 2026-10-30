@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GhostBar</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="shell">
+
+    <header class="app-header">
+      <div class="brand">
+        <div class="brand-icon"><img src="data:image/png;base64,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" style="width:100%;height:100%;object-fit:contain;border-radius:14px;" /></div>
+        <div>
+          <h1>GhostBar</h1>
+          <p>Summon AI anywhere in your browser</p>
+        </div>
+      </div>
+      <div class="status-pill" id="topStatus">Waiting</div>
+    </header>
+
+    <main class="grid">
+
+      <!-- ── LEFT COLUMN ─────────────────────────────── -->
+      <section class="main-column">
+
+        <!-- Status cards -->
+        <div class="panel">
+          <div class="panel-head">
+            <div><h2>Status</h2><span>Everything you need, at a glance.</span></div>
+          </div>
+          <div class="status-grid">
+            <div class="status-card">
+              <div class="status-label"><span class="dot off" id="webDot"></span> WEB PROXY</div>
+              <div class="status-value" id="webProxyValue">Off</div>
+            </div>
+            <div class="status-card">
+              <div class="status-label"><span class="dot off" id="httpsDot"></span> SECURE PROXY</div>
+              <div class="status-value" id="secureProxyValue">Off</div>
+            </div>
+            <div class="status-card">
+              <div class="status-label"><span class="dot off" id="apiDot"></span> GEMINI API</div>
+              <div class="status-value" id="apiValue">Not Connected</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Setup steps -->
+        <div class="panel">
+          <div class="panel-head">
+            <div><h2>Setup</h2><span>Three quick steps — do this once.</span></div>
+          </div>
+
+          <!-- Step 1 -->
+          <div class="step-card">
+            <div class="step-tag">STEP 1</div>
+            <div class="step-title">Get a Free Gemini API Key</div>
+            <div class="step-copy">Create your free key from Google AI Studio. Sign in with any Google account — it takes under a minute.</div>
+            <button class="primary-btn" id="openStudioBtn">Open Google AI Studio ↗</button>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="step-card">
+            <div class="step-tag">STEP 2</div>
+            <div class="step-title">Connect Your Gemini Key</div>
+            <label class="input-label" for="apiKeyInput">Paste your Gemini API Key (starts with AIza…)</label>
+            <input id="apiKeyInput" class="api-input" type="password" placeholder="AIzaSy…" autocomplete="off" spellcheck="false" />
+            <div class="tier-row">
+              <div id="tierFreeBtn" class="tier-chip">✓ Free Tier</div>
+              <div id="tierPaidBtn" class="tier-chip">  Paid Tier</div>
+              <div id="tierSpinner" class="tier-spinner" style="display:none">⏳ checking…</div>
+            </div>
+            <div id="tierInfo" class="tier-info">Tier is detected automatically from your API key.</div>
+            <div class="button-row">
+              <button class="secondary-btn" id="pasteBtn">⌘ Paste</button>
+              <button class="secondary-btn" id="showBtn">Show</button>
+              <button class="secondary-btn" id="testBtn">Test Connection</button>
+              <button class="accent-btn"    id="saveBtn">Save Key</button>
+            </div>
+            <div id="messageBox" class="message-box hidden"></div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="step-card">
+            <div class="step-tag">STEP 3</div>
+            <div class="step-title">Start GhostBar</div>
+            <div class="step-copy">
+              Press Start — GhostBar will enable your system proxy and inject the Gemini chat button into every website you visit.
+            </div>
+            <button class="launch-btn" id="startBtn">▶  Start GhostBar</button>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- ── RIGHT COLUMN ────────────────────────────── -->
+      <aside class="side-column">
+
+        <!-- Running mode -->
+        <div class="panel">
+          <div class="panel-head">
+            <div><h2>Running Mode</h2><span id="runningSubtext">Ready to start.</span></div>
+          </div>
+          <div class="hero-banner waiting" id="heroBanner">GhostBar is waiting</div>
+
+          <div class="activity-card">
+            <div class="activity-title">Activity</div>
+            <div class="activity-list" id="activityList">
+              <div class="activity-item"><span class="check muted">•</span><span>Waiting for start command</span></div>
+              <div class="activity-item"><span class="check muted">•</span><span>Proxy not active yet</span></div>
+              <div class="activity-item"><span class="check muted">•</span><span>Save a Gemini key to get started</span></div>
+            </div>
+          </div>
+
+          <div class="stack">
+            <button class="secondary-btn stack-btn" id="refreshUiBtn">↺  Refresh Status</button>
+            <button class="danger-btn   stack-btn" id="stopBtn">■  Stop GhostBar</button>
+          </div>
+        </div>
+
+        <!-- Certificate notice (shown once after first start) -->
+        <div class="panel cert-panel" id="certPanel" style="display:none">
+          <div class="panel-head">
+            <div><h2>🔐 One-Time Certificate Setup</h2><span>Required once for HTTPS to work in your browser.</span></div>
+          </div>
+
+          <!-- Auto trust button (primary) -->
+          <button class="primary-btn stack-btn" id="autoTrustBtn" style="margin-bottom:10px;">
+            ✅ Trust Certificate Automatically
+          </button>
+          <div class="cert-note" id="autoTrustNote" style="margin-bottom:14px;">
+            Click above → macOS will ask for your password → click OK. Done.
+          </div>
+
+          <!-- Manual fallback (collapsed) -->
+          <div id="manualToggle" style="color:#666;font-size:12px;cursor:pointer;text-decoration:underline;margin-bottom:8px;" onclick="document.getElementById('manualSteps').style.display=document.getElementById('manualSteps').style.display==='none'?'block':'none'">
+            ▸ Do it manually instead
+          </div>
+          <div id="manualSteps" style="display:none;">
+            <div class="cert-steps">
+              <div class="cert-step"><span class="cert-num">1</span>Open <strong>Keychain Access</strong> (Spotlight → Keychain Access)</div>
+              <div class="cert-step"><span class="cert-num">2</span>Search for <strong>"mitmproxy"</strong></div>
+              <div class="cert-step"><span class="cert-num">3</span>Double-click the certificate</div>
+              <div class="cert-step"><span class="cert-num">4</span>Expand <strong>Trust</strong> → set to <strong>Always Trust</strong></div>
+              <div class="cert-step"><span class="cert-num">5</span>Close and enter your Mac password</div>
+            </div>
+            <button class="secondary-btn stack-btn" id="openKeychainBtn">Open Keychain Access ↗</button>
+          </div>
+        </div>
+
+        <!-- How it works -->
+        <div class="panel">
+          <div class="panel-head"><div><h2>How it works</h2></div></div>
+          <div class="how-list">
+            <div>1. Get your free Gemini API key</div>
+            <div>2. Paste, save and test it above</div>
+            <div>3. Press <strong>Start GhostBar</strong></div>
+            <div>4. Open any website in Safari or Chrome</div>
+            <div>5. Click the <strong>✦</strong> button in the top-right corner</div>
+            <div>6. Chat with Gemini AI about anything on screen</div>
+          </div>
+          <div class="hint">When you're done, press <strong>Stop GhostBar</strong> to restore normal browsing.</div>
+        </div>
+
+      </aside>
+    </main>
+  </div>
+
+  <script src="renderer.js"></script>
+</body>
+</html>

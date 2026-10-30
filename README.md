@@ -119,3 +119,8 @@ OpenAI's personal/local-app eligibility and your account's available models and 
 Apple service pass-through follows [Apple’s network guidance](https://support.apple.com/en-us/101555), because those services reject HTTPS inspection. This also keeps iCloud Drive downloads working while GhostBar is active.
 
 Version 2.0.2 passes Respondus service domains and their documented AWS/CloudFront dependencies through unchanged, following [Respondus’s network guidance](https://support.respondus.com/hc/en-us/articles/29456577007003-Firewalls-Content-Filters-and-Proxy-Servers). This addresses proxy interference with Monitor connections; it does not guarantee that restricted browsers permit the GhostBar chat panel. End-to-end Monitor startup must be verified in the user’s institution environment.
+
+
+## Historical project backup
+
+Older GhostBar projects, guides, source snapshots, and development scripts are preserved in [the 30 October 2026 archive](archive/2026-10-30/README.md). Historical installers are available in the [Mac cleanup backup release](https://github.com/nakhundov02/GhostBar/releases/tag/mac-cleanup-2026-10-30).
